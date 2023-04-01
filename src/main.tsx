@@ -13,11 +13,20 @@ import {
 } from 'react-router-dom';
 import App from './App';
 import './main.css';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
+import Skills from './pages/Skills';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route index element={<App />} />
+      <Route index element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/skills" element={<Skills />} />
+      <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/contact" element={<Contact />} />
     </Route>
   )
 );
