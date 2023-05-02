@@ -12,18 +12,18 @@ import {
   createRoutesFromElements,
 } from 'react-router-dom';
 import App from './App';
+import Contact from './components/Contact';
+import Portfolio from './components/Portfolio';
+import Skills from './components/Skills';
 import './main.css';
-import About from './pages/About';
-import Contact from './pages/Contact';
 import Home from './pages/Home';
-import Portfolio from './pages/Portfolio';
-import Skills from './pages/Skills';
+import { Profile } from './pages/Profile';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<Home />} />
-      <Route path="/about" element={<About />} />
+      <Route path="/profile" element={<Profile />} />
       <Route path="/skills" element={<Skills />} />
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/contact" element={<Contact />} />

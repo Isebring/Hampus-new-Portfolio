@@ -120,9 +120,19 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
 
   const logo =
     logoType === 'dark' ? (
-      <img src="" alt="Hampus Isering logo" />
+      <img
+        src="../public/imgs/hampus-logo.png"
+        width="180x"
+        height="140px"
+        alt="Hampus Isering logo"
+      />
     ) : (
-      <img src="" alt="Hampus Isebring logo" />
+      <img
+        src="../public/imgs/hampus-logo.png"
+        width="180x"
+        height="140px"
+        alt="Hampus Isebring logo"
+      />
     );
 
   const items = links.map((link, index) => (
