@@ -13,12 +13,7 @@ export function Profile() {
             theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
         })}
       >
-        <Avatar
-          src="../public/imgs/hampusimg.png"
-          size={120}
-          radius={120}
-          mx="auto"
-        />
+        <Avatar src="/imgs/hampusimg.png" size={120} radius={120} mx="auto" />
         <Text ta="center" fz="lg" weight={500} mt="md">
           Hampus Isebring
         </Text>

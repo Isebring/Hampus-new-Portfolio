@@ -10,7 +10,7 @@ function Welcome() {
           maw={400}
           mt="sm"
           mb="md"
-          src="../public/imgs/hampus.png"
+          src="/imgs/hampus.png"
           alt="a picture of me, Hampus Isebring"
         />
         <Title
