@@ -1,4 +1,23 @@
-import { Avatar, Button, Divider, Flex, Paper, Text } from '@mantine/core';
+import {
+  Avatar,
+  Button,
+  Divider,
+  Flex,
+  Group,
+  Paper,
+  Text,
+} from '@mantine/core';
+import {
+  IconBrandCss3,
+  IconBrandGit,
+  IconBrandGithub,
+  IconBrandHtml5,
+  IconBrandJavascript,
+  IconBrandMongodb,
+  IconBrandNpm,
+  IconBrandReact,
+  IconBrandTypescript,
+} from '@tabler/icons-react';
 import { HobbyCards } from '../components/Hobbies';
 
 export function Profile() {
@@ -20,6 +39,16 @@ export function Profile() {
         <Text ta="center" c="dimmed" fz="sm">
           Front End Developer • UX | UI Designer
         </Text>
+        <Flex justify="center" mb="sm" mt="lg">
+          <Group spacing="xs">
+            <IconBrandReact color="lightblue" />{' '}
+            <IconBrandJavascript color="yellow" />{' '}
+            <IconBrandTypescript color="blue" />{' '}
+            <IconBrandMongodb color="green" /> <IconBrandHtml5 color="red" />{' '}
+            <IconBrandCss3 color="blue" /> <IconBrandGit color="darkred" />{' '}
+            <IconBrandGithub color="grey" /> <IconBrandNpm color="red" />
+          </Group>
+        </Flex>
         <Flex justify="center">
           <Button variant="filled" mt="md">
             More about me

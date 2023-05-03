@@ -105,12 +105,13 @@ export function HobbyCards() {
       </Group>
 
       <Title order={2} className={classes.title} ta="center" mt="sm">
-        How do I spend my time when I am not coding or in the middle of a design
-        process?
+        In my spare time when I am not coding or in the middle of a design
+        process I do..
       </Title>
 
       <Text c="dimmed" className={classes.description} ta="center" mt="md">
-        Family and friends. Exercise.
+        Spend time with my family, cats, and friends. I also enjoy watching
+        hockey, art and tv-shows and movies.
       </Text>
 
       <SimpleGrid
