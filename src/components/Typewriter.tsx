@@ -27,7 +27,7 @@ const TypingTitle = styled(Title)`
   border-right: 0.1em solid #b6c7f7;
   white-space: nowrap;
   width: 0;
-  animation: ${typing} 6s steps(30, end) both infinite, ${blink} 0.8s infinite;
+  animation: ${typing} 6s steps(40, end) both infinite, ${blink} 0.8s infinite;
 `;
 
 function Typewriter() {
@@ -35,12 +35,12 @@ function Typewriter() {
     <Flex align="center" justify="center">
       <Container size="sm">
         <StopCursor>
-          <TypingTitle mx="auto" order={2}>
-            I am a Junior UX | UI Designer..
+          <TypingTitle mx="auto" order={3}>
+            I am a Junior UX | UI Designer,
           </TypingTitle>
         </StopCursor>{' '}
         <StopCursor>
-          <TypingTitle mx="auto" order={2}>
+          <TypingTitle mx="auto" order={3}>
             and a Front End Developer Student..
           </TypingTitle>
         </StopCursor>

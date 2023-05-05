@@ -1,10 +1,10 @@
-import { Avatar, Box, Text, ThemeIcon, Timeline, Title } from '@mantine/core';
+import { Avatar, Box, Divider, Text, ThemeIcon, Timeline, Title } from '@mantine/core';
 import { IconBrandZoom, IconPencil, IconSchool } from '@tabler/icons-react';
 
 function MyTimeLine() {
   return (
     <Box maw={320} mx="auto" mt="xl">
-      <Title mb="lg" align="center" order={3}>
+      <Title mb="lg" align="center" order={4}>
         My journey in IT
       </Title>
       <Timeline>
@@ -95,6 +95,7 @@ function MyTimeLine() {
           </Text>
         </Timeline.Item>
       </Timeline>
+      <Divider mt="md"/>
     </Box>
   );
 }

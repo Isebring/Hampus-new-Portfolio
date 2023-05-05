@@ -1,5 +1,5 @@
-import { Container, Divider, Flex, Image, Title } from '@mantine/core';
-import MyTimeLine from './Timeline';
+import { ActionIcon, Container, Divider, Flex, Group, Image, Title } from '@mantine/core';
+import { IconBrandGithub, IconBrandLinkedin, IconBrandSlack } from '@tabler/icons-react';
 import Typewriter from './Typewriter';
 
 function Welcome() {
@@ -23,7 +23,7 @@ function Welcome() {
               position: 'absolute',
               top: '50%',
               transform: 'translate(-50%)',
-              left: '11.2rem',
+              left: '20.5rem',
               width: '1.25rem',
               height: '0.125rem',
               background: '#B6C7F7;',
@@ -33,7 +33,7 @@ function Welcome() {
               position: 'absolute',
               top: '50%',
               transform: 'translate(-50%)',
-              right: '10rem',
+              right: '19.2rem',
               width: '1.25rem',
               height: '0.125rem',
               background: '#B6C7F7;',
@@ -51,8 +51,12 @@ function Welcome() {
           I am <span style={{ color: '#3596e6' }}>Hampus</span>,
         </Title>
         <Typewriter />
+        <Group mt="md" position='center'>
+        <ActionIcon component="a" href="https://github.com/Isebring" target="_blank" sx={{borderRadius: '50%'}} size="lg" color="blue" aria-label="Github" variant="filled" ><IconBrandGithub size="1.5rem" /></ActionIcon>
+        <ActionIcon component="a" href="https://linkedin.com/" target="_blank" sx={{borderRadius: '50%'}} size="lg" color="blue" aria-label="LinkedIn" variant="filled"><IconBrandLinkedin size="1.5rem" /></ActionIcon>
+        <ActionIcon component="a" href="#" target="_blank" sx={{borderRadius: '50%'}} size="lg" color="blue" aria-label="LinkedIn" variant="filled"><IconBrandSlack size="1.5rem" /></ActionIcon>
+        </Group>
         <Divider mt="md" />
-        <MyTimeLine />
       </Container>
     </Flex>
   );
