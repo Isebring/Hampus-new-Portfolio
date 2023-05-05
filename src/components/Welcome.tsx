@@ -1,4 +1,5 @@
-import { Container, Flex, Image, Title } from '@mantine/core';
+import { Container, Divider, Flex, Image, Title } from '@mantine/core';
+import MyTimeLine from './Timeline';
 import Typewriter from './Typewriter';
 
 function Welcome() {
@@ -47,9 +48,11 @@ function Welcome() {
           Hello there
         </Title>
         <Title order={1} mb="sm" align="center">
-          I am <span style={{ color: '#3596e6' }}>Hampus</span>, and..
+          I am <span style={{ color: '#3596e6' }}>Hampus</span>,
         </Title>
         <Typewriter />
+        <Divider mt="md" />
+        <MyTimeLine />
       </Container>
     </Flex>
   );

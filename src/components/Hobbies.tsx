@@ -9,7 +9,11 @@ import {
   createStyles,
   rem,
 } from '@mantine/core';
-import { IconBarbell, IconDeviceGamepad, IconMusic } from '@tabler/icons-react';
+import {
+  IconDeviceGamepad,
+  IconMusic,
+  IconStretching,
+} from '@tabler/icons-react';
 
 const mockdata = [
   {
@@ -19,10 +23,10 @@ const mockdata = [
     icon: IconDeviceGamepad,
   },
   {
-    title: 'Exercising',
+    title: 'Exercise',
     description:
       'A way to clear my head and come back refreshed, exercising is an important part of my daily life.',
-    icon: IconBarbell,
+    icon: IconStretching,
   },
   {
     title: 'Music',
@@ -111,7 +115,7 @@ export function HobbyCards() {
 
       <Text c="dimmed" className={classes.description} ta="center" mt="md">
         Spend time with my family, cats, and friends. I also enjoy watching
-        hockey, art and tv-shows and movies.
+        hockey, art, tv-shows and movies.
       </Text>
 
       <SimpleGrid
