@@ -35,13 +35,13 @@ function Typewriter() {
     <Flex align="center" justify="center">
       <Container size="sm">
         <StopCursor>
-          <TypingTitle mx="auto" order={3}>
-            I am a Junior UX | UI Designer,
+          <TypingTitle mx="auto" order={4}>
+            I am a Junior UX Designer &
           </TypingTitle>
         </StopCursor>{' '}
         <StopCursor>
-          <TypingTitle mx="auto" order={3}>
-            and a Front End Developer Student..
+          <TypingTitle mx="auto" order={4}>
+            Front End Developer Student.
           </TypingTitle>
         </StopCursor>
       </Container>

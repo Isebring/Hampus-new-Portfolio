@@ -14,7 +14,7 @@ function Welcome() {
           src="/imgs/hampus.png"
           alt="a picture of me, Hampus Isebring"
         />
-        <Title
+        {/* <Title
           mb="lg"
           order={2}
           sx={{
@@ -46,7 +46,7 @@ function Welcome() {
           }}
         >
           Hello there
-        </Title>
+        </Title> */}
         <Title order={1} mb="sm" align="center">
           I am <span style={{ color: '#3596e6' }}>Hampus</span>,
         </Title>

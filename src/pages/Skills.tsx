@@ -189,12 +189,12 @@ function Skills() {
   ];
   return (
     <MediaQuery
-      query="(max-width: 780px)"
+      query="(max-width: 1000px)"
       styles={{
         flexDirection: 'column',
       }}
     >
-      <Flex justify="center" mt="xl">
+      <Flex justify="center" gap="lg" mt="xl">
         {skills.map((skill) => (
           <SkillsCard
             key={skill.title}
