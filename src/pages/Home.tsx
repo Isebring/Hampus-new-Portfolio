@@ -1,7 +1,6 @@
 import { Box, Flex } from '@mantine/core';
 import Contact from '../components/Contact';
 import Portfolio from '../components/Portfolio';
-import Skills from '../components/Skills';
 import MyTimeLine from '../components/Timeline';
 import Welcome from '../components/Welcome';
 
@@ -13,10 +12,8 @@ function Home() {
 
         <MyTimeLine />
 
-        <Skills />
-
         <Portfolio />
-       
+
         <Contact />
       </Flex>
     </Box>

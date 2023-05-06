@@ -18,6 +18,7 @@ import {
   IconBrandReact,
   IconBrandTypescript,
 } from '@tabler/icons-react';
+import MyCarousel from '../components/Carousel';
 import { HobbyCards } from '../components/Hobbies';
 
 export function Profile() {
@@ -56,6 +57,7 @@ export function Profile() {
         </Flex>
         <Divider mt="lg" />
         <HobbyCards />
+        <MyCarousel/>
       </Paper>
     </>
   );

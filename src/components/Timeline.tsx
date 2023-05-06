@@ -90,7 +90,7 @@ function MyTimeLine() {
           }
         >
           <Text color="dimmed" size="sm">
-            After graduating I felt an interest to know more how developers work
+            Medieinstitutet. After graduating I felt an interest to know more how developers work
             so I can better understand and collaborate with them.
           </Text>
         </Timeline.Item>

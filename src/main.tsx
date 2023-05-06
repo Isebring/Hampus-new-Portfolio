@@ -14,10 +14,10 @@ import {
 import App from './App';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
-import Skills from './components/Skills';
 import './main.css';
 import Home from './pages/Home';
 import { Profile } from './pages/Profile';
+import Skills from './pages/Skills';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
