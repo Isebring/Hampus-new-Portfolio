@@ -1,11 +1,5 @@
-import {
-  Flex,
-  MediaQuery,
-} from '@mantine/core';
-import {
-  BadgeCardProps,
-  SkillsCard,
-} from '../components/SkillsCard';
+import { Container, Flex, MediaQuery, Title } from '@mantine/core';
+import { BadgeCardProps, SkillsCard } from '../components/SkillsCard';
 
 function Skills() {
   const skills: BadgeCardProps[] = [
@@ -77,8 +71,7 @@ function Skills() {
         },
         {
           emoji: '💼',
-          label:
-            'Business Model Canvas',
+          label: 'Business Model Canvas',
         },
         {
           emoji: '🛄',
@@ -188,27 +181,30 @@ function Skills() {
     },
   ];
   return (
-    <MediaQuery
-      query="(max-width: 1000px)"
-      styles={{
-        flexDirection: 'column',
-      }}
-    >
-      <Flex justify="center" gap="lg" mt="xl">
-        {skills.map((skill) => (
-          <SkillsCard
-            key={skill.title}
-            image={skill.image}
-            title={skill.title}
-            subject={skill.subject}
-            description={
-              skill.description
-            }
-            badges={skill.badges}
-          />
-        ))}
-      </Flex>
-    </MediaQuery>
+    <Container fluid>
+      <Title align="center" mt="lg">
+        My Skills
+      </Title>
+      <MediaQuery
+        query="(max-width: 1000px)"
+        styles={{
+          flexDirection: 'column',
+        }}
+      >
+        <Flex justify="center" gap="lg" mt="xl">
+          {skills.map((skill) => (
+            <SkillsCard
+              key={skill.title}
+              image={skill.image}
+              title={skill.title}
+              subject={skill.subject}
+              description={skill.description}
+              badges={skill.badges}
+            />
+          ))}
+        </Flex>
+      </MediaQuery>
+    </Container>
   );
 }
 export default Skills;
