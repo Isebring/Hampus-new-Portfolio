@@ -17,11 +17,15 @@ import {
   IconBrandNpm,
   IconBrandReact,
   IconBrandTypescript,
+  IconMail,
 } from '@tabler/icons-react';
 import MyCarousel from '../components/Carousel';
 import { HobbyCards } from '../components/Hobbies';
 
 export function Profile() {
+  function sendMail() {
+    window.location.href = "mailto:hampus.isebring@gmail.com";
+  }
   return (
     <>
       <Paper
@@ -42,22 +46,23 @@ export function Profile() {
         </Text>
         <Flex justify="center" mb="sm" mt="lg">
           <Group spacing="xs">
-            <IconBrandReact color="lightblue" />{' '}
-            <IconBrandJavascript color="yellow" />{' '}
-            <IconBrandTypescript color="blue" />{' '}
-            <IconBrandMongodb color="green" /> <IconBrandHtml5 color="red" />{' '}
-            <IconBrandCss3 color="blue" /> <IconBrandGit color="darkred" />{' '}
-            <IconBrandGithub color="grey" /> <IconBrandNpm color="red" />
+            <IconBrandReact stroke={1.3} color="lightblue" />{' '}
+            <IconBrandJavascript stroke={1.3} color="yellow" />{' '}
+            <IconBrandTypescript stroke={1.3} color="blue" />{' '}
+            <IconBrandMongodb stroke={1.3} color="green" />{' '}
+            <IconBrandHtml5 stroke={1.3} color="red" />{' '}
+            <IconBrandCss3 stroke={1.3} color="blue" />{' '}
+            <IconBrandGit stroke={1.3} color="darkred" />{' '}
+            <IconBrandGithub stroke={1.3} color="grey" />{' '}
+            <IconBrandNpm stroke={1.3} color="red" />
           </Group>
         </Flex>
         <Flex justify="center">
-          <Button variant="filled" mt="md">
-            More about me
-          </Button>
+          <Button onClick={sendMail} leftIcon={<IconMail size="1rem" />}>Contact me</Button>
         </Flex>
         <Divider mt="lg" />
         <HobbyCards />
-        <MyCarousel/>
+        <MyCarousel />
       </Paper>
     </>
   );

@@ -33,6 +33,10 @@ function Skills() {
         },
         {
           emoji: '💭',
+          label: 'Brainstorm',
+        },
+        {
+          emoji: '💡',
           label: 'Idea generation',
         },
         {
@@ -92,6 +96,10 @@ function Skills() {
         {
           emoji: '🗣️',
           label: 'Talk to stakeholders',
+        },
+        {
+          emoji: '💡',
+          label: 'Idea generation',
         },
         {
           emoji: '📝',

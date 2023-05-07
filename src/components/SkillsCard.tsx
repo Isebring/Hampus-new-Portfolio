@@ -1,16 +1,13 @@
 import {
-    ActionIcon,
-    Badge,
-    Button,
-    Card,
-    Container,
-    Group,
-    Image,
-    Text,
-    createStyles,
-    rem,
+  Badge,
+  Card,
+  Container,
+  Group,
+  Image,
+  Text,
+  createStyles,
+  rem
 } from '@mantine/core';
-import { IconHeart } from '@tabler/icons-react';
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -68,7 +65,7 @@ export function SkillsCard({
       {badge.label}
     </Badge>
   ));
-
+  
   return (
     <Container size="sm">
       <Card withBorder shadow="md" radius="md" p="md" className={classes.card}>
@@ -96,15 +93,6 @@ export function SkillsCard({
             {features}
           </Group>
         </Card.Section>
-
-        <Group mt="xs">
-          <Button radius="md" style={{ flex: 1 }}>
-            To cases
-          </Button>
-          <ActionIcon variant="default" radius="md" size={36}>
-            <IconHeart size="1.1rem" className={classes.like} stroke={1.5} />
-          </ActionIcon>
-        </Group>
       </Card>
     </Container>
   );

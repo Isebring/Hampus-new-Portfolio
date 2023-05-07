@@ -1,5 +1,5 @@
 import { Avatar, Box, Group, Text, createStyles } from '@mantine/core';
-import { IconAt, IconPhoneCall } from '@tabler/icons-react';
+import { IconAt, IconMapPin, IconPhoneCall } from '@tabler/icons-react';
 
 const useStyles = createStyles((theme) => ({
   icon: {
@@ -38,6 +38,12 @@ export function ContactCard() {
             <IconPhoneCall stroke={1.5} size="1rem" className={classes.icon} />
             <Text fz="xs" c="dimmed">
               +46763117617
+            </Text>
+          </Group>
+          <Group noWrap spacing={10} mt={5}>
+            <IconMapPin stroke={1.5} size="1rem" className={classes.icon} />
+            <Text fz="xs" c="dimmed">
+              Halmstad
             </Text>
           </Group>
         </div>

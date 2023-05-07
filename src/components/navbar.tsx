@@ -12,7 +12,7 @@ import {
   SegmentedControl,
   Transition,
   useMantineColorScheme,
-  useMantineTheme
+  useMantineTheme,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconMoon, IconSun } from '@tabler/icons-react';
@@ -115,10 +115,10 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
   const [logoType, setLogoType] = useState('dark');
   const theme = useMantineTheme();
 
-  const handleToggle = () => {
-    toggleColorScheme();
-    setLogoType(colorScheme === 'dark' ? 'dark' : 'light');
-  };
+  // const handleToggle = () => {
+  //   toggleColorScheme();
+  //   setLogoType(colorScheme === 'dark' ? 'dark' : 'light');
+  // };
 
   const logo =
     logoType === 'dark' ? (
@@ -215,6 +215,13 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
     });
   }
 
+  function scrollBackToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
+
   return (
     <Header
       height={HEADER_HEIGHT}
@@ -236,7 +243,7 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
             <Group spacing={1}>{logo}</Group>
           </Link>
         </MediaQuery>
-        <Group spacing={5} className={classes.links}>
+        <Group onClick={scrollBackToTop} spacing={5} className={classes.links}>
           {items}
         </Group>
         <Group spacing={1}>
