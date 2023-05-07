@@ -12,10 +12,9 @@ import {
   createRoutesFromElements,
 } from 'react-router-dom';
 import App from './App';
-import Contact from './components/Contact';
-import Portfolio from './components/Portfolio';
 import './main.css';
 import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
 import { Profile } from './pages/Profile';
 import Skills from './pages/Skills';
 
@@ -26,7 +25,6 @@ const router = createBrowserRouter(
       <Route path="/profile" element={<Profile />} />
       <Route path="/skills" element={<Skills />} />
       <Route path="/portfolio" element={<Portfolio />} />
-      <Route path="/contact" element={<Contact />} />
     </Route>
   )
 );

@@ -97,7 +97,7 @@ function PortfolioItem(props: any) {
         <PortfolioBox>
           <PortfolioImg src={imgSrc} alt={title} />
           <PortfolioOverlay>
-            <Heading style={{ textAlign: 'center' }}>{title}</Heading>
+            <Heading style={{ textAlign: 'center', marginTop: '1rem' }}>{title}</Heading>
             <Text style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
               {description}
             </Text>

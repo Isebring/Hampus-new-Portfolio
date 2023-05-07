@@ -142,7 +142,7 @@ function MyTimeLine() {
             }}
           >
             <Box ml="xl" sx={{ width: '50%' }}>
-              <Title mb="lg" mt="lg" order={4}>
+              <Title mb="lg" order={4}>
                 My goal
               </Title>
               <Text>

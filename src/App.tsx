@@ -9,7 +9,6 @@ function App() {
 
   const footerLinks: FooterProps['links'] = [
     { link: '/', label: 'Hampus Isebring 2023 ☕' },
-    { link: '/', label: 'Reach out to me let us chat' },
   ]
 
   const headerLinks: HeaderResponsiveProps['links'] = [
