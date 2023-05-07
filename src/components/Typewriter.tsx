@@ -33,14 +33,14 @@ const TypingTitle = styled(Title)`
 function Typewriter() {
   return (
     <Flex align="center" justify="center">
-      <Container size="sm">
+      <Container sx={{textAlign: 'center'}} size="sm">
         <StopCursor>
           <TypingTitle mx="auto" order={4}>
             I am a Junior UX Designer &
           </TypingTitle>
         </StopCursor>{' '}
         <StopCursor>
-          <TypingTitle mx="auto" order={4}>
+          <TypingTitle mx="auto"  order={4}>
             Front End Developer Student.
           </TypingTitle>
         </StopCursor>

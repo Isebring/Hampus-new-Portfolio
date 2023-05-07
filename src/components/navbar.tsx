@@ -6,6 +6,7 @@ import {
   createStyles,
   Group,
   Header,
+  MediaQuery,
   Paper,
   rem,
   SegmentedControl,
@@ -222,19 +223,19 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
       className={classes.root}
     >
       <Container sx={{ maxWidth: 'none' }} className={classes.header}>
-        {/* <MediaQuery
+        <MediaQuery
           query="(max-width: 460px)"
           styles={{
             img: {
-              width: '10rem',
-              height: '8rem',
+              width: '6rem',
+              height: '5rem',
             },
           }}
-        > */}
+        >
           <Link to="./" onClick={handleLinkClick}>
             <Group spacing={1}>{logo}</Group>
           </Link>
-        {/* </MediaQuery> */}
+        </MediaQuery>
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>

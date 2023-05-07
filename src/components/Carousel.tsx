@@ -3,7 +3,7 @@ import { Container, Title } from '@mantine/core';
 
 function MyCarousel() {
   return (
-    <Container size="lg">
+    <Container size="md">
       <Title align="center" mb="md" order={3}>
         Some pictures from my life
       </Title>

@@ -1,5 +1,5 @@
 import { ActionIcon, Anchor, Group, createStyles, rem } from '@mantine/core';
-import { IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react';
+import { IconBrandGithub, IconBrandLinkedin, IconBrandSlack, IconMail } from '@tabler/icons-react';
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -54,14 +54,17 @@ export function MyFooter({ links }: FooterProps) {
         <Group className={classes.links}>{items}</Group>
 
         <Group spacing="xs" position="right" noWrap>
-          <ActionIcon size="lg" variant="default" radius="xl">
-            <IconBrandTwitter size="1.05rem" stroke={1.5} />
+        <ActionIcon component="a" href="mailto:hampus.isebring@gmail.com" size="lg" variant="default" radius="xl">
+            <IconMail size="1.05rem" stroke={1.5} />
           </ActionIcon>
           <ActionIcon size="lg" variant="default" radius="xl">
-            <IconBrandYoutube size="1.05rem" stroke={1.5} />
+            <IconBrandLinkedin size="1.05rem" stroke={1.5} />
+          </ActionIcon>
+          <ActionIcon component="a" href="https://github.com/Isebring" target="_blank" size="lg" variant="default" radius="xl">
+            <IconBrandGithub size="1.05rem" stroke={1.5} />
           </ActionIcon>
           <ActionIcon size="lg" variant="default" radius="xl">
-            <IconBrandInstagram size="1.05rem" stroke={1.5} />
+            <IconBrandSlack size="1.05rem" stroke={1.5} />
           </ActionIcon>
         </Group>
       </div>

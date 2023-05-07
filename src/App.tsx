@@ -1,7 +1,8 @@
 import { Box } from '@mantine/core';
 import { Outlet } from 'react-router-dom';
 import { FooterProps, MyFooter } from './components/Footer';
-import { HeaderResponsive, HeaderResponsiveProps } from './components/navbar';
+import { HeaderResponsive, HeaderResponsiveProps } from './components/Navbar';
+
 
 
 function App() {
