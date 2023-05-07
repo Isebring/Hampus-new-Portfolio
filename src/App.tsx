@@ -8,7 +8,8 @@ import { HeaderResponsive, HeaderResponsiveProps } from './components/Navbar';
 function App() {
 
   const footerLinks: FooterProps['links'] = [
-    { link: '/', label: 'Email me' },
+    { link: '/', label: 'Hampus Isebring 2023 ☕' },
+    { link: '/', label: 'Reach out to me let us chat' },
   ]
 
   const headerLinks: HeaderResponsiveProps['links'] = [
