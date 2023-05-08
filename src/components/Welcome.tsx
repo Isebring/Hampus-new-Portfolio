@@ -1,5 +1,17 @@
-import { ActionIcon, Container, Divider, Flex, Group, Image, Title } from '@mantine/core';
-import { IconBrandGithub, IconBrandLinkedin, IconBrandSlack } from '@tabler/icons-react';
+import {
+  ActionIcon,
+  Container,
+  Divider,
+  Flex,
+  Group,
+  Image,
+  Title,
+} from '@mantine/core';
+import {
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconBrandSlack,
+} from '@tabler/icons-react';
 import Typewriter from './Typewriter';
 
 function Welcome() {
@@ -11,7 +23,7 @@ function Welcome() {
           maw={400}
           mt="sm"
           mb="md"
-          src="/imgs/hampus.png"
+          src="/imgs/hampus-landingpage.png"
           alt="a picture of me, Hampus Isebring"
         />
         {/* <Title
@@ -51,10 +63,43 @@ function Welcome() {
           I am <span style={{ color: '#3596e6' }}>Hampus</span>,
         </Title>
         <Typewriter />
-        <Group mt="md" position='center'>
-        <ActionIcon component="a" href="https://github.com/Isebring" target="_blank" sx={{borderRadius: '50%'}} size="lg" color="blue" aria-label="Github" variant="filled" ><IconBrandGithub size="1.5rem" /></ActionIcon>
-        <ActionIcon component="a" href="https://linkedin.com/" target="_blank" sx={{borderRadius: '50%'}} size="lg" color="blue" aria-label="LinkedIn" variant="filled"><IconBrandLinkedin size="1.5rem" /></ActionIcon>
-        <ActionIcon component="a" href="#" target="_blank" sx={{borderRadius: '50%'}} size="lg" color="blue" aria-label="LinkedIn" variant="filled"><IconBrandSlack size="1.5rem" /></ActionIcon>
+        <Group mt="md" position="center">
+          <ActionIcon
+            component="a"
+            href="https://github.com/Isebring"
+            target="_blank"
+            sx={{ borderRadius: '50%' }}
+            size="lg"
+            color="blue"
+            aria-label="Reach out to me on Github"
+            variant="filled"
+          >
+            <IconBrandGithub size="1.5rem" />
+          </ActionIcon>
+          <ActionIcon
+            component="a"
+            href="https://linkedin.com/"
+            target="_blank"
+            sx={{ borderRadius: '50%' }}
+            size="lg"
+            color="blue"
+            aria-label="Reach out to me on LinkedIn"
+            variant="filled"
+          >
+            <IconBrandLinkedin size="1.5rem" />
+          </ActionIcon>
+          <ActionIcon
+            component="a"
+            href="#"
+            target="_blank"
+            sx={{ borderRadius: '50%' }}
+            size="lg"
+            color="blue"
+            aria-label="Reach out to me on Slack"
+            variant="filled"
+          >
+            <IconBrandSlack size="1.5rem" />
+          </ActionIcon>
         </Group>
         <Divider mt="md" />
       </Container>

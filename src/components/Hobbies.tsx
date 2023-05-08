@@ -19,7 +19,7 @@ const mockdata = [
   {
     title: 'Retro Games',
     description:
-      'In recent years I have started collecting retro games, mostly from older Nintendo systems like SNES, N64 and GCN',
+      'In recent years I have started collecting retro games, mostly from older Nintendo systems like SNES, N64 and GCN.',
     icon: IconDeviceGamepad,
   },
   {

@@ -90,13 +90,24 @@ const projects = [
   {
     title: 'GHEDb',
     imgSrc:
-      'https://isebring.github.io/Hampus-Isebring-Portfolio/imgs/ghedb-site.PNG',
+      '/imgs/ghedb.png',
     description:
       'Me and 2 fellow students created a movie application using React and TypeScript. We used the TMDB API for this assignment which was a lot of fun.',
       websiteUrl:
       'https://ghedb.netlify.app/',
       githubLink:
       'https://github.com/Isebring/GHE-Movie-App'
+  },
+  {
+    title: 'T101',
+    imgSrc:
+      'https://isebring.github.io/Hampus-Isebring-Portfolio/imgs/frontend-projects-in-progress.png',
+    description:
+      'Me and 3 fellow students created an ecommerce store application using React, Mantine and TypeScript. ',
+      websiteUrl:
+      '#',
+      githubLink:
+      '#'
   },
 ];
 
@@ -158,7 +169,7 @@ function PortfolioItem(props: {
 
 function Portfolio() {
   return (
-    <Container sx={{maxWidth: '1600px'}}>
+    <Container fluid>
       <Title align="center" mt="lg" mb="lg">
         My Portfolio
       </Title>
@@ -166,7 +177,7 @@ function Portfolio() {
       <Flex justify="center" align="center">
         <Box>
           <MediaQuery
-            query="(max-width: 900px)"
+            query="(max-width: 1250px)"
             styles={{
               flexDirection: 'column',
               alignItems: 'center',

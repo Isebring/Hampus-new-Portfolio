@@ -42,6 +42,7 @@ function MyTimeLine() {
                       size={22}
                       radius="xl"
                       src="https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/306003674_531200435678034_4822185864769976897_n.png?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=VHBhR3GGv70AX_2Wkt5&_nc_ht=scontent-arn2-1.xx&oh=00_AfDBjKWo5-YA07g3jS4bf2GZoVUsR4XI5QVtOJXLRYpvJQ&oe=6459948C"
+                      alt="Halmstad University logo"
                     />
                   }
                 >
@@ -123,6 +124,7 @@ function MyTimeLine() {
                       size={22}
                       radius="xl"
                       src="https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/294741673_447501380716314_4282193232347612574_n.png?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=OI9SRh1esBgAX_VvAD6&_nc_ht=scontent-arn2-1.xx&oh=00_AfATV4lesIPmaP2fvtfAvuID8Gf3VeD4rEBQiyEa7AgboA&oe=645A7BFA"
+                      alt="Medieinstitutet logo"
                     />
                   }
                 >
@@ -154,10 +156,10 @@ function MyTimeLine() {
                 artefacts, from start to finish. One of my main goals with a
                 career in IT is to be able to combine interests and subjects I
                 am passionate about. To name some of them: Being a{' '}
-                <span style={{ color: '#3596e6' }}>helping hand</span> for
-                people. <span style={{ color: '#3596e6' }}>Sustainability</span>{' '}
+                <span style={{ color: '#228be6' }}>helping hand</span> for
+                people. <span style={{ color: '#228be6' }}>Sustainability</span>{' '}
                 for our planet and it's habitants.{' '}
-                <span style={{ color: '#3596e6' }}>
+                <span style={{ color: '#228be6' }}>
                   Accessibility and equity
                 </span>{' '}
                 since we are all unique and have different needs.

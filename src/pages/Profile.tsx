@@ -37,7 +37,7 @@ export function Profile() {
             theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
         })}
       >
-        <Avatar src="/imgs/hampusimg.png" size={120} radius={120} mx="auto" />
+        <Avatar src="/imgs/hampusimg.png" alt="A picture of Hampus Isebring" size={120} radius={120} mx="auto" />
         <Text ta="center" fz="lg" weight={500} mt="md">
           Hampus Isebring
         </Text>
@@ -58,7 +58,7 @@ export function Profile() {
           </Group>
         </Flex>
         <Flex justify="center">
-          <Button onClick={sendMail} leftIcon={<IconMail size="1rem" />}>Contact me</Button>
+          <Button aria-label="Send an e-mail to Hampus Isebring" onClick={sendMail} leftIcon={<IconMail size="1rem" />}>Contact me</Button>
         </Flex>
         <Divider mt="lg" />
         <HobbyCards />

@@ -17,7 +17,7 @@ export function ContactCard() {
   return (
     <Box mt="lg">
       <Group position="center" noWrap>
-        <Avatar src="/imgs/hampus-isebring.png" size={94} radius="md" />
+        <Avatar src="/imgs/hampus-isebring.png" alt="a picture of me, Hampus Isebring" size={94} radius="md" />
         <div>
           <Text fz="xs" tt="uppercase" fw={700} c="dimmed">
             UX Designer & Front End Developer

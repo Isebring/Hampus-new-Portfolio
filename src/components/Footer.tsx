@@ -68,6 +68,7 @@ export function MyFooter({ links }: FooterProps) {
 
         <Group spacing="xs" position="left" noWrap>
           <ActionIcon
+            aria-label="Contact Hampus on e-mail"
             component="a"
             href="mailto:hampus.isebring@gmail.com"
             size="lg"
@@ -76,11 +77,17 @@ export function MyFooter({ links }: FooterProps) {
           >
             <IconMail size="1.05rem" stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg" variant="default" radius="xl">
+          <ActionIcon
+            size="lg"
+            variant="default"
+            aria-label="Contact Hampus on LinkedIn"
+            radius="xl"
+          >
             <IconBrandLinkedin size="1.05rem" stroke={1.5} />
           </ActionIcon>
           <ActionIcon
             component="a"
+            aria-label="Contact Hampus on Github"
             href="https://github.com/Isebring"
             target="_blank"
             size="lg"
@@ -89,12 +96,18 @@ export function MyFooter({ links }: FooterProps) {
           >
             <IconBrandGithub size="1.05rem" stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg" variant="default" radius="xl">
+          <ActionIcon
+            size="lg"
+            aria-label="Contact Hampus on Slack"
+            variant="default"
+            radius="xl"
+          >
             <IconBrandSlack size="1.05rem" stroke={1.5} />
           </ActionIcon>
         </Group>
         <ActionIcon
           onClick={scrollBackToTop}
+          aria-label="Scroll to the top of the page"
           size="lg"
           variant="default"
           radius="xl"

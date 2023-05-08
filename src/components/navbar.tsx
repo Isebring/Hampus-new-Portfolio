@@ -10,7 +10,7 @@ import {
   createStyles,
   rem,
   useMantineColorScheme,
-  useMantineTheme
+  useMantineTheme,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconMoonStars, IconSun } from '@tabler/icons-react';
@@ -178,8 +178,9 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
     return (
       <Group position="center" my={30}>
         <Switch
+          aria-label="Click here to switch between light and dark mode colors for the webpage"
           checked={colorScheme === 'dark'}
-         onClick={handleToggle}
+          onClick={handleToggle}
           size="lg"
           onLabel={<IconSun color={theme.white} size="1.25rem" stroke={1.5} />}
           offLabel={
@@ -237,6 +238,7 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
           <ToggleDarkAndLightMode />
         </Group>
         <Burger
+          aria-label="Click to open mobile menu"
           opened={opened}
           onClick={toggle}
           className={classes.burger}
