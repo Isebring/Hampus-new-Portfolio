@@ -25,7 +25,7 @@ function About() {
                 height: '60%',
               }}
             >
-              <img src="/imgs/isebring-design.svg" />
+              <img src="/imgs/isebring-design.svg" alt="A cat mascot sketching on design ideas" />
             </MediaQuery>
           </Box>
         </Flex>

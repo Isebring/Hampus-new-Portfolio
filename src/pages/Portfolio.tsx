@@ -70,7 +70,11 @@ const projects = [
     imgSrc:
       'https://isebring.github.io/Hampus-Isebring-Portfolio/imgs/frostbite-frenzy.PNG',
     description:
-      'Me and 5 fellow students created this game using P5.js and TypeScript.',
+      'Me and 5 fellow students created this game using P5.js and TypeScript. We built the game using Object Oriented Programming.',
+      websiteUrl:
+      'https://frostbitefrenzy.netlify.app/',
+      githubLink:
+      'https://github.com/Isebring/Frostbite-Frenzy'
   },
   {
     title: 'Design Portfolio',
@@ -78,18 +82,32 @@ const projects = [
       'https://isebring.github.io/Hampus-Isebring-Portfolio/imgs/portfolio-projects.png',
     description:
       'In this Figma portfolio I present my case studies in design. They are all related to the design process',
+      websiteUrl:
+      'https://www.figma.com/proto/MXf4oJ7sJUWP8UbyzpWEZo/CV-%2B-Portfolio?page-id=0%3A1&node-id=253%3A20&viewport=933%2C1413%2C0.16&scaling=scale-down&starting-point-node-id=253%3A20&hide-ui=1',
+      githubLink:
+      ''
   },
   {
     title: 'GHEDb',
     imgSrc:
       'https://isebring.github.io/Hampus-Isebring-Portfolio/imgs/ghedb-site.PNG',
     description:
-      'Me and 2 fellow students created a movie application using React and TypeScript.',
+      'Me and 2 fellow students created a movie application using React and TypeScript. We used the TMDB API for this assignment which was a lot of fun.',
+      websiteUrl:
+      'https://ghedb.netlify.app/',
+      githubLink:
+      'https://github.com/Isebring/GHE-Movie-App'
   },
 ];
 
-function PortfolioItem(props: any) {
-  const { title, imgSrc, description } = props;
+function PortfolioItem(props: {
+  title: string,
+  imgSrc: string,
+  description: string,
+  githubLink: string,
+  websiteUrl: string,
+}) {
+  const { title, imgSrc, description, githubLink, websiteUrl } = props;
 
   return (
     <Container>
@@ -106,12 +124,12 @@ function PortfolioItem(props: any) {
               mt="lg"
               mx="auto"
               component="a"
-              href="https://github.com/Isebring"
+              href={websiteUrl}
               target="_blank"
               sx={{ borderRadius: '50%' }}
               size="lg"
               color="blue"
-              aria-label="Github"
+              aria-label="Project website"
               variant="filled"
             >
               <IconExternalLink size="1.5rem" />
@@ -121,7 +139,7 @@ function PortfolioItem(props: any) {
               mt="sm"
               mx="auto"
               component="a"
-              href="https://github.com/Isebring"
+              href={githubLink}
               target="_blank"
               sx={{ borderRadius: '50%' }}
               size="lg"
@@ -140,7 +158,7 @@ function PortfolioItem(props: any) {
 
 function Portfolio() {
   return (
-    <Container fluid>
+    <Container sx={{maxWidth: '1600px'}}>
       <Title align="center" mt="lg" mb="lg">
         My Portfolio
       </Title>
@@ -161,6 +179,8 @@ function Portfolio() {
                   title={project.title}
                   imgSrc={project.imgSrc}
                   description={project.description}
+                  websiteUrl={project.websiteUrl}
+                  githubLink={project.githubLink}
                 />
               ))}
             </PortfolioContent>

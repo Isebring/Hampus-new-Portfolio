@@ -189,7 +189,7 @@ function Skills() {
     },
   ];
   return (
-    <Container fluid>
+    <Container sx={{maxWidth: '1600px'}}>
       <Title align="center" mt="lg">
         My Skills
       </Title>
