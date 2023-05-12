@@ -58,12 +58,6 @@ const PortfolioContent = styled.div`
   gap: 2rem;
 `;
 
-const SectionTitle = styled.h2`
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 2.5rem;
-  text-align: center;
-`;
 const projects = [
   {
     title: 'Frostbite Frenzy',
@@ -71,52 +65,43 @@ const projects = [
       'https://isebring.github.io/Hampus-Isebring-Portfolio/imgs/frostbite-frenzy.PNG',
     description:
       'Me and 5 fellow students created this game using P5.js and TypeScript. We built the game using Object Oriented Programming.',
-      websiteUrl:
-      'https://frostbitefrenzy.netlify.app/',
-      githubLink:
-      'https://github.com/Isebring/Frostbite-Frenzy'
+    websiteUrl: 'https://frostbitefrenzy.netlify.app/',
+    githubLink: 'https://github.com/Isebring/Frostbite-Frenzy',
   },
   {
-    title: 'Design Portfolio',
+    title: 'Design Cases',
     imgSrc:
       'https://isebring.github.io/Hampus-Isebring-Portfolio/imgs/portfolio-projects.png',
     description:
-      'In this Figma portfolio I present my case studies in design. They are all related to the design process',
-      websiteUrl:
+      'In this Figma portfolio I present my case studies in design. They are all related to the design process.',
+    websiteUrl:
       'https://www.figma.com/proto/MXf4oJ7sJUWP8UbyzpWEZo/CV-%2B-Portfolio?page-id=0%3A1&node-id=253%3A20&viewport=933%2C1413%2C0.16&scaling=scale-down&starting-point-node-id=253%3A20&hide-ui=1',
-      githubLink:
-      ''
+    githubLink: '',
   },
   {
     title: 'GHEDb',
-    imgSrc:
-      '/imgs/ghedb.png',
+    imgSrc: '/imgs/ghedb.png',
     description:
       'Me and 2 fellow students created a movie application using React and TypeScript. We used the TMDB API for this assignment which was a lot of fun.',
-      websiteUrl:
-      'https://ghedb.netlify.app/',
-      githubLink:
-      'https://github.com/Isebring/GHE-Movie-App'
+    websiteUrl: 'https://ghedb.netlify.app/',
+    githubLink: 'https://github.com/Isebring/GHE-Movie-App',
   },
   {
-    title: 'T101',
-    imgSrc:
-      'https://isebring.github.io/Hampus-Isebring-Portfolio/imgs/frontend-projects-in-progress.png',
+    title: 'Vanilla portfolio',
+    imgSrc: '/imgs/old-portfolio.png',
     description:
-      'Me and 3 fellow students created an ecommerce store application using React, Mantine and TypeScript. ',
-      websiteUrl:
-      '#',
-      githubLink:
-      '#'
+      'This was the first portfolio I created and hosted without libraries. Made with HTML, CSS and JavaScript. ',
+    websiteUrl: 'https://isebring.github.io/Hampus-Isebring-Portfolio/',
+    githubLink: 'https://github.com/Isebring/Hampus-Isebring-Portfolio',
   },
 ];
 
 function PortfolioItem(props: {
-  title: string,
-  imgSrc: string,
-  description: string,
-  githubLink: string,
-  websiteUrl: string,
+  title: string;
+  imgSrc: string;
+  description: string;
+  githubLink: string;
+  websiteUrl: string;
 }) {
   const { title, imgSrc, description, githubLink, websiteUrl } = props;
 
@@ -126,7 +111,9 @@ function PortfolioItem(props: {
         <PortfolioBox>
           <PortfolioImg src={imgSrc} alt={title} />
           <PortfolioOverlay>
-            <Heading style={{ textAlign: 'center', marginTop: '1rem' }}>{title}</Heading>
+            <Heading style={{ textAlign: 'center', marginTop: '1rem' }}>
+              {title}
+            </Heading>
             <Text style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
               {description}
             </Text>
@@ -146,20 +133,22 @@ function PortfolioItem(props: {
               <IconExternalLink size="1.5rem" />
             </ActionIcon>
 
-            <ActionIcon
-              mt="sm"
-              mx="auto"
-              component="a"
-              href={githubLink}
-              target="_blank"
-              sx={{ borderRadius: '50%' }}
-              size="lg"
-              color="blue"
-              aria-label="Github"
-              variant="filled"
-            >
-              <IconBrandGithub size="1.5rem" />
-            </ActionIcon>
+            {githubLink && (
+              <ActionIcon
+                mt="sm"
+                mx="auto"
+                component="a"
+                href={githubLink}
+                target="_blank"
+                sx={{ borderRadius: '50%' }}
+                size="lg"
+                color="blue"
+                aria-label="Github"
+                variant="filled"
+              >
+                <IconBrandGithub size="1.5rem" />
+              </ActionIcon>
+            )}
           </PortfolioOverlay>
         </PortfolioBox>
       </Flex>
