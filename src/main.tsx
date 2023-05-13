@@ -13,6 +13,7 @@ import {
 } from 'react-router-dom';
 import App from './App';
 import './main.css';
+import Cv from './pages/Cv';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import { Profile } from './pages/Profile';
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       <Route path="/profile" element={<Profile />} />
       <Route path="/skills" element={<Skills />} />
       <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/cv" element={<Cv />} />
     </Route>
   )
 );

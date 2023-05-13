@@ -8,10 +8,9 @@ function Home() {
   return (
     <Box>
       <Welcome />
-
       <MyTimeLine />
       <About />
-      <Contact/>
+      <Contact />
     </Box>
   );
 }

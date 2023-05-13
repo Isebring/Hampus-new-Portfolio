@@ -141,9 +141,10 @@ function MyTimeLine() {
             query="(max-width: 780px)"
             styles={{
               width: '100%',
+              marginTop: '1rem'
             }}
           >
-            <Box ml="xl" sx={{ width: '50%' }}>
+            <Box sx={{ width: '50%' }}>
               <Title mb="lg" order={4}>
                 My goal
               </Title>

@@ -39,7 +39,7 @@ const useStyles = createStyles((theme) => ({
     borderTopWidth: 0,
     overflow: 'hidden',
 
-    [theme.fn.largerThan('sm')]: {
+    [theme.fn.largerThan('md')]: {
       display: 'none',
     },
   },
@@ -53,13 +53,13 @@ const useStyles = createStyles((theme) => ({
   },
 
   links: {
-    [theme.fn.smallerThan('sm')]: {
+    [theme.fn.smallerThan('md')]: {
       display: 'none',
     },
   },
 
   burger: {
-    [theme.fn.largerThan('sm')]: {
+    [theme.fn.largerThan('md')]: {
       display: 'none',
     },
   },
@@ -157,7 +157,7 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsBurgerVisible(window.innerWidth < 768);
+      setIsBurgerVisible(window.innerWidth < 991);
     };
     handleResize();
     window.addEventListener('resize', handleResize);
@@ -246,7 +246,7 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
         />
         <Transition transition="pop-top-right" duration={200} mounted={opened}>
           {(styles) => (
-            <Paper className={classes.dropdown} withBorder style={styles}>
+            <Paper onClick={scrollBackToTop} className={classes.dropdown} withBorder style={styles}>
               {items}
             </Paper>
           )}

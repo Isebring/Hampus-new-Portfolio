@@ -1,4 +1,4 @@
-import { ActionIcon, Anchor, Group, createStyles, rem } from '@mantine/core';
+import { ActionIcon, Anchor, Group, MediaQuery, createStyles, rem } from '@mantine/core';
 import {
   IconArrowUp,
   IconBrandGithub,
@@ -105,6 +105,12 @@ export function MyFooter({ links }: FooterProps) {
             <IconBrandSlack size="1.05rem" stroke={1.5} />
           </ActionIcon>
         </Group>
+        <MediaQuery
+            query="(max-width: 758px)"
+            styles={{
+            marginTop: '1rem'
+            }}
+          >
         <ActionIcon
           onClick={scrollBackToTop}
           aria-label="Scroll to the top of the page"
@@ -114,6 +120,7 @@ export function MyFooter({ links }: FooterProps) {
         >
           <IconArrowUp size="1.05rem" stroke={1.5} />
         </ActionIcon>
+        </MediaQuery>
       </div>
     </div>
   );
