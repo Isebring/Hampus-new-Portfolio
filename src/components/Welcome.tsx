@@ -78,7 +78,7 @@ function Welcome() {
           </ActionIcon>
           <ActionIcon
             component="a"
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/hampus-isebring-6947b0230/"
             target="_blank"
             sx={{ borderRadius: '50%' }}
             size="lg"

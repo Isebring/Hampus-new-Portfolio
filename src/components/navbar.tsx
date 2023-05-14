@@ -178,7 +178,7 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
     return (
       <Group position="center" my={30}>
         <Switch
-          aria-label="Click here to switch between light and dark mode colors for the webpage"
+          aria-label="Here you can switch between light and dark mode colors for the webpage"
           checked={colorScheme === 'dark'}
           onClick={handleToggle}
           size="lg"

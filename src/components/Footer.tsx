@@ -78,6 +78,9 @@ export function MyFooter({ links }: FooterProps) {
             <IconMail size="1.05rem" stroke={1.5} />
           </ActionIcon>
           <ActionIcon
+            component="a"
+            target="_blank"
+            href="https://www.linkedin.com/in/hampus-isebring-6947b0230/"
             size="lg"
             variant="default"
             aria-label="Contact Hampus on LinkedIn"

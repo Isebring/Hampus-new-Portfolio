@@ -147,6 +147,10 @@ function Skills() {
           emoji: '🤖',
           label: 'AI',
         },
+        {
+          emoji: '🔄',
+          label: 'Iteration',
+        },
       ],
     },
     {
@@ -155,7 +159,7 @@ function Skills() {
       title: 'Back End Development',
       subject: 'Coding',
       description:
-        'Node, Express, Socket.io and MongoDB are some of the tools I have worked with during Back End development. I have created Rest API:s with CRUD operations.',
+        'Node, Express, Socket.io and MongoDB are some of the tools I have worked with during Back End development. I have for example created Rest API:s with CRUD operations.',
       badges: [
         {
           emoji: '📄',
@@ -184,6 +188,10 @@ function Skills() {
         {
           emoji: '🤖',
           label: 'AI',
+        },
+        {
+          emoji: '🔄',
+          label: 'Iteration',
         },
       ],
     },

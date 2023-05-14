@@ -37,15 +37,6 @@ const mockdata = [
 ];
 
 const useStyles = createStyles((theme) => ({
-  title: {
-    fontSize: rem(34),
-    fontWeight: 900,
-
-    [theme.fn.smallerThan('sm')]: {
-      fontSize: rem(24),
-    },
-  },
-
   description: {
     maxWidth: 600,
     margin: 'auto',
@@ -108,9 +99,9 @@ export function HobbyCards() {
         </Badge>
       </Group>
 
-      <Title order={2} className={classes.title} ta="center" mt="sm">
+      <Title order={2} ta="center" mt="sm">
         In my spare time when I am not coding or in the middle of a design
-        process I do..
+        process, I do..
       </Title>
 
       <Text c="dimmed" className={classes.description} ta="center" mt="md">

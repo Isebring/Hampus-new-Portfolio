@@ -41,7 +41,7 @@ function MyTimeLine() {
                     <Avatar
                       size={22}
                       radius="xl"
-                      src="https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/306003674_531200435678034_4822185864769976897_n.png?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=VHBhR3GGv70AX_2Wkt5&_nc_ht=scontent-arn2-1.xx&oh=00_AfDBjKWo5-YA07g3jS4bf2GZoVUsR4XI5QVtOJXLRYpvJQ&oe=6459948C"
+                      src="/imgs/hh-logo.png"
                       alt="Halmstad University logo"
                     />
                   }
@@ -123,7 +123,7 @@ function MyTimeLine() {
                     <Avatar
                       size={22}
                       radius="xl"
-                      src="https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/294741673_447501380716314_4282193232347612574_n.png?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=OI9SRh1esBgAX_VvAD6&_nc_ht=scontent-arn2-1.xx&oh=00_AfATV4lesIPmaP2fvtfAvuID8Gf3VeD4rEBQiyEa7AgboA&oe=645A7BFA"
+                      src="/imgs/mi-logo.png"
                       alt="Medieinstitutet logo"
                     />
                   }
