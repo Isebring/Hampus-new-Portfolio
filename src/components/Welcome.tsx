@@ -8,9 +8,9 @@ import {
   Title,
 } from '@mantine/core';
 import {
+  IconBrandDiscord,
   IconBrandGithub,
-  IconBrandLinkedin,
-  IconBrandSlack,
+  IconBrandLinkedin
 } from '@tabler/icons-react';
 import Typewriter from './Typewriter';
 
@@ -74,7 +74,7 @@ function Welcome() {
             aria-label="Reach out to me on Github"
             variant="filled"
           >
-            <IconBrandGithub size="1.5rem" />
+            <IconBrandGithub size="1.5rem" stroke={1.5} />
           </ActionIcon>
           <ActionIcon
             component="a"
@@ -86,19 +86,19 @@ function Welcome() {
             aria-label="Reach out to me on LinkedIn"
             variant="filled"
           >
-            <IconBrandLinkedin size="1.5rem" />
+            <IconBrandLinkedin size="1.5rem" stroke={1.5} />
           </ActionIcon>
           <ActionIcon
             component="a"
-            href="#"
+            href="https://discord.com/users/alagos#3330"
             target="_blank"
             sx={{ borderRadius: '50%' }}
             size="lg"
             color="blue"
-            aria-label="Reach out to me on Slack"
+            aria-label="Reach out to me on Discord"
             variant="filled"
           >
-            <IconBrandSlack size="1.5rem" />
+            <IconBrandDiscord size="1.5rem" stroke={1.5} />
           </ActionIcon>
         </Group>
         <Divider mt="md" />

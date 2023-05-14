@@ -4,6 +4,13 @@ import { Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 import { Document } from 'react-pdf/dist/esm/entry.vite';
+import styled from 'styled-components';
+
+const BoxHover = styled.div`
+&:hover div {
+  filter: brightness(0.98);
+}
+`;
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
@@ -40,10 +47,10 @@ function CV() {
   }
 
   return (
-    <Container mt="md" fluid>
+    <Container mt="md" size="sm">
       <Box>
         {!showIframe ? (
-          <Box
+          <BoxHover
             onClick={toggleIframe}
             style={{
               display: 'flex',
@@ -57,7 +64,7 @@ function CV() {
             >
               <Page pageNumber={pageNumber} scale={pdfScale} />
             </Document>
-          </Box>
+          </BoxHover>
         ) : (
           <Box>
             <Button mt="md" mb="sm" variant="outline" onClick={toggleIframe}>
@@ -67,7 +74,7 @@ function CV() {
               src="/cv_hampus_isebring - 2023.pdf"
               width="100%"
               height="600px"
-              style={{ border: 'none' }}
+              // style={{ border: 'none' }}
               title="CV PDF"
             ></iframe>
           </Box>

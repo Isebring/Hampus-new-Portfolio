@@ -157,12 +157,12 @@ function MyTimeLine() {
                 artefacts, from start to finish. One of my main goals with a
                 career in IT is to be able to combine interests and subjects I
                 am passionate about. To name some of them: Being a{' '}
-                <span style={{ color: '#228be6' }}>helping hand</span> for
-                people. <span style={{ color: '#228be6' }}>Sustainability</span>{' '}
+                <Text span c="blue">helping hand</Text> for
+                people. <Text span c="blue">Sustainability</Text>{' '}
                 for our planet and it's habitants.{' '}
-                <span style={{ color: '#228be6' }}>
+                <Text span c="blue">
                   Accessibility and equity
-                </span>{' '}
+                </Text>{' '}
                 since we are all unique and have different needs.
               </Text>
             </Box>

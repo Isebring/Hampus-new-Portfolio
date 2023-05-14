@@ -151,6 +151,10 @@ function Skills() {
           emoji: '🔄',
           label: 'Iteration',
         },
+        {
+          emoji: '🦆',
+          label: 'Rubber Duck',
+        },
       ],
     },
     {
@@ -193,6 +197,11 @@ function Skills() {
           emoji: '🔄',
           label: 'Iteration',
         },
+        {
+          emoji: '🦆',
+          label: 'Rubber Duck',
+        },
+        
       ],
     },
   ];

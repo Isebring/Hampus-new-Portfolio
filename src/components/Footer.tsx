@@ -1,9 +1,16 @@
-import { ActionIcon, Anchor, Group, MediaQuery, createStyles, rem } from '@mantine/core';
+import {
+  ActionIcon,
+  Anchor,
+  Group,
+  MediaQuery,
+  createStyles,
+  rem,
+} from '@mantine/core';
 import {
   IconArrowUp,
+  IconBrandDiscord,
   IconBrandGithub,
   IconBrandLinkedin,
-  IconBrandSlack,
   IconMail,
 } from '@tabler/icons-react';
 
@@ -100,29 +107,32 @@ export function MyFooter({ links }: FooterProps) {
             <IconBrandGithub size="1.05rem" stroke={1.5} />
           </ActionIcon>
           <ActionIcon
+            component="a"
             size="lg"
-            aria-label="Contact Hampus on Slack"
+            target="_blank"
+            href="https://discord.com/users/alagos#3330"
+            aria-label="Contact Hampus on Discord"
             variant="default"
             radius="xl"
           >
-            <IconBrandSlack size="1.05rem" stroke={1.5} />
+            <IconBrandDiscord size="1.05rem" stroke={1.5} />
           </ActionIcon>
         </Group>
         <MediaQuery
-            query="(max-width: 758px)"
-            styles={{
-            marginTop: '1rem'
-            }}
-          >
-        <ActionIcon
-          onClick={scrollBackToTop}
-          aria-label="Scroll to the top of the page"
-          size="lg"
-          variant="default"
-          radius="xl"
+          query="(max-width: 758px)"
+          styles={{
+            marginTop: '1rem',
+          }}
         >
-          <IconArrowUp size="1.05rem" stroke={1.5} />
-        </ActionIcon>
+          <ActionIcon
+            onClick={scrollBackToTop}
+            aria-label="Scroll to the top of the page"
+            size="lg"
+            variant="default"
+            radius="xl"
+          >
+            <IconArrowUp size="1.05rem" stroke={1.5} />
+          </ActionIcon>
         </MediaQuery>
       </div>
     </div>

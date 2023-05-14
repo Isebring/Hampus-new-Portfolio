@@ -137,19 +137,21 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
 
   const items = links.map((link, index) => (
     <ul key={index}>
-      <Link
-        key={link.label}
-        to={link.link}
-        className={cx(classes.link, {
-          [classes.linkActive]: active === link.link,
-        })}
-        onClick={() => {
-          setActive(link.link);
-          close();
-        }}
-      >
-        {link.label}
-      </Link>
+      <li style={{ listStyle: 'none' }}>
+        <Link
+          key={link.label}
+          to={link.link}
+          className={cx(classes.link, {
+            [classes.linkActive]: active === link.link,
+          })}
+          onClick={() => {
+            setActive(link.link);
+            close();
+          }}
+        >
+          {link.label}
+        </Link>
+      </li>
     </ul>
   ));
 
@@ -234,19 +236,24 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
         <Group onClick={scrollBackToTop} spacing={5} className={classes.links}>
           {items}
         </Group>
-        <Group spacing={1}>
+        <Group position="right">
           <ToggleDarkAndLightMode />
+          <Burger
+            aria-label="Click to open mobile menu"
+            opened={opened}
+            onClick={toggle}
+            className={classes.burger}
+            size="sm"
+          />
         </Group>
-        <Burger
-          aria-label="Click to open mobile menu"
-          opened={opened}
-          onClick={toggle}
-          className={classes.burger}
-          size="sm"
-        />
         <Transition transition="pop-top-right" duration={200} mounted={opened}>
           {(styles) => (
-            <Paper onClick={scrollBackToTop} className={classes.dropdown} withBorder style={styles}>
+            <Paper
+              onClick={scrollBackToTop}
+              className={classes.dropdown}
+              withBorder
+              style={styles}
+            >
               {items}
             </Paper>
           )}

@@ -58,7 +58,7 @@ export function Profile() {
           </Group>
         </Flex>
         <Flex justify="center">
-          <Button aria-label="Send an e-mail to Hampus Isebring" onClick={sendMail} leftIcon={<IconMail size="1rem" />}>Contact me</Button>
+          <Button color="blue.8" aria-label="Send an e-mail to Hampus Isebring" onClick={sendMail} leftIcon={<IconMail size="1rem" />}>Contact me</Button>
         </Flex>
         <Divider mt="lg" />
         <HobbyCards />

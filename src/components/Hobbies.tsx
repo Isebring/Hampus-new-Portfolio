@@ -94,7 +94,7 @@ export function HobbyCards() {
   return (
     <Container size="lg" py="xl" mt="lg">
       <Group position="center">
-        <Badge variant="filled" size="lg">
+        <Badge color="blue.8" variant="filled" size="lg">
           My hobbies
         </Badge>
       </Group>
