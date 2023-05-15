@@ -1,7 +1,7 @@
 import { Box } from '@mantine/core';
 import { Outlet } from 'react-router-dom';
 import { FooterProps, MyFooter } from './components/Footer';
-import { Navigationbar, NavigationbarProps } from './components/navbar';
+import { Navigationbar, NavigationbarProps } from './components/Navigationbar';
 
 function App() {
   const footerLinks: FooterProps['links'] = [

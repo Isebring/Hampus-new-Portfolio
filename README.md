@@ -36,4 +36,4 @@ The way I present my projects is actually very similar to my last portfolio. Thi
 
 This is a work in progress and will most likely be updated from time to time. Thanks for checking it out.
 
-[Live Demo here](https://isebring.github.io//Hampus-Isebring-Portfolio/) 🙌
+[Live Demo here](https://hampusisebring.netlify.app/) 🙌
