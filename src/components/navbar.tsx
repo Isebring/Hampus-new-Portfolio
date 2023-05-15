@@ -101,11 +101,11 @@ const useStyles = createStyles((theme) => ({
     },
   },
 }));
-export interface HeaderResponsiveProps {
+export interface NavigationbarProps {
   links: { link: string; label: string }[];
 }
 
-export function HeaderResponsive({ links }: HeaderResponsiveProps) {
+export function Navigationbar({ links }: NavigationbarProps) {
   const [opened, { toggle, close }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
   const { classes, cx } = useStyles();

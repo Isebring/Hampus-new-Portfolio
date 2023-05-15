@@ -1,14 +1,14 @@
 import { Box } from '@mantine/core';
 import { Outlet } from 'react-router-dom';
 import { FooterProps, MyFooter } from './components/Footer';
-import { HeaderResponsive, HeaderResponsiveProps } from './components/Navbar';
+import { Navigationbar, NavigationbarProps } from './components/navbar';
 
 function App() {
   const footerLinks: FooterProps['links'] = [
     { link: '/', label: 'Hampus Isebring, 2023 ☕' },
   ];
 
-  const headerLinks: HeaderResponsiveProps['links'] = [
+  const headerLinks: NavigationbarProps['links'] = [
     { link: '/', label: 'Home' },
     { link: '/profile', label: 'Profile' },
     { link: '/cv', label: 'CV' },
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <Box>
-      <HeaderResponsive links={headerLinks} />
+      <Navigationbar links={headerLinks} />
       <main>
         <Outlet />
       </main>
