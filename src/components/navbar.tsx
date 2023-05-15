@@ -121,14 +121,14 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
   const logo =
     logoType === 'dark' ? (
       <img
-        src="../public/imgs/hampuslogo.svg"
+        src="../imgs/hampuslogo.svg"
         width="150x"
         height="60px"
         alt="Hampus Isering logo"
       />
     ) : (
       <img
-        src="../public/imgs/hampuslogodark.svg"
+        src="../imgs/hampuslogodark.svg"
         width="150x"
         height="60px"
         alt="Hampus Isebring logo"

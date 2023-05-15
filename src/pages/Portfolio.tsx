@@ -1,11 +1,5 @@
-import {
-  ActionIcon,
-  Box,
-  Container,
-  Flex,
-  MediaQuery,
-  Title,
-} from '@mantine/core';
+import { ActionIcon, Container, SimpleGrid, Title } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
 import { IconBrandGithub, IconExternalLink } from '@tabler/icons-react';
 import styled from 'styled-components';
 
@@ -53,11 +47,6 @@ const Text = styled.p`
   color: white;
 `;
 
-const PortfolioContent = styled.div`
-  display: flex;
-  gap: 2rem;
-`;
-
 const projects = [
   {
     title: 'Frostbite Frenzy',
@@ -94,6 +83,14 @@ const projects = [
     websiteUrl: 'https://isebring.github.io/Hampus-Isebring-Portfolio/',
     githubLink: 'https://github.com/Isebring/Hampus-Isebring-Portfolio',
   },
+  {
+    title: 'T101',
+    imgSrc: '/imgs/T101.png',
+    description:
+      'Me and 3 fellow students created this tech ecommerce store with React, TypeScript and Mantine. We worked with the context API from React for the shopping cart. ',
+    websiteUrl: 'https://tech-101-webshop.netlify.app/',
+    githubLink: 'https://github.com/Isebring/Tech-101-Webshop',
+  },
 ];
 
 function PortfolioItem(props: {
@@ -106,87 +103,73 @@ function PortfolioItem(props: {
   const { title, imgSrc, description, githubLink, websiteUrl } = props;
 
   return (
-    <Container>
-      <Flex justify="center" align="center">
-        <PortfolioBox>
-          <PortfolioImg src={imgSrc} alt={title} />
-          <PortfolioOverlay>
-            <Heading style={{ textAlign: 'center', marginTop: '1rem' }}>
-              {title}
-            </Heading>
-            <Text style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
-              {description}
-            </Text>
+    <PortfolioBox>
+      <PortfolioImg src={imgSrc} alt={title} />
+      <PortfolioOverlay>
+        <Heading style={{ textAlign: 'center', marginTop: '1rem' }}>
+          {title}
+        </Heading>
+        <Text style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
+          {description}
+        </Text>
 
-            <ActionIcon
-              mt="lg"
-              mx="auto"
-              component="a"
-              href={websiteUrl}
-              target="_blank"
-              sx={{ borderRadius: '50%' }}
-              size="lg"
-              color="blue"
-              aria-label="Project website"
-              variant="filled"
-            >
-              <IconExternalLink size="1.5rem" />
-            </ActionIcon>
+        <ActionIcon
+          mt="lg"
+          mx="auto"
+          component="a"
+          href={websiteUrl}
+          target="_blank"
+          sx={{ borderRadius: '50%' }}
+          size="lg"
+          color="blue"
+          aria-label="Project website"
+          variant="filled"
+        >
+          <IconExternalLink size="1.5rem" />
+        </ActionIcon>
 
-            {githubLink && (
-              <ActionIcon
-                mt="sm"
-                mx="auto"
-                component="a"
-                href={githubLink}
-                target="_blank"
-                sx={{ borderRadius: '50%' }}
-                size="lg"
-                color="blue"
-                aria-label="Github"
-                variant="filled"
-              >
-                <IconBrandGithub size="1.5rem" />
-              </ActionIcon>
-            )}
-          </PortfolioOverlay>
-        </PortfolioBox>
-      </Flex>
-    </Container>
+        {githubLink && (
+          <ActionIcon
+            mt="sm"
+            mx="auto"
+            component="a"
+            href={githubLink}
+            target="_blank"
+            sx={{ borderRadius: '50%' }}
+            size="lg"
+            color="blue"
+            aria-label="Github"
+            variant="filled"
+          >
+            <IconBrandGithub size="1.5rem" />
+          </ActionIcon>
+        )}
+      </PortfolioOverlay>
+    </PortfolioBox>
   );
 }
 
 function Portfolio() {
+  const isMobile = useMediaQuery('(max-width: 800px)');
+  const columns = isMobile ? 1 : 2;
+
   return (
-    <Container fluid>
+    <Container>
       <Title align="center" mt="lg" mb="lg">
         My Portfolio
       </Title>
-
-      <Flex justify="center" align="center">
-        <Box>
-          <MediaQuery
-            query="(max-width: 1250px)"
-            styles={{
-              flexDirection: 'column',
-              alignItems: 'center',
-            }}
-          >
-            <PortfolioContent>
-              {projects.map((project, index) => (
-                <PortfolioItem
-                  key={index}
-                  title={project.title}
-                  imgSrc={project.imgSrc}
-                  description={project.description}
-                  websiteUrl={project.websiteUrl}
-                  githubLink={project.githubLink}
-                />
-              ))}
-            </PortfolioContent>
-          </MediaQuery>
-        </Box>
-      </Flex>
+      <SimpleGrid cols={columns}>
+        {projects.map((project, index) => (
+          <PortfolioItem
+            key={index}
+            title={project.title}
+            imgSrc={project.imgSrc}
+            description={project.description}
+            websiteUrl={project.websiteUrl}
+            githubLink={project.githubLink}
+          />
+        ))}
+      </SimpleGrid>
     </Container>
   );
 }

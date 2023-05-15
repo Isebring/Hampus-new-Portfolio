@@ -7,9 +7,9 @@ import { Document } from 'react-pdf/dist/esm/entry.vite';
 import styled from 'styled-components';
 
 const BoxHover = styled.div`
-&:hover div {
-  filter: brightness(0.98);
-}
+  &:hover div {
+    filter: brightness(0.98);
+  }
 `;
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
@@ -66,15 +66,14 @@ function CV() {
             </Document>
           </BoxHover>
         ) : (
-          <Box>
+          <Box sx={{ height: '100rem' }}>
             <Button mt="md" mb="sm" variant="outline" onClick={toggleIframe}>
               Close PDF
             </Button>
             <iframe
               src="/cv_hampus_isebring - 2023.pdf"
               width="100%"
-              height="600px"
-              // style={{ border: 'none' }}
+              height="100%"
               title="CV PDF"
             ></iframe>
           </Box>
@@ -90,7 +89,7 @@ function CV() {
           <a
             style={{ textDecoration: 'none', color: 'white' }}
             href="/cv_hampus_isebring - 2023.pdf"
-            download="YourName-CV.pdf"
+            download="Hampus Isebring CV.pdf"
           >
             Download CV
           </a>
