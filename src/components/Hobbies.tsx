@@ -100,8 +100,7 @@ export function HobbyCards() {
       </Group>
 
       <Title order={2} ta="center" mt="sm">
-        In my spare time when I am not coding or in the middle of a design
-        process, I do..
+        In my spare time I do..
       </Title>
 
       <Text c="dimmed" className={classes.description} ta="center" mt="md">

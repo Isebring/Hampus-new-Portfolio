@@ -66,7 +66,7 @@ function CV() {
             </Document>
           </BoxHover>
         ) : (
-          <Box sx={{ height: '100rem' }}>
+          <Box sx={{ height: '100dvh' }}>
             <Button mt="md" mb="sm" variant="outline" onClick={toggleIframe}>
               Close PDF
             </Button>

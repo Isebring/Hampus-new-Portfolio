@@ -10,8 +10,9 @@ import {
 import {
   IconBrandDiscord,
   IconBrandGithub,
-  IconBrandLinkedin
+  IconBrandLinkedin,
 } from '@tabler/icons-react';
+import Texteffect from './Texteffect';
 import Typewriter from './Typewriter';
 
 function Welcome() {
@@ -57,10 +58,11 @@ function Welcome() {
             textAlign: 'center',
           }}
         >
-          Hello there
+          Hello World
         </Title> */}
+
         <Title order={1} mb="sm" align="center">
-          I am <span style={{ color: '#3596e6' }}>Hampus</span>,
+          <Texteffect />I am <span style={{ color: '#3596e6' }}>Hampus</span>,
         </Title>
         <Typewriter />
         <Group mt="md" position="center">
