@@ -1,6 +1,7 @@
 import {
   Avatar,
   Button,
+  Container,
   Divider,
   Flex,
   Group,
@@ -53,35 +54,43 @@ export function Profile() {
         <Text ta="center" c="dimmed" fz="sm">
           Front End Developer • UX | UI Designer
         </Text>
-        <Text mt="sm" size="xs" ta="center">
-          Some of my Coding Tools:
-        </Text>
-        <Flex justify="center" mb="sm" mt="xs">
-          <Group spacing="xs">
-            <IconBrandReact stroke={1.3} color="lightblue" />{' '}
-            <IconBrandJavascript stroke={1.3} color="yellow" />{' '}
-            <IconBrandTypescript stroke={1.3} color="blue" />{' '}
-            <IconBrandMongodb stroke={1.3} color="green" />{' '}
-            <IconBrandHtml5 stroke={1.3} color="red" />{' '}
-            <IconBrandCss3 stroke={1.3} color="blue" />{' '}
-            <IconBrandGit stroke={1.3} color="darkred" />{' '}
-            <IconBrandGithub stroke={1.3} color="grey" />{' '}
-            <IconBrandNpm stroke={1.3} color="red" />
-          </Group>
+        <Flex align="center" mb="sm" mt="xs">
+          <Container size="xs">
+            <Paper mt="sm" p="xs" shadow="sm">
+              <Text mb="sm" size="xs" ta="center">
+                Some of my Coding Tools:
+              </Text>
+              <Group spacing="xs">
+                <IconBrandReact stroke={1.3} color="lightblue" />{' '}
+                <IconBrandJavascript stroke={1.3} color="yellow" />{' '}
+                <IconBrandTypescript stroke={1.3} color="blue" />{' '}
+                <IconBrandMongodb stroke={1.3} color="green" />{' '}
+                <IconBrandHtml5 stroke={1.3} color="red" />{' '}
+                <IconBrandCss3 stroke={1.3} color="blue" />{' '}
+                <IconBrandGit stroke={1.3} color="darkred" />{' '}
+                <IconBrandGithub stroke={1.3} color="grey" />{' '}
+                <IconBrandNpm stroke={1.3} color="red" />
+              </Group>
+            </Paper>
+          </Container>
         </Flex>
-
-        <Text mt="lg" size="xs" ta="center">
-          Some of my Design Tools:
-        </Text>
-        <Flex justify="center" mb="sm" mt="xs">
-          <Group spacing="xs">
-            <IconBrandFigma stroke={1.3} color="#1877F2" />{' '}
-            <IconBrandAdobe stroke={1.3} color="darkgrey" />{' '}
-            <IconBrandSketch stroke={1.3} color="orange" />{' '}
-          </Group>
+        <Flex align="center" mb="sm" mt="xs">
+          <Container size="xs">
+            <Paper sx={{ width: '10rem' }} mt="sm" shadow="sm" p="xs">
+              <Text mb="sm" size="xs" align="center">
+                Some of my Design Tools:
+              </Text>
+              <Group position="center" spacing="xs">
+                <IconBrandFigma stroke={1.3} color="#1877F2" />{' '}
+                <IconBrandAdobe stroke={1.3} color="darkgrey" />{' '}
+                <IconBrandSketch stroke={1.3} color="orange" />{' '}
+              </Group>
+            </Paper>
+          </Container>
         </Flex>
         <Flex justify="center">
           <Button
+            mt="md"
             color="blue.8"
             aria-label="Send an e-mail to Hampus Isebring"
             onClick={sendMail}
