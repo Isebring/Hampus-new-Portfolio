@@ -15,7 +15,7 @@ import {
 import { useDisclosure } from '@mantine/hooks';
 import { IconMoonStars, IconSun } from '@tabler/icons-react';
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const HEADER_HEIGHT = rem(70);
 
@@ -112,6 +112,7 @@ export function Navigationbar({ links }: NavigationbarProps) {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const [logoType, setLogoType] = useState('dark');
   const theme = useMantineTheme();
+  const location = useLocation();
 
   const handleToggle = () => {
     toggleColorScheme();
@@ -176,6 +177,10 @@ export function Navigationbar({ links }: NavigationbarProps) {
 
   function ToggleDarkAndLightMode() {
     const { colorScheme } = useMantineColorScheme();
+
+    useEffect(() => {
+      setActive(location.pathname);
+    }, [location.pathname]);
 
     return (
       <Group position="center" my={30}>

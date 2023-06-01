@@ -1,5 +1,10 @@
 import { Container, Flex, MediaQuery, Title } from '@mantine/core';
+import { Link } from 'react-router-dom';
 import { BadgeCardProps, SkillsCard } from '../components/SkillsCard';
+
+function portfolioLink() {
+  <Link to="/portfolio">Check out my portfolio tab.</Link>;
+}
 
 function Skills() {
   const skills: BadgeCardProps[] = [
@@ -8,8 +13,17 @@ function Skills() {
         'https://images.unsplash.com/photo-1634245482394-1bcf5ccffcc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
       title: 'UX Design',
       subject: 'Digital Design',
-      description:
-        'UX design is something I am familiar with due to my three years of studying at Halmstad university. UX and UI are both important parts, and I believe a designer needs both to succeed well in a design process. While UX refers to the overall experience of a product or service, UI is what meets the eye and therefore is an important part of the experience. I present my design projects in a Figma portfolio. Press the button below',
+      description: (
+        <>
+          UX design is something I am familiar with due to my three years of
+          studying at Halmstad university. UX and UI are both important parts,
+          and I believe a designer needs both to succeed well in a design
+          process. While UX refers to the overall experience of a product or
+          service, UI is what meets the eye and therefore is an important part
+          of the experience. I present my design projects in a Figma portfolio.{' '}
+          <Link to="/portfolio">Check out my portfolio tab.</Link>
+        </>
+      ),
       badges: [
         {
           emoji: '👀',
@@ -201,12 +215,11 @@ function Skills() {
           emoji: '🦆',
           label: 'Rubber Duck',
         },
-        
       ],
     },
   ];
   return (
-    <Container sx={{maxWidth: '1600px'}}>
+    <Container sx={{ maxWidth: '1600px' }}>
       <Title align="center" mt="lg">
         My Skills
       </Title>

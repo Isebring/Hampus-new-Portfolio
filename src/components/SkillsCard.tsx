@@ -6,7 +6,7 @@ import {
   Image,
   Text,
   createStyles,
-  rem
+  rem,
 } from '@mantine/core';
 
 const useStyles = createStyles((theme) => ({
@@ -40,7 +40,7 @@ export interface BadgeCardProps {
   image: string;
   title: string;
   subject: string;
-  description: string;
+  description: React.ReactNode;
   badges: {
     emoji: string;
     label: string;
@@ -65,7 +65,7 @@ export function SkillsCard({
       {badge.label}
     </Badge>
   ));
-  
+
   return (
     <Container size="sm">
       <Card withBorder shadow="md" radius="md" p="md" className={classes.card}>
