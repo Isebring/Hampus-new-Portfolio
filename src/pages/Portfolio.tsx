@@ -59,12 +59,11 @@ const projects = [
   },
   {
     title: 'Design Cases',
-    imgSrc:
-      'https://isebring.github.io/Hampus-Isebring-Portfolio/imgs/portfolio-projects.png',
+    imgSrc: '/imgs/figma-portfolio.png',
     description:
       'In this Figma portfolio I present my case studies in design. They are all related to the design process.',
     websiteUrl:
-      'https://www.figma.com/proto/MXf4oJ7sJUWP8UbyzpWEZo/CV-%2B-Portfolio?page-id=0%3A1&node-id=253%3A20&viewport=933%2C1413%2C0.16&scaling=scale-down&starting-point-node-id=253%3A20&hide-ui=1',
+      'https://www.figma.com/proto/4tnMOesa5z2xNH2tvB0Jcv/Hampus-UX-Portfolio?page-id=0%3A1&type=design&node-id=404-2&viewport=574%2C144%2C0.09&scaling=scale-down-width&starting-point-node-id=404%3A2&hide-ui=1',
     githubLink: '',
   },
   {
