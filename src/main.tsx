@@ -46,6 +46,9 @@ function Root() {
             primaryShade: { light: 8, dark: 6 },
             colorScheme,
             primaryColor: 'blue',
+            headings: {
+              fontFamily: 'Quicksand, sans-serif',
+            },
           }}
           withGlobalStyles
           withNormalizeCSS

@@ -3,17 +3,12 @@ import React, { useState } from 'react';
 import TextTransition, { presets } from 'react-text-transition';
 
 function Texteffect() {
-  const welcomeMessage = [
-    'Hello World',
-    'I hope you are well',
-    'It is just me',
-    'Wait, who?',
-  ];
+  const welcomeMessage = ['Hello World', 'Welcome to..', 'my portfolio!'];
 
   const [index, setIndex] = useState(0);
 
   React.useEffect(() => {
-    const intervalId = setInterval(() => setIndex((index) => index + 1), 3000);
+    const intervalId = setInterval(() => setIndex((index) => index + 1), 2000);
     return () => clearTimeout(intervalId);
   }, []);
 
@@ -21,7 +16,7 @@ function Texteffect() {
     <Flex justify="center">
       <Box>
         <Text fw={500} ta="center" mb="sm" size="xl">
-          <TextTransition springConfig={presets.wobbly}>
+          <TextTransition springConfig={presets.slow}>
             {welcomeMessage[index % welcomeMessage.length]}
           </TextTransition>
         </Text>
