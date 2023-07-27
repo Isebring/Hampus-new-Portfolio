@@ -1,9 +1,9 @@
-import { Box, MediaQuery, Text } from '@mantine/core';
+import { Box, MediaQuery, Paper, Title } from '@mantine/core';
 import React, { useState } from 'react';
 import TextTransition, { presets } from 'react-text-transition';
 
 function Texteffect() {
-  const welcomeMessage = ['Hello World 🌍', 'This is my journey', 'Welcome👋'];
+  const welcomeMessage = ['Hello World 🌍', 'Welcome to👋', 'My Journey 🚀'];
 
   const [index, setIndex] = useState(0);
 
@@ -14,13 +14,15 @@ function Texteffect() {
 
   return (
     <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-      <MediaQuery query="(max-width: 815px)" styles={{ fontSize: '35px' }}>
-        <Text fw={300} ta="center" mb="sm" size={45}>
-          <TextTransition springConfig={presets.slow}>
-            {welcomeMessage[index % welcomeMessage.length]}
-          </TextTransition>
-        </Text>
-      </MediaQuery>
+      <Paper p="xs" sx={{ backgroundColor: '#B6C6F7' }} shadow="md">
+        <MediaQuery query="(max-width: 815px)" styles={{ fontSize: '35px' }}>
+          <Title fw={200} ta="center" color="black" size={45}>
+            <TextTransition springConfig={presets.slow}>
+              {welcomeMessage[index % welcomeMessage.length]}
+            </TextTransition>
+          </Title>
+        </MediaQuery>
+      </Paper>
     </Box>
   );
 }
