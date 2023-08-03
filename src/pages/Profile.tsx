@@ -5,6 +5,7 @@ import {
   Divider,
   Flex,
   Group,
+  Image,
   Paper,
   Text,
 } from '@mantine/core';
@@ -32,6 +33,12 @@ export function Profile() {
   }
   return (
     <>
+      <Image
+        style={{ position: 'absolute', height: '100 dvh' }}
+        alt="Shapes of blobs, triangles and squares"
+        src="/imgs/shapes.svg"
+      ></Image>
+
       <Paper
         radius="md"
         withBorder
