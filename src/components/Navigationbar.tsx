@@ -224,7 +224,7 @@ export function Navigationbar({ links }: NavigationbarProps) {
       ref={headerRef}
       className={classes.root}
     >
-      <Container sx={{ maxWidth: 'none' }} className={classes.header}>
+      <Container size="xl" className={classes.header}>
         <MediaQuery
           query="(max-width: 460px)"
           styles={{

@@ -1,6 +1,7 @@
 import {
   ActionIcon,
   Anchor,
+  Container,
   Group,
   MediaQuery,
   createStyles,
@@ -17,10 +18,13 @@ import {
 const useStyles = createStyles((theme) => ({
   footer: {
     marginTop: rem(120),
+    position: 'absolute',
+    bottom: '0',
+    left: '0',
+    right: '0',
     borderTop: `${rem(1)} solid ${
       theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
     }`,
-    // position: 'relative',
   },
 
   inner: {
@@ -69,8 +73,8 @@ export function MyFooter({ links }: FooterProps) {
   ));
 
   return (
-    <div className={classes.footer}>
-      <div className={classes.inner}>
+    <footer className={classes.footer}>
+      <Container size="xl" className={classes.inner}>
         <Group className={classes.links}>{items}</Group>
 
         <Group spacing="xs" position="left" noWrap>
@@ -134,7 +138,7 @@ export function MyFooter({ links }: FooterProps) {
             <IconArrowUp size="1.05rem" stroke={1.5} />
           </ActionIcon>
         </MediaQuery>
-      </div>
-    </div>
+      </Container>
+    </footer>
   );
 }

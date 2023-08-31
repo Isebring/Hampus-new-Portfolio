@@ -41,11 +41,10 @@ export function Profile() {
 
       <Paper
         radius="md"
-        withBorder
         p="lg"
         sx={(theme) => ({
           backgroundColor:
-            theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
+            theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
         })}
       >
         <Avatar
@@ -106,7 +105,7 @@ export function Profile() {
             Contact me
           </Button>
         </Flex>
-        <Divider mt="lg" />
+        <Divider mt="xl" />
         <HobbyCards />
         <MyCarousel />
       </Paper>

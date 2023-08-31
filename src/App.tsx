@@ -19,7 +19,7 @@ function App() {
   return (
     <Box>
       <Navigationbar links={headerLinks} />
-      <main>
+      <main style={{ marginBottom: '20rem' }}>
         <Outlet />
       </main>
       <MyFooter links={footerLinks} />
