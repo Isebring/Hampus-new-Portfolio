@@ -100,11 +100,11 @@ export function HobbyCards() {
       </Group>
 
       <Title order={2} ta="center" mt="sm">
-        In my spare time I do like to..
+        In my spare time I enjoy:
       </Title>
 
-      <Text c="dimmed" className={classes.description} ta="center" mt="md">
-        Spend time with my family, cats, and friends. I also enjoy watching
+      <Text className={classes.description} ta="center" mt="md">
+        spending time with my family, cats, and friends. I also enjoy watching
         hockey, art, tv-shows and movies.
       </Text>
 

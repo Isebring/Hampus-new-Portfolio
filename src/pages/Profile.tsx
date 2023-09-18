@@ -1,13 +1,15 @@
 import {
   Avatar,
+  BackgroundImage,
+  Box,
   Button,
   Container,
   Divider,
   Flex,
   Group,
-  Image,
   Paper,
   Text,
+  createStyles,
 } from '@mantine/core';
 import {
   IconBrandAdobe,
@@ -27,26 +29,31 @@ import {
 import MyCarousel from '../components/Carousel';
 import { HobbyCards } from '../components/Hobbies';
 
+const useStyles = createStyles((theme) => ({
+  paper: {
+    '&:hover': {
+      transition: '0.5s ease-in-out',
+      scale: '1.2',
+    },
+  },
+}));
+
 export function Profile() {
+  const { classes } = useStyles();
   function sendMail() {
     window.location.href = 'mailto:hampus.isebring@gmail.com';
   }
   return (
-    <>
-      <Image
-        style={{ position: 'absolute', height: '100 dvh' }}
-        alt="Shapes of blobs, triangles and squares"
-        src="/imgs/shapes.svg"
-      ></Image>
-
-      <Paper
-        radius="md"
-        p="lg"
-        sx={(theme) => ({
-          backgroundColor:
-            theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
-        })}
-      >
+    <Box mt="xl">
+      <BackgroundImage src="/imgs/shape1.svg">
+        {/* <Paper
+          radius="md"
+          p="lg"
+          sx={(theme) => ({
+            backgroundColor:
+              theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
+          })}
+        > */}
         <Avatar
           src="/imgs/hampusimg.png"
           alt="A picture of Hampus Isebring"
@@ -62,7 +69,7 @@ export function Profile() {
         </Text>
         <Flex align="center" mb="sm" mt="xs">
           <Container size="xs">
-            <Paper mt="sm" p="xs" shadow="sm">
+            <Paper className={classes.paper} mt="sm" p="xs" shadow="sm">
               <Text mb="sm" size="xs" ta="center">
                 Some of my Coding Tools:
               </Text>
@@ -82,7 +89,13 @@ export function Profile() {
         </Flex>
         <Flex align="center" mb="sm" mt="xs">
           <Container size="xs">
-            <Paper sx={{ width: '10rem' }} mt="sm" shadow="sm" p="xs">
+            <Paper
+              className={classes.paper}
+              sx={{ width: '10rem' }}
+              mt="sm"
+              shadow="sm"
+              p="xs"
+            >
               <Text mb="sm" size="xs" align="center">
                 Some of my Design Tools:
               </Text>
@@ -108,7 +121,8 @@ export function Profile() {
         <Divider mt="xl" />
         <HobbyCards />
         <MyCarousel />
-      </Paper>
-    </>
+        {/* </Paper> */}
+      </BackgroundImage>
+    </Box>
   );
 }
