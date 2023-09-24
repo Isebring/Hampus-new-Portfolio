@@ -34,6 +34,13 @@ const useStyles = createStyles((theme) => ({
     fontSize: theme.fontSizes.xs,
     fontWeight: 700,
   },
+
+  skills: {
+    '&:hover': {
+      transform: 'scale(1.1)',
+      transition: '0.4s ease-in-out',
+    },
+  },
 }));
 
 export interface BadgeCardProps {
@@ -68,7 +75,13 @@ export function SkillsCard({
 
   return (
     <Container size="sm">
-      <Card withBorder shadow="md" radius="md" p="md" className={classes.card}>
+      <Card
+        withBorder
+        shadow="md"
+        radius="md"
+        p="md"
+        className={`${classes.card} ${classes.skills}`}
+      >
         <Card.Section>
           <Image src={image} alt={title} height={180} />
         </Card.Section>

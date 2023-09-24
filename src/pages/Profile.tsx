@@ -32,8 +32,8 @@ import { HobbyCards } from '../components/Hobbies';
 const useStyles = createStyles((theme) => ({
   paper: {
     '&:hover': {
-      transition: '0.5s ease-in-out',
-      scale: '1.2',
+      transform: 'scale(1.1)',
+      transition: '0.4s ease-in-out',
     },
   },
 }));
