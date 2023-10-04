@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import TextTransition, { presets } from 'react-text-transition';
 
 function Texteffect() {
-  const welcomeMessage = ['Hello World 🌍', 'Welcome to👋', 'My Journey 🚀'];
+  const welcomeMessage = ['Hello World 🌍', 'Welcome👋', 'To my journey 🚀'];
 
   const [index, setIndex] = useState(0);
 
@@ -17,7 +17,7 @@ function Texteffect() {
       <Paper p="xs" sx={{ backgroundColor: '#B6C6F7' }} shadow="md">
         <MediaQuery query="(max-width: 815px)" styles={{ fontSize: '35px' }}>
           <Title fw={200} ta="center" color="black" size={45}>
-            <TextTransition springConfig={presets.slow}>
+            <TextTransition springConfig={presets.gentle}>
               {welcomeMessage[index % welcomeMessage.length]}
             </TextTransition>
           </Title>
