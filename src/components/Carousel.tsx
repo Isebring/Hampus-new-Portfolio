@@ -5,7 +5,7 @@ function MyCarousel() {
   return (
     <Container size="lg">
       <Title mt="lg" align="center" mb="md" order={3}>
-        Some pictures from my life
+        <span style={{ color: '#FEFEFE' }}>Some</span> pictures from my life
       </Title>
       <Carousel
         withIndicators
