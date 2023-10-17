@@ -46,9 +46,7 @@ function MyTimeLine() {
                     />
                   }
                 >
-                  <Text color="dimmed" size="sm">
-                    Digital Design, Halmstad University
-                  </Text>
+                  <Text size="sm">Digital Design, Halmstad University</Text>
                 </Timeline.Item>
                 <Timeline.Item
                   title="2020. On-site to Remote"
@@ -67,7 +65,7 @@ function MyTimeLine() {
                     </ThemeIcon>
                   }
                 >
-                  <Text color="dimmed" size="sm">
+                  <Text size="sm">
                     Early in 2020 the pandemic changed my studies as I knew
                     them.
                   </Text>
@@ -89,7 +87,7 @@ function MyTimeLine() {
                     </ThemeIcon>
                   }
                 >
-                  <Text color="dimmed" size="sm">
+                  <Text size="sm">
                     As the years went by, I got more and more comfortable as to
                     what my role as a designer is.
                   </Text>
@@ -111,7 +109,7 @@ function MyTimeLine() {
                     </ThemeIcon>
                   }
                 >
-                  <Text color="dimmed" size="sm">
+                  <Text size="sm">
                     In June 2022 I graduated and can now call myself a junior
                     designer.
                   </Text>
@@ -128,7 +126,7 @@ function MyTimeLine() {
                     />
                   }
                 >
-                  <Text color="dimmed" size="sm">
+                  <Text size="sm">
                     Medieinstitutet. After graduating I felt an interest to know
                     more how developers work so I can better understand and
                     collaborate with them.
@@ -141,7 +139,7 @@ function MyTimeLine() {
             query="(max-width: 780px)"
             styles={{
               width: '100%',
-              marginTop: '1rem'
+              marginTop: '1rem',
             }}
           >
             <Box sx={{ width: '50%' }}>
@@ -157,8 +155,13 @@ function MyTimeLine() {
                 artefacts, from start to finish. One of my main goals with a
                 career in IT is to be able to combine interests and subjects I
                 am passionate about. To name some of them: Being a{' '}
-                <Text span c="blue">helping hand</Text> for
-                people. <Text span c="blue">Sustainability</Text>{' '}
+                <Text span c="blue">
+                  helping hand
+                </Text>{' '}
+                for people.{' '}
+                <Text span c="blue">
+                  Sustainability
+                </Text>{' '}
                 for our planet and it's habitants.{' '}
                 <Text span c="blue">
                   Accessibility and equity
