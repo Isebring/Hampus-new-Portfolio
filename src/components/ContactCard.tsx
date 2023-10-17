@@ -36,22 +36,16 @@ export function ContactCard() {
 
           <Group noWrap spacing={10} mt={3}>
             <IconAt stroke={1.5} size="1rem" className={classes.icon} />
-            <Text fz="xs" c="dimmed">
-              hampus.isebring@gmail.com
-            </Text>
+            <Text fz="xs">hampus.isebring@gmail.com</Text>
           </Group>
 
           <Group noWrap spacing={10} mt={5}>
             <IconPhoneCall stroke={1.5} size="1rem" className={classes.icon} />
-            <Text fz="xs" c="dimmed">
-              +46763117617
-            </Text>
+            <Text fz="xs">+46763117617</Text>
           </Group>
           <Group noWrap spacing={10} mt={5}>
             <IconMapPin stroke={1.5} size="1rem" className={classes.icon} />
-            <Text fz="xs" c="dimmed">
-              Halmstad
-            </Text>
+            <Text fz="xs">Halmstad</Text>
           </Group>
         </div>
       </Group>
