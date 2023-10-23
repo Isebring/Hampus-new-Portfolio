@@ -9,30 +9,30 @@ import {
   Title,
   createStyles,
   rem,
-} from "@mantine/core";
+} from '@mantine/core';
 import {
   IconDeviceGamepad,
   IconMusic,
   IconStretching,
-} from "@tabler/icons-react";
+} from '@tabler/icons-react';
 
 const mockdata = [
   {
-    title: "Retro Games",
+    title: 'Retro Games',
     description:
-      "In recent years I have started collecting retro games, mostly from older Nintendo systems like SNES, N64 and GCN.",
+      'In recent years I have started collecting retro games, mostly from older Nintendo systems like SNES, N64 and GCN.',
     icon: IconDeviceGamepad,
   },
   {
-    title: "Exercise",
+    title: 'Exercise',
     description:
-      "A way to clear my head and come back refreshed, exercising is an important part of my daily life.",
+      'A way to clear my head and come back refreshed, exercising is an important part of my daily life.',
     icon: IconStretching,
   },
   {
-    title: "Music",
+    title: 'Music',
     description:
-      "Music has been a part of my life since the beginning. Whatever my mood is, there is always a song to help me get through. I also play the guitar from time to time.",
+      'Music has been a part of my life since the beginning. Whatever my mood is, there is always a song to help me get through. I also play the guitar from time to time.',
     icon: IconMusic,
   },
 ];
@@ -40,30 +40,30 @@ const mockdata = [
 const useStyles = createStyles((theme) => ({
   description: {
     maxWidth: 600,
-    margin: "auto",
+    margin: 'auto',
 
-    "&::after": {
+    '&::after': {
       content: '""',
-      display: "block",
-      backgroundColor: theme.fn.primaryColor(),
+      display: 'block',
+      // backgroundColor: theme.fn.primaryColor(),
       width: rem(45),
       height: rem(2),
       marginTop: theme.spacing.sm,
-      marginLeft: "auto",
-      marginRight: "auto",
+      marginLeft: 'auto',
+      marginRight: 'auto',
     },
   },
 
   card: {
     border: `${rem(1)} solid ${
-      theme.colorScheme === "dark" ? theme.colors.dark[5] : theme.colors.gray[1]
+      theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
     }`,
   },
 
   cardTitle: {
-    "&::after": {
+    '&::after': {
       content: '""',
-      display: "block",
+      display: 'block',
       backgroundColor: theme.fn.primaryColor(),
       width: rem(45),
       height: rem(2),
@@ -100,7 +100,14 @@ export function HobbyCards() {
         </Badge>
       </Group>
 
-      <Paper shadow="md" mt="lg" p="sm" radius="md" sx={{}}>
+      <Paper
+        className={classes.card}
+        shadow="md"
+        mt="lg"
+        p="sm"
+        radius="md"
+        sx={{}}
+      >
         <Title order={2} ta="center" mt="sm">
           In my spare time I enjoy:
         </Title>
@@ -115,7 +122,7 @@ export function HobbyCards() {
         cols={3}
         spacing="xl"
         mt={50}
-        breakpoints={[{ maxWidth: "md", cols: 1 }]}
+        breakpoints={[{ maxWidth: 'md', cols: 1 }]}
       >
         {features}
       </SimpleGrid>
