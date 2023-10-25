@@ -1,4 +1,10 @@
-import { ActionIcon, Container, Image, SimpleGrid, Title } from '@mantine/core';
+import {
+  ActionIcon,
+  BackgroundImage,
+  Container,
+  SimpleGrid,
+  Title,
+} from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { IconBrandGithub, IconExternalLink } from '@tabler/icons-react';
 import styled from 'styled-components';
@@ -154,28 +160,30 @@ function Portfolio() {
 
   return (
     <>
-      <Image
+      <BackgroundImage src="/imgs/circles.svg">
+        {/* <Image
         style={{ position: 'absolute', height: '100dvh' }}
         alt="Circles used for decoration purposes"
         src="/imgs/circles.svg"
-      ></Image>
-      <Container>
-        <Title align="center" mt="lg" mb="lg">
-          My Portfolio
-        </Title>
-        <SimpleGrid cols={columns}>
-          {projects.map((project, index) => (
-            <PortfolioItem
-              key={index}
-              title={project.title}
-              imgSrc={project.imgSrc}
-              description={project.description}
-              websiteUrl={project.websiteUrl}
-              githubLink={project.githubLink}
-            />
-          ))}
-        </SimpleGrid>
-      </Container>
+      ></Image> */}
+        <Container>
+          <Title align="center" mt="lg" mb="lg">
+            My Portfolio
+          </Title>
+          <SimpleGrid cols={columns}>
+            {projects.map((project, index) => (
+              <PortfolioItem
+                key={index}
+                title={project.title}
+                imgSrc={project.imgSrc}
+                description={project.description}
+                websiteUrl={project.websiteUrl}
+                githubLink={project.githubLink}
+              />
+            ))}
+          </SimpleGrid>
+        </Container>
+      </BackgroundImage>
     </>
   );
 }
