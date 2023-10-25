@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 function Typewriter() {
   return (
     <Container>
-      <Text size="xl" align="center" fw={600}>
+      <Text mb="xl" size="xl" align="center" fw={600}>
         <span style={{ color: '#3596e6' }}>I am a</span>{' '}
         <TypeAnimation
           sequence={[
