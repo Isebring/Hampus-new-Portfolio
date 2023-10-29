@@ -91,7 +91,9 @@ export function SkillsCard({
             <Text fz="lg" fw={500}>
               {title}
             </Text>
-            <Badge size="sm">{subject}</Badge>
+            <Badge color={subject === 'Coding' ? 'yellow' : 'blue'} size="sm">
+              {subject}
+            </Badge>
           </Group>
           <Text fz="sm" mt="xs">
             {description}
