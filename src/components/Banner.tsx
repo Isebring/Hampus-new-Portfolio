@@ -1,6 +1,12 @@
 import { Button, Card, Overlay, Text, createStyles } from '@mantine/core';
 import { Link } from 'react-router-dom';
 
+function scrollBackToTop() {
+  window.scrollTo({
+    top: 0,
+  });
+}
+
 const useStyles = createStyles((theme) => ({
   card: {
     height: '240px',
@@ -58,7 +64,11 @@ function Banner() {
           in both design and coding projects.
         </Text>
         <Link to="/portfolio">
-          <Button className={classes.action} size="sm">
+          <Button
+            onClick={scrollBackToTop}
+            className={classes.action}
+            size="sm"
+          >
             Portfolio
           </Button>
         </Link>
