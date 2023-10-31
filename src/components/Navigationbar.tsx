@@ -213,7 +213,6 @@ export function Navigationbar({ links }: NavigationbarProps) {
   function scrollBackToTop() {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
     });
   }
 
