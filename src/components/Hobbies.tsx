@@ -101,12 +101,15 @@ export function HobbyCards() {
       </Group>
 
       <Paper
+        sx={(theme) => ({
+          backgroundColor:
+            theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.white,
+        })}
         className={classes.card}
         shadow="md"
         mt="lg"
         p="sm"
         radius="md"
-        sx={{}}
       >
         <Title order={2} ta="center" mt="sm">
           In my spare time I enjoy:
