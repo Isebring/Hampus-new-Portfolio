@@ -69,7 +69,18 @@ export function Profile() {
         </Text>
         <Flex align="center" mb="sm" mt="xs">
           <Container size="xs">
-            <Paper className={classes.paper} mt="sm" p="xs" shadow="sm">
+            <Paper
+              sx={(theme) => ({
+                backgroundColor:
+                  theme.colorScheme === 'dark'
+                    ? theme.colors.dark[6]
+                    : theme.white,
+              })}
+              className={classes.paper}
+              mt="sm"
+              p="xs"
+              shadow="sm"
+            >
               <Text mb="sm" size="xs" ta="center">
                 Some of my Coding Tools:
               </Text>
@@ -91,7 +102,13 @@ export function Profile() {
           <Container size="xs">
             <Paper
               className={classes.paper}
-              sx={{ width: '10rem' }}
+              sx={(theme) => ({
+                backgroundColor:
+                  theme.colorScheme === 'dark'
+                    ? theme.colors.dark[6]
+                    : theme.white,
+                width: '10rem',
+              })}
               mt="sm"
               shadow="sm"
               p="xs"
