@@ -30,7 +30,7 @@ function MyTimeLine() {
             }}
           >
             <Box sx={{ width: '50%' }}>
-              <Title mb="lg" order={4}>
+              <Title mb="lg" order={3}>
                 My journey in IT
               </Title>
               <Timeline>
@@ -143,7 +143,7 @@ function MyTimeLine() {
             }}
           >
             <Box sx={{ width: '50%' }}>
-              <Title mb="lg" order={4}>
+              <Title mb="lg" order={3}>
                 My goal
               </Title>
               <Text>

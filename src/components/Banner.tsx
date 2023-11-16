@@ -19,26 +19,27 @@ const useStyles = createStyles((theme) => ({
   content: {
     inset: 0,
     padding: theme.spacing.xl,
-    zIndex: 1,
+    position: 'relative',
   },
   action: {
     position: 'absolute',
-    bottom: theme.spacing.xl,
+    marginTop: '1rem',
     right: theme.spacing.xl,
   },
   title: {
     color: 'white',
     marginBottom: '0.5rem',
-    textShadow: '1px 1px 2px grey, 0 0 1px grey, 0 0 0.2px grey',
+    textShadow: '1px 1px 1px grey, 0 0 1px lightblue, 0 0 0.1px lightblue',
   },
   description: {
     color: 'white',
     maxWidth: '220px',
-    textShadow: '1px 1px 2px grey, 0 0 1px grey, 0 0 0.2px white',
+    textShadow: '1px 1px 1px grey, 0 0 1px lightblue, 0 0 0.1px lightblue',
     fontWeight: 500,
   },
   overlay: {
-    backgroundColor: 'transparent',
+    position: 'absolute',
+    backgroundColor: 'rgba(0, 0, 0, 0.2)',
     backgroundImage: `linear-gradient(
           105deg,
           ${theme.colors.black} 20%,
@@ -52,7 +53,7 @@ function Banner() {
   const { classes } = useStyles();
   return (
     <Card radius="md" className={classes.card}>
-      <Overlay className={classes.overlay} opacity={0.55} zIndex={0} />
+      <Overlay className={classes.overlay} opacity={0} zIndex={0} />
 
       <div className={classes.content}>
         <Text size="lg" fw={700} className={classes.title}>
