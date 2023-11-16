@@ -128,7 +128,7 @@ export function Profile() {
           <Button
             mt="md"
             color="blue.8"
-            aria-label="Send an e-mail to Hampus Isebring"
+            aria-label="Contact me"
             onClick={sendMail}
             leftIcon={<IconMail size="1rem" />}
           >

@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 import TextTransition, { presets } from 'react-text-transition';
 
 function Texteffect() {
-  const welcomeMessage = ['Hello World 🌍', 'Welcome👋', 'To my journey 🚀'];
+  const welcomeMessage = ['Hello World 🌍', 'Welcome 👋', 'Have a look 👀'];
 
   const [index, setIndex] = useState(0);
 
   React.useEffect(() => {
-    const intervalId = setInterval(() => setIndex((index) => index + 1), 2500);
+    const intervalId = setInterval(() => setIndex((index) => index + 1), 3000);
     return () => clearTimeout(intervalId);
   }, []);
 
@@ -17,7 +17,7 @@ function Texteffect() {
       <Paper p="xs" sx={{ backgroundColor: '#B6C6F7' }} shadow="md">
         <MediaQuery query="(max-width: 815px)" styles={{ fontSize: '35px' }}>
           <Title fw={200} ta="center" color="black" size={45}>
-            <TextTransition springConfig={presets.gentle}>
+            <TextTransition springConfig={presets.wobbly}>
               {welcomeMessage[index % welcomeMessage.length]}
             </TextTransition>
           </Title>
