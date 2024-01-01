@@ -1,30 +1,30 @@
-import { Box, MediaQuery, Paper, Title } from '@mantine/core';
-import React, { useState } from 'react';
-import TextTransition, { presets } from 'react-text-transition';
+// import { Box, MediaQuery, Paper, Title } from '@mantine/core';
+// import React, { useState } from 'react';
+// import TextTransition, { presets } from 'react-text-transition';
 
-function Texteffect() {
-  const welcomeMessage = ['Hello World 🌍', 'Welcome 👋', 'Have a look 👀'];
+// function Texteffect() {
+//   const welcomeMessage = ['Hello World 🌍', 'Welcome 👋', 'Have a look 👀'];
 
-  const [index, setIndex] = useState(0);
+//   const [index, setIndex] = useState(0);
 
-  React.useEffect(() => {
-    const intervalId = setInterval(() => setIndex((index) => index + 1), 3000);
-    return () => clearTimeout(intervalId);
-  }, []);
+//   React.useEffect(() => {
+//     const intervalId = setInterval(() => setIndex((index) => index + 1), 3000);
+//     return () => clearTimeout(intervalId);
+//   }, []);
 
-  return (
-    <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-      <Paper p="xs" sx={{ backgroundColor: '#B6C6F7' }} shadow="md">
-        <MediaQuery query="(max-width: 815px)" styles={{ fontSize: '35px' }}>
-          <Title fw={200} ta="center" color="black" size={45}>
-            <TextTransition springConfig={presets.wobbly}>
-              {welcomeMessage[index % welcomeMessage.length]}
-            </TextTransition>
-          </Title>
-        </MediaQuery>
-      </Paper>
-    </Box>
-  );
-}
+//   return (
+//     <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+//       <Paper p="xs" sx={{ backgroundColor: '#B6C6F7' }} shadow="md">
+//         <MediaQuery query="(max-width: 815px)" styles={{ fontSize: '35px' }}>
+//           <Title fw={200} ta="center" color="black" size={45}>
+//             <TextTransition springConfig={presets.wobbly}>
+//               {welcomeMessage[index % welcomeMessage.length]}
+//             </TextTransition>
+//           </Title>
+//         </MediaQuery>
+//       </Paper>
+//     </Box>
+//   );
+// }
 
-export default Texteffect;
+// export default Texteffect;

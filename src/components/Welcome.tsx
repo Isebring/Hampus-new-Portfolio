@@ -7,14 +7,13 @@ import {
   Image,
   MediaQuery,
   Title,
-} from '@mantine/core';
+} from "@mantine/core";
 import {
   IconBrandDiscord,
   IconBrandGithub,
   IconBrandLinkedin,
-} from '@tabler/icons-react';
-import Texteffect from './Texteffect';
-import Typewriter from './Typewriter';
+} from "@tabler/icons-react";
+import Typewriter from "./Typewriter";
 
 function Welcome() {
   return (
@@ -22,23 +21,23 @@ function Welcome() {
     <Container>
       <Box
         sx={{
-          marginTop: '2rem',
-          marginBottom: '2rem',
-          display: 'flex',
-          justifyContent: 'center',
+          marginTop: "2rem",
+          marginBottom: "2rem",
+          display: "flex",
+          justifyContent: "center",
         }}
       >
-        <Texteffect />
+        {/* <Texteffect /> */}
       </Box>
       <MediaQuery
         query="(max-width: 815px)"
-        styles={{ flexDirection: 'column' }}
+        styles={{ flexDirection: "column" }}
       >
         <Box
           sx={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
           }}
         >
           <Image
@@ -82,9 +81,9 @@ function Welcome() {
           Hello World
         </Title> */}
 
-          <MediaQuery query="(max-width: 815px)" styles={{ fontSize: '35px' }}>
+          <MediaQuery query="(max-width: 815px)" styles={{ fontSize: "35px" }}>
             <Title order={1} size={55} mb="sm" align="center">
-              I am <span style={{ color: '#3596e6' }}>Hampus</span>
+              I am <span style={{ color: "#3596e6" }}>Hampus</span>
             </Title>
           </MediaQuery>
         </Box>
@@ -96,7 +95,7 @@ function Welcome() {
           component="a"
           href="https://github.com/Isebring"
           target="_blank"
-          sx={{ borderRadius: '50%' }}
+          sx={{ borderRadius: "50%" }}
           size="lg"
           color="blue"
           aria-label="Reach out to me on Github"
@@ -108,7 +107,7 @@ function Welcome() {
           component="a"
           href="https://www.linkedin.com/in/hampus-isebring-6947b0230/"
           target="_blank"
-          sx={{ borderRadius: '50%' }}
+          sx={{ borderRadius: "50%" }}
           size="lg"
           color="blue"
           aria-label="Reach out to me on LinkedIn"
@@ -120,7 +119,7 @@ function Welcome() {
           component="a"
           href="https://discord.com/users/alagos#3330"
           target="_blank"
-          sx={{ borderRadius: '50%' }}
+          sx={{ borderRadius: "50%" }}
           size="lg"
           color="blue"
           aria-label="Reach out to me on Discord"

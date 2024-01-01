@@ -1,13 +1,7 @@
-import {
-  ActionIcon,
-  BackgroundImage,
-  Container,
-  SimpleGrid,
-  Title,
-} from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
-import { IconBrandGithub, IconExternalLink } from '@tabler/icons-react';
-import styled from 'styled-components';
+import { ActionIcon, Container, SimpleGrid, Title } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
+import { IconBrandGithub, IconExternalLink } from "@tabler/icons-react";
+import styled from "styled-components";
 
 const PortfolioBox = styled.div`
   position: relative;
@@ -55,46 +49,46 @@ const Text = styled.p`
 
 const projects = [
   {
-    title: 'Frostbite Frenzy',
+    title: "Frostbite Frenzy",
     imgSrc:
-      'https://isebring.github.io/Hampus-Isebring-Portfolio/imgs/frostbite-frenzy.PNG',
+      "https://isebring.github.io/Hampus-Isebring-Portfolio/imgs/frostbite-frenzy.PNG",
     description:
-      'Me and 5 fellow students created this game using P5.js and TypeScript. We built the game using Object Oriented Programming.',
-    websiteUrl: 'https://frostbitefrenzy.netlify.app/',
-    githubLink: 'https://github.com/Isebring/Frostbite-Frenzy',
+      "Me and 5 fellow students created this game using P5.js and TypeScript. We built the game using Object Oriented Programming.",
+    websiteUrl: "https://frostbitefrenzy.netlify.app/",
+    githubLink: "https://github.com/Isebring/Frostbite-Frenzy",
   },
   {
-    title: 'Design Cases',
-    imgSrc: '/imgs/figma-portfolio.png',
+    title: "Design Cases",
+    imgSrc: "/imgs/figma-portfolio.png",
     description:
-      'In this Figma portfolio I present my case studies in design. They are all related to the design process.',
+      "In this Figma portfolio I present my case studies in design. They are all related to the design process.",
     websiteUrl:
-      'https://www.figma.com/proto/4tnMOesa5z2xNH2tvB0Jcv/Hampus-UX-Portfolio?page-id=0%3A1&type=design&node-id=404-2&viewport=574%2C144%2C0.09&scaling=scale-down-width&starting-point-node-id=404%3A2&hide-ui=1',
-    githubLink: '',
+      "https://www.figma.com/proto/4tnMOesa5z2xNH2tvB0Jcv/Hampus-UX-Portfolio?page-id=0%3A1&type=design&node-id=404-2&viewport=574%2C144%2C0.09&scaling=scale-down-width&starting-point-node-id=404%3A2&hide-ui=1",
+    githubLink: "",
   },
   {
-    title: 'GHEDb',
-    imgSrc: '/imgs/ghedb.png',
+    title: "GHEDb",
+    imgSrc: "/imgs/ghedb.png",
     description:
-      'Me and 2 fellow students created a movie application using React and TypeScript. We used the TMDB API for this assignment which was a lot of fun.',
-    websiteUrl: 'https://ghedb.netlify.app/',
-    githubLink: 'https://github.com/Isebring/GHE-Movie-App',
+      "Me and 2 fellow students created a movie application using React and TypeScript. We used the TMDB API for this assignment which was a lot of fun.",
+    websiteUrl: "https://ghedb.netlify.app/",
+    githubLink: "https://github.com/Isebring/GHE-Movie-App",
   },
   {
-    title: 'Vanilla portfolio',
-    imgSrc: '/imgs/old-portfolio.png',
+    title: "Vanilla portfolio",
+    imgSrc: "/imgs/old-portfolio.png",
     description:
-      'This was the first portfolio I created and hosted without libraries. Made with HTML, CSS and JavaScript. ',
-    websiteUrl: 'https://isebring.github.io/Hampus-Isebring-Portfolio/',
-    githubLink: 'https://github.com/Isebring/Hampus-Isebring-Portfolio',
+      "This was the first portfolio I created and hosted without libraries. Made with HTML, CSS and JavaScript. ",
+    websiteUrl: "https://isebring.github.io/Hampus-Isebring-Portfolio/",
+    githubLink: "https://github.com/Isebring/Hampus-Isebring-Portfolio",
   },
   {
-    title: 'T101',
-    imgSrc: '/imgs/T101.png',
+    title: "T101",
+    imgSrc: "/imgs/T101.png",
     description:
-      'Me and 3 fellow students created this tech ecommerce store with React, TypeScript and Mantine. We worked with the context API from React for the shopping cart. ',
-    websiteUrl: 'https://tech-101-webshop.netlify.app/',
-    githubLink: 'https://github.com/Isebring/Tech-101-Webshop',
+      "Me and 3 fellow students created this tech ecommerce store with React, TypeScript and Mantine. We worked with the context API from React for the shopping cart. ",
+    websiteUrl: "https://tech-101-webshop.netlify.app/",
+    githubLink: "https://github.com/Isebring/Tech-101-Webshop",
   },
 ];
 
@@ -111,10 +105,10 @@ function PortfolioItem(props: {
     <PortfolioBox>
       <PortfolioImg src={imgSrc} alt={title} />
       <PortfolioOverlay>
-        <Heading style={{ textAlign: 'center', marginTop: '1rem' }}>
+        <Heading style={{ textAlign: "center", marginTop: "1rem" }}>
           {title}
         </Heading>
-        <Text style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
+        <Text style={{ paddingLeft: "1rem", paddingRight: "1rem" }}>
           {description}
         </Text>
 
@@ -124,7 +118,7 @@ function PortfolioItem(props: {
           component="a"
           href={websiteUrl}
           target="_blank"
-          sx={{ borderRadius: '50%' }}
+          sx={{ borderRadius: "50%" }}
           size="lg"
           color="blue"
           aria-label="Project website"
@@ -140,7 +134,7 @@ function PortfolioItem(props: {
             component="a"
             href={githubLink}
             target="_blank"
-            sx={{ borderRadius: '50%' }}
+            sx={{ borderRadius: "50%" }}
             size="lg"
             color="blue"
             aria-label="Github"
@@ -155,35 +149,35 @@ function PortfolioItem(props: {
 }
 
 function Portfolio() {
-  const isMobile = useMediaQuery('(max-width: 800px)');
+  const isMobile = useMediaQuery("(max-width: 800px)");
   const columns = isMobile ? 1 : 2;
 
   return (
     <>
-      <BackgroundImage src="/imgs/circles.svg">
-        {/* <Image
+      {/* <BackgroundImage src="/imgs/circles.svg"> */}
+      {/* <Image
         style={{ position: 'absolute', height: '100dvh' }}
         alt="Circles used for decoration purposes"
         src="/imgs/circles.svg"
       ></Image> */}
-        <Container>
-          <Title align="center" mt="lg" mb="lg">
-            My Portfolio
-          </Title>
-          <SimpleGrid cols={columns}>
-            {projects.map((project, index) => (
-              <PortfolioItem
-                key={index}
-                title={project.title}
-                imgSrc={project.imgSrc}
-                description={project.description}
-                websiteUrl={project.websiteUrl}
-                githubLink={project.githubLink}
-              />
-            ))}
-          </SimpleGrid>
-        </Container>
-      </BackgroundImage>
+      <Container>
+        <Title align="center" mt="lg" mb="lg">
+          My Portfolio
+        </Title>
+        <SimpleGrid cols={columns}>
+          {projects.map((project, index) => (
+            <PortfolioItem
+              key={index}
+              title={project.title}
+              imgSrc={project.imgSrc}
+              description={project.description}
+              websiteUrl={project.websiteUrl}
+              githubLink={project.githubLink}
+            />
+          ))}
+        </SimpleGrid>
+      </Container>
+      {/* </BackgroundImage> */}
     </>
   );
 }

@@ -1,4 +1,4 @@
-import { Blockquote, Box, Container, Flex, MediaQuery } from '@mantine/core';
+import { Blockquote, Box, Container, Flex, MediaQuery } from "@mantine/core";
 
 function About() {
   return (
@@ -6,8 +6,9 @@ function About() {
       <MediaQuery
         query="(max-width: 780px)"
         styles={{
-          flexDirection: 'column',
-          alignItems: 'center',
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         <Flex justify="center" align="center">
@@ -18,18 +19,10 @@ function About() {
             </Blockquote>
           </Box>
           <Box>
-            <MediaQuery
-              query="(max-width: 780px)"
-              styles={{
-                width: '80%',
-                height: '60%',
-              }}
-            >
-              <img
-                src="/imgs/isebring-design.svg"
-                alt="A cat mascot sketching on design ideas"
-              />
-            </MediaQuery>
+            <img
+              src="/imgs/isebring-design.svg"
+              alt="A cat mascot sketching on design ideas"
+            />
           </Box>
         </Flex>
       </MediaQuery>

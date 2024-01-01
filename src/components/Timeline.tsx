@@ -9,8 +9,8 @@ import {
   ThemeIcon,
   Timeline,
   Title,
-} from '@mantine/core';
-import { IconBrandZoom, IconPencil, IconSchool } from '@tabler/icons-react';
+} from "@mantine/core";
+import { IconBrandZoom, IconPencil, IconSchool } from "@tabler/icons-react";
 
 function MyTimeLine() {
   return (
@@ -18,18 +18,18 @@ function MyTimeLine() {
       <MediaQuery
         query="(max-width: 780px)"
         styles={{
-          flexDirection: 'column',
-          alignItems: 'center',
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
         <Flex mx="auto" mt="xl" justify="space-between">
           <MediaQuery
             query="(max-width: 780px)"
             styles={{
-              width: '100%',
+              width: "100%",
             }}
           >
-            <Box sx={{ width: '50%' }}>
+            <Box sx={{ width: "50%" }}>
               <Title mb="lg" order={3}>
                 My journey in IT
               </Title>
@@ -56,8 +56,8 @@ function MyTimeLine() {
                       size={22}
                       variant="gradient"
                       gradient={{
-                        from: 'blue',
-                        to: 'cyan',
+                        from: "blue",
+                        to: "cyan",
                       }}
                       radius="xl"
                     >
@@ -78,8 +78,8 @@ function MyTimeLine() {
                       size={22}
                       variant="gradient"
                       gradient={{
-                        from: 'teal',
-                        to: 'cyan',
+                        from: "teal",
+                        to: "cyan",
                       }}
                       radius="xl"
                     >
@@ -100,8 +100,8 @@ function MyTimeLine() {
                       size={22}
                       variant="gradient"
                       gradient={{
-                        from: 'lightblue',
-                        to: 'cyan',
+                        from: "lightblue",
+                        to: "cyan",
                       }}
                       radius="xl"
                     >
@@ -138,11 +138,11 @@ function MyTimeLine() {
           <MediaQuery
             query="(max-width: 780px)"
             styles={{
-              width: '100%',
-              marginTop: '1rem',
+              width: "100%",
+              marginTop: "1rem",
             }}
           >
-            <Box sx={{ width: '50%' }}>
+            <Box sx={{ width: "50%" }}>
               <Title mb="lg" order={3}>
                 My goal
               </Title>
@@ -154,18 +154,18 @@ function MyTimeLine() {
                 understanding of the whole process of creating digital
                 artefacts, from start to finish. One of my main goals with a
                 career in IT is to be able to combine interests and subjects I
-                am passionate about. To name some of them: Being a{' '}
+                am passionate about. To name some of them: Being a{" "}
                 <Text span c="blue">
                   helping hand
-                </Text>{' '}
-                for people.{' '}
+                </Text>{" "}
+                for people.{" "}
                 <Text span c="blue">
                   Sustainability
-                </Text>{' '}
-                for our planet and it's habitants.{' '}
+                </Text>{" "}
+                for our planet and it's habitants.{" "}
                 <Text span c="blue">
                   Accessibility and equity
-                </Text>{' '}
+                </Text>{" "}
                 since we are all unique and have different needs.
               </Text>
             </Box>
