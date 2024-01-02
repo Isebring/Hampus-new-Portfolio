@@ -28,3 +28,5 @@
 // }
 
 // export default Texteffect;
+
+export {};
