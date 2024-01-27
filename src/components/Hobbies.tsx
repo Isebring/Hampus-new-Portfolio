@@ -9,61 +9,59 @@ import {
   Title,
   createStyles,
   rem,
-} from '@mantine/core';
-import {
-  IconDeviceGamepad,
-  IconMusic,
-  IconStretching,
-} from '@tabler/icons-react';
+} from "@mantine/core";
+import { IconStretching } from "@tabler/icons-react";
+import { GiRetroController } from "react-icons/gi";
+import { IoMusicalNotes } from "react-icons/io5";
 
 const mockdata = [
   {
-    title: 'Retro Games',
+    title: "Retro Games",
     description:
-      'In recent years I have started collecting retro games, mostly from older Nintendo systems like SNES, N64 and GCN.',
-    icon: IconDeviceGamepad,
+      "In recent years I have started collecting retro games, mostly from older Nintendo systems like SNES, N64 and GCN.",
+    icon: GiRetroController,
   },
   {
-    title: 'Exercise',
+    title: "Exercise",
     description:
-      'A way to clear my head and come back refreshed, exercising is an important part of my daily life.',
+      "A way to clear my head and come back refreshed, exercising is an important part of my daily life.",
     icon: IconStretching,
   },
   {
-    title: 'Music',
+    title: "Music",
     description:
-      'Music has been a part of my life since the beginning. Whatever my mood is, there is always a song to help me get through. I also play the guitar from time to time.',
-    icon: IconMusic,
+      "Music has been a part of my life since the beginning. Whatever my mood is, there is always a song to help me get through. I also play the guitar from time to time.",
+    icon: IoMusicalNotes,
   },
 ];
 
 const useStyles = createStyles((theme) => ({
   description: {
     maxWidth: 600,
-    margin: 'auto',
+    margin: "auto",
 
-    '&::after': {
+    "&::after": {
       content: '""',
-      display: 'block',
+      display: "block",
       // backgroundColor: theme.fn.primaryColor(),
       width: rem(45),
       height: rem(2),
       marginTop: theme.spacing.sm,
-      marginLeft: 'auto',
-      marginRight: 'auto',
+      marginLeft: "auto",
+      marginRight: "auto",
     },
   },
 
   card: {
     border: `${rem(1)} solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
+      theme.colorScheme === "dark" ? theme.colors.dark[5] : theme.colors.gray[1]
     }`,
   },
 
   cardTitle: {
-    '&::after': {
+    "&::after": {
       content: '""',
-      display: 'block',
+      display: "block",
       backgroundColor: theme.fn.primaryColor(),
       width: rem(45),
       height: rem(2),
@@ -82,7 +80,7 @@ export function HobbyCards() {
       className={classes.card}
       padding="xl"
     >
-      <feature.icon size={rem(50)} stroke={2} color={theme.fn.primaryColor()} />
+      <feature.icon size={rem(50)} color={theme.fn.primaryColor()} />
       <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
         {feature.title}
       </Text>
@@ -103,7 +101,7 @@ export function HobbyCards() {
       <Paper
         sx={(theme) => ({
           backgroundColor:
-            theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.white,
+            theme.colorScheme === "dark" ? theme.colors.dark[6] : theme.white,
         })}
         className={classes.card}
         shadow="md"
@@ -125,7 +123,7 @@ export function HobbyCards() {
         cols={3}
         spacing="xl"
         mt={50}
-        breakpoints={[{ maxWidth: 'md', cols: 1 }]}
+        breakpoints={[{ maxWidth: "md", cols: 1 }]}
       >
         {features}
       </SimpleGrid>

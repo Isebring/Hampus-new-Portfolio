@@ -10,30 +10,22 @@ import {
   Paper,
   Text,
   createStyles,
-} from '@mantine/core';
-import {
-  IconBrandAdobe,
-  IconBrandCss3,
-  IconBrandFigma,
-  IconBrandGit,
-  IconBrandGithub,
-  IconBrandHtml5,
-  IconBrandJavascript,
-  IconBrandMongodb,
-  IconBrandNpm,
-  IconBrandReact,
-  IconBrandSketch,
-  IconBrandTypescript,
-  IconMail,
-} from '@tabler/icons-react';
-import MyCarousel from '../components/Carousel';
-import { HobbyCards } from '../components/Hobbies';
+} from "@mantine/core";
+import { IconBrandNpm, IconMail } from "@tabler/icons-react";
+import { BiLogoTypescript } from "react-icons/bi";
+import { FaCss3Alt, FaGithub, FaHtml5, FaSketch } from "react-icons/fa";
+import { FaGitAlt, FaReact } from "react-icons/fa6";
+import { PiFigmaLogoDuotone } from "react-icons/pi";
+import { RiJavascriptFill } from "react-icons/ri";
+import { SiAdobe, SiMongodb } from "react-icons/si";
+import MyCarousel from "../components/Carousel";
+import { HobbyCards } from "../components/Hobbies";
 
 const useStyles = createStyles((theme) => ({
   paper: {
-    '&:hover': {
-      transform: 'scale(1.1)',
-      transition: '0.4s ease-in-out',
+    "&:hover": {
+      transform: "scale(1.1)",
+      transition: "0.4s ease-in-out",
     },
   },
 }));
@@ -41,7 +33,7 @@ const useStyles = createStyles((theme) => ({
 export function Profile() {
   const { classes } = useStyles();
   function sendMail() {
-    window.location.href = 'mailto:hampus.isebring@gmail.com';
+    window.location.href = "mailto:hampus.isebring@gmail.com";
   }
   return (
     <Box mt="xl">
@@ -72,7 +64,7 @@ export function Profile() {
             <Paper
               sx={(theme) => ({
                 backgroundColor:
-                  theme.colorScheme === 'dark'
+                  theme.colorScheme === "dark"
                     ? theme.colors.dark[6]
                     : theme.white,
               })}
@@ -85,14 +77,14 @@ export function Profile() {
                 Some of my Coding Tools:
               </Text>
               <Group spacing="xs">
-                <IconBrandReact stroke={1.3} color="lightblue" />{' '}
-                <IconBrandJavascript stroke={1.3} color="yellow" />{' '}
-                <IconBrandTypescript stroke={1.3} color="blue" />{' '}
-                <IconBrandMongodb stroke={1.3} color="green" />{' '}
-                <IconBrandHtml5 stroke={1.3} color="red" />{' '}
-                <IconBrandCss3 stroke={1.3} color="blue" />{' '}
-                <IconBrandGit stroke={1.3} color="darkred" />{' '}
-                <IconBrandGithub stroke={1.3} color="grey" />{' '}
+                <FaReact size="1.5rem" color="#61DAFB" />{" "}
+                <RiJavascriptFill size="1.6rem" color="#e5de00" />{" "}
+                <BiLogoTypescript size="1.5rem" color="blue" />{" "}
+                <SiMongodb size="1.5rem" color="green" />{" "}
+                <FaHtml5 size="1.5rem" color="red" />{" "}
+                <FaCss3Alt size="1.5rem" color="blue" />{" "}
+                <FaGitAlt size="1.5rem" color="darkred" />{" "}
+                <FaGithub size="1.5rem" />{" "}
                 <IconBrandNpm stroke={1.3} color="red" />
               </Group>
             </Paper>
@@ -104,10 +96,10 @@ export function Profile() {
               className={classes.paper}
               sx={(theme) => ({
                 backgroundColor:
-                  theme.colorScheme === 'dark'
+                  theme.colorScheme === "dark"
                     ? theme.colors.dark[6]
                     : theme.white,
-                width: '10rem',
+                width: "10rem",
               })}
               mt="sm"
               shadow="sm"
@@ -117,9 +109,9 @@ export function Profile() {
                 Some of my Design Tools:
               </Text>
               <Group position="center" spacing="xs">
-                <IconBrandFigma stroke={1.3} color="#1877F2" />{' '}
-                <IconBrandAdobe stroke={1.3} color="darkgrey" />{' '}
-                <IconBrandSketch stroke={1.3} color="orange" />{' '}
+                <PiFigmaLogoDuotone size="1.3rem" color="#1877F2" />{" "}
+                <SiAdobe size="1.3rem" color="red" />{" "}
+                <FaSketch size="1.3rem" color="orange" />{" "}
               </Group>
             </Paper>
           </Container>

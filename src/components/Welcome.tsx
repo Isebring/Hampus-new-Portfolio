@@ -8,11 +8,8 @@ import {
   MediaQuery,
   Title,
 } from "@mantine/core";
-import {
-  IconBrandDiscord,
-  IconBrandGithub,
-  IconBrandLinkedin,
-} from "@tabler/icons-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 import Typewriter from "./Typewriter";
 
 function Welcome() {
@@ -101,7 +98,7 @@ function Welcome() {
           aria-label="Reach out to me on Github"
           variant="filled"
         >
-          <IconBrandGithub size="1.5rem" stroke={1.5} />
+          <FaGithub size="1.2rem" />
         </ActionIcon>
         <ActionIcon
           component="a"
@@ -113,19 +110,19 @@ function Welcome() {
           aria-label="Reach out to me on LinkedIn"
           variant="filled"
         >
-          <IconBrandLinkedin size="1.5rem" stroke={1.5} />
+          <FaLinkedin size="1rem" />
         </ActionIcon>
         <ActionIcon
           component="a"
-          href="https://discord.com/users/alagos#3330"
+          href="mailto:hampus.isebring@gmail.com"
           target="_blank"
           sx={{ borderRadius: "50%" }}
           size="lg"
           color="blue"
-          aria-label="Reach out to me on Discord"
+          aria-label="Reach out to me on email"
           variant="filled"
         >
-          <IconBrandDiscord size="1.5rem" stroke={1.5} />
+          <IoMdMail size="1rem" />
         </ActionIcon>
       </Group>
       <Divider mt="md" />

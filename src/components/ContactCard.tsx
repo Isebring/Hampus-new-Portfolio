@@ -1,10 +1,10 @@
-import { Avatar, Box, Group, Text, createStyles } from '@mantine/core';
-import { IconAt, IconMapPin, IconPhoneCall } from '@tabler/icons-react';
+import { Avatar, Box, Group, Text, createStyles } from "@mantine/core";
+import { IconAt, IconMapPin, IconPhoneCall } from "@tabler/icons-react";
 
 const useStyles = createStyles((theme) => ({
   icon: {
     color:
-      theme.colorScheme === 'dark'
+      theme.colorScheme === "dark"
         ? theme.colors.dark[3]
         : theme.colors.gray[5],
   },
@@ -18,7 +18,7 @@ export function ContactCard() {
   const { classes } = useStyles();
   return (
     <Box mt="lg">
-      <Group position="center" noWrap>
+      <Group position="center">
         <Avatar
           src="/imgs/hampus-isebring.png"
           alt="a picture of me, Hampus Isebring"

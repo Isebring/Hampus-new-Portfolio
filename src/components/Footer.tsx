@@ -6,40 +6,36 @@ import {
   MediaQuery,
   createStyles,
   rem,
-} from '@mantine/core';
-import {
-  IconArrowUp,
-  IconBrandDiscord,
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconMail,
-} from '@tabler/icons-react';
+} from "@mantine/core";
+import { IconArrowUp } from "@tabler/icons-react";
+import { FaDiscord, FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 
 const useStyles = createStyles((theme) => ({
   footer: {
     marginTop: rem(120),
-    position: 'absolute',
-    bottom: '0',
-    left: '0',
-    right: '0',
+    position: "absolute",
+    bottom: "0",
+    left: "0",
+    right: "0",
     borderTop: `${rem(1)} solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
+      theme.colorScheme === "dark" ? theme.colors.dark[5] : theme.colors.gray[2]
     }`,
   },
 
   inner: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
     padding: `${theme.spacing.md} ${theme.spacing.md}`,
 
-    [theme.fn.smallerThan('sm')]: {
-      flexDirection: 'column',
+    [theme.fn.smallerThan("sm")]: {
+      flexDirection: "column",
     },
   },
 
   links: {
-    [theme.fn.smallerThan('sm')]: {
+    [theme.fn.smallerThan("sm")]: {
       marginTop: theme.spacing.lg,
       marginBottom: theme.spacing.sm,
     },
@@ -49,7 +45,7 @@ const useStyles = createStyles((theme) => ({
 function scrollBackToTop() {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth',
+    behavior: "smooth",
   });
 }
 
@@ -60,7 +56,7 @@ export interface FooterProps {
 export function MyFooter({ links }: FooterProps) {
   const { classes } = useStyles();
   const items = links.map((link) => (
-    <Anchor<'a'>
+    <Anchor<"a">
       color="dimmed"
       key={link.label}
       href={link.link}
@@ -86,7 +82,7 @@ export function MyFooter({ links }: FooterProps) {
             variant="default"
             radius="xl"
           >
-            <IconMail size="1.05rem" stroke={1.5} />
+            <IoMdMail />
           </ActionIcon>
           <ActionIcon
             component="a"
@@ -97,7 +93,7 @@ export function MyFooter({ links }: FooterProps) {
             aria-label="Contact Hampus on LinkedIn"
             radius="xl"
           >
-            <IconBrandLinkedin size="1.05rem" stroke={1.5} />
+            <FaLinkedin />
           </ActionIcon>
           <ActionIcon
             component="a"
@@ -108,7 +104,7 @@ export function MyFooter({ links }: FooterProps) {
             variant="default"
             radius="xl"
           >
-            <IconBrandGithub size="1.05rem" stroke={1.5} />
+            <FaGithub />
           </ActionIcon>
           <ActionIcon
             component="a"
@@ -119,13 +115,13 @@ export function MyFooter({ links }: FooterProps) {
             variant="default"
             radius="xl"
           >
-            <IconBrandDiscord size="1.05rem" stroke={1.5} />
+            <FaDiscord />
           </ActionIcon>
         </Group>
         <MediaQuery
           query="(max-width: 758px)"
           styles={{
-            marginTop: '1rem',
+            marginTop: "1rem",
           }}
         >
           <ActionIcon

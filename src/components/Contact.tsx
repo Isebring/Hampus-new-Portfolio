@@ -5,11 +5,9 @@ import { ContactCard } from "./ContactCard";
 function Contact() {
   return (
     <Container>
-      <Box mb="xl">
-        <Title order={2} align="left">
-          Feel free to reach out
-        </Title>
-        <Text align="left">I'd be happy to have a chat about anything</Text>
+      <Box pl="sm" mb="xl">
+        <Title order={2}>Feel free to reach out</Title>
+        <Text>I'd be happy to have a chat about anything</Text>
       </Box>
       <Box
         sx={{
