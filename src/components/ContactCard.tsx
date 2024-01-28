@@ -18,7 +18,7 @@ export function ContactCard() {
   const { classes } = useStyles();
   return (
     <Box mt="lg">
-      <Group position="center">
+      <Group pl="sm">
         <Avatar
           src="/imgs/hampus-isebring.png"
           alt="a picture of me, Hampus Isebring"

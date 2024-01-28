@@ -23,7 +23,7 @@ const PortfolioImg = styled.img`
 `;
 const PortfolioOverlay = styled.div`
   position: absolute;
-  bottom: -100%;
+  bottom: 100%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -37,26 +37,17 @@ const Heading = styled.h2`
   font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 0.625rem;
-  color: white;
+  color: #f8f8f8;
 `;
 
 const Text = styled.p`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #f8f8f8;
 `;
 
 const projects = [
-  {
-    title: "Frostbite Frenzy",
-    imgSrc:
-      "https://isebring.github.io/Hampus-Isebring-Portfolio/imgs/frostbite-frenzy.PNG",
-    description:
-      "Me and 5 fellow students created this game using P5.js and TypeScript. We built the game using Object Oriented Programming.",
-    websiteUrl: "https://frostbitefrenzy.netlify.app/",
-    githubLink: "https://github.com/Isebring/Frostbite-Frenzy",
-  },
   {
     title: "Design Cases",
     imgSrc: "/imgs/figma-portfolio.png",
@@ -67,6 +58,23 @@ const projects = [
     githubLink: "",
   },
   {
+    title: "GH: Gamehaven",
+    imgSrc: "/imgs/GH-logo.png",
+    description:
+      "Me and 1 other student created this project. We used the Internet Game Database (IGDB v.4) API to create this web application for games where you can browse, rate, search, bookmark etc.",
+    websiteUrl: "https://ghgamehaven.netlify.app/",
+    githubLink: "https://github.com/gabriel-lugo/GH-GameHaven",
+  },
+  {
+    title: "Frostbite Frenzy",
+    imgSrc:
+      "https://isebring.github.io/Hampus-Isebring-Portfolio/imgs/frostbite-frenzy.PNG",
+    description:
+      "Me and 5 fellow students created this game using P5.js and TypeScript. We built the game using Object Oriented Programming.",
+    websiteUrl: "https://frostbitefrenzy.netlify.app/",
+    githubLink: "https://github.com/Isebring/Frostbite-Frenzy",
+  },
+  {
     title: "GHEDb",
     imgSrc: "/imgs/ghedb.png",
     description:
@@ -75,12 +83,12 @@ const projects = [
     githubLink: "https://github.com/Isebring/GHE-Movie-App",
   },
   {
-    title: "Vanilla portfolio",
-    imgSrc: "/imgs/old-portfolio.png",
+    title: "DevStudio",
+    imgSrc: "/imgs/devStudio.png",
     description:
-      "This was the first portfolio I created and hosted without libraries. Made with HTML, CSS and JavaScript. ",
-    websiteUrl: "https://isebring.github.io/Hampus-Isebring-Portfolio/",
-    githubLink: "https://github.com/Isebring/Hampus-Isebring-Portfolio",
+      "This was an assignment from Medieinstitutet where we as a group of students created a website together where we offer our services. We used React, TypeScript and Mantine",
+    websiteUrl: "https://devstudiofed22g.netlify.app/",
+    githubLink: "https://github.com/HJYMM22G/HJYMM22G",
   },
   {
     title: "T101",

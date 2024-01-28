@@ -1,5 +1,5 @@
-import { Button, Card, Overlay, Text, createStyles } from '@mantine/core';
-import { Link } from 'react-router-dom';
+import { Button, Card, Overlay, Text, createStyles } from "@mantine/core";
+import { Link } from "react-router-dom";
 
 function scrollBackToTop() {
   window.scrollTo({
@@ -9,37 +9,37 @@ function scrollBackToTop() {
 
 const useStyles = createStyles((theme) => ({
   card: {
-    height: '240px',
-    width: '30rem',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
+    height: "240px",
+    width: "30rem",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
     backgroundImage:
-      'url(https://images.unsplash.com/photo-1620121478247-ec786b9be2fa?auto=format&fit=crop&q=80&w=1932&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
+      "url(https://images.unsplash.com/photo-1620121478247-ec786b9be2fa?auto=format&fit=crop&q=80&w=1932&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
   },
   content: {
     inset: 0,
     padding: theme.spacing.xl,
-    position: 'relative',
+    position: "relative",
   },
   action: {
-    position: 'absolute',
-    marginTop: '1rem',
+    position: "absolute",
+    marginTop: "1rem",
     right: theme.spacing.xl,
   },
   title: {
-    color: 'white',
-    marginBottom: '0.5rem',
-    textShadow: '1px 1px 1px grey, 0 0 1px lightblue, 0 0 0.1px lightblue',
+    color: "white",
+    marginBottom: "0.5rem",
+    textShadow: "1px 1px 1px grey, 0 0 1px lightblue, 0 0 0.1px lightblue",
   },
   description: {
-    color: 'white',
-    maxWidth: '220px',
-    textShadow: '1px 1px 1px grey, 0 0 1px lightblue, 0 0 0.1px lightblue',
+    color: "white",
+    maxWidth: "220px",
+    textShadow: "1px 1px 1px grey, 0 0 1px lightblue, 0 0 0.1px lightblue",
     fontWeight: 500,
   },
   overlay: {
-    position: 'absolute',
-    backgroundColor: 'rgba(0, 0, 0, 0.2)',
+    position: "absolute",
+    backgroundColor: "rgba(0, 0, 0, 0.2)",
     backgroundImage: `linear-gradient(
           105deg,
           ${theme.colors.black} 20%,
