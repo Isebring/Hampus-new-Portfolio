@@ -9,7 +9,7 @@ const PortfolioBox = styled.div`
   height: 20rem;
   border-radius: 1rem;
   overflow: hidden;
-  border: 1px solid #ced4da;
+  border: 1px solid #b3adad;
 
   &:hover div {
     bottom: 0;

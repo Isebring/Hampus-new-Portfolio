@@ -2,7 +2,7 @@ import { Blockquote, Box, Container, Flex, MediaQuery } from "@mantine/core";
 
 function About() {
   return (
-    <Container size="xl">
+    <Container mt="xl" size="xl">
       <MediaQuery
         query="(max-width: 780px)"
         styles={{
