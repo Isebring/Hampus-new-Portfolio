@@ -9,6 +9,7 @@ const PortfolioBox = styled.div`
   height: 20rem;
   border-radius: 1rem;
   overflow: hidden;
+  border: 1px solid #ced4da;
 
   &:hover div {
     bottom: 0;
@@ -36,6 +37,7 @@ const PortfolioOverlay = styled.div`
 const Heading = styled.h2`
   font-size: 1.6rem;
   font-weight: 600;
+  font-family: Quicksand, sans-serif;
   margin-bottom: 0.625rem;
   color: #f8f8f8;
 `;
@@ -172,7 +174,7 @@ function Portfolio() {
         <Title align="center" mt="lg" mb="lg">
           My Portfolio
         </Title>
-        <SimpleGrid cols={columns}>
+        <SimpleGrid cols={columns} spacing="xl">
           {projects.map((project, index) => (
             <PortfolioItem
               key={index}
