@@ -1,4 +1,4 @@
-import { Box, Container, Image } from "@mantine/core";
+import { Box, Container, Image, Title } from "@mantine/core";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -23,6 +23,9 @@ interface Props {
 function Slider({ slides }: Props) {
   return (
     <Container>
+      <Title order={2} align="center" mt="lg">
+        My Tools
+      </Title>
       <Swiper
         modules={[EffectCoverflow, Navigation, Pagination, Autoplay]}
         navigation={{
@@ -45,7 +48,7 @@ function Slider({ slides }: Props) {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index} className="slide-inner">
-            <img src={slide.url} alt={slide.alt} />
+            <img loading="lazy" src={slide.url} alt={slide.alt} />
           </SwiperSlide>
         ))}
         <Box className="button-prev">

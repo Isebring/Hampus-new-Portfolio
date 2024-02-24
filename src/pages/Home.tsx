@@ -5,6 +5,7 @@ import MyTimeLine from "../components/Timeline";
 import Welcome from "../components/Welcome";
 import "../data/imgs";
 import { imgs } from "../data/imgs";
+import Skills from "./Skills";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <Welcome />
       <MyTimeLine />
       <Slider slides={imgs} />
+      <Skills />
       <About />
       <Contact />
     </>

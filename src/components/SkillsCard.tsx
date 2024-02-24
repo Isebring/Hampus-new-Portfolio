@@ -7,18 +7,18 @@ import {
   Text,
   createStyles,
   rem,
-} from '@mantine/core';
+} from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
   card: {
     backgroundColor:
-      theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
-    maxWidth: '25rem',
+      theme.colorScheme === "dark" ? theme.colors.dark[7] : theme.white,
+    maxWidth: "25rem",
   },
 
   section: {
     borderBottom: `${rem(1)} solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
+      theme.colorScheme === "dark" ? theme.colors.dark[4] : theme.colors.gray[3]
     }`,
     paddingLeft: theme.spacing.md,
     paddingRight: theme.spacing.md,
@@ -30,15 +30,15 @@ const useStyles = createStyles((theme) => ({
   },
 
   label: {
-    textTransform: 'uppercase',
+    textTransform: "uppercase",
     fontSize: theme.fontSizes.xs,
     fontWeight: 700,
   },
 
   skills: {
-    '&:hover': {
-      transform: 'scale(1.08)',
-      transition: '0.6s ease-in-out',
+    "&:hover": {
+      transform: "scale(1.08)",
+      transition: "0.6s ease-in-out",
     },
   },
 }));
@@ -65,7 +65,7 @@ export function SkillsCard({
 
   const features = badges.map((badge) => (
     <Badge
-      color={theme.colorScheme === 'dark' ? 'dark' : 'gray'}
+      color={theme.colorScheme === "dark" ? "dark" : "gray"}
       key={badge.label}
       leftSection={badge.emoji}
     >
@@ -91,7 +91,7 @@ export function SkillsCard({
             <Text fz="lg" fw={500}>
               {title}
             </Text>
-            <Badge color={subject === 'Coding' ? 'yellow' : 'blue'} size="sm">
+            <Badge color={subject === "Coding" ? "yellow" : "blue"} size="sm">
               {subject}
             </Badge>
           </Group>

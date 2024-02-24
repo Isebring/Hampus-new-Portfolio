@@ -1,4 +1,4 @@
-import { Box, Container, Text, Title } from "@mantine/core";
+import { Box, Container, Divider, Text, Title } from "@mantine/core";
 import Banner from "./Banner";
 import { ContactCard } from "./ContactCard";
 
@@ -8,6 +8,7 @@ function Contact() {
       <Box pl="sm" mb="xl">
         <Title order={2}>Feel free to reach out</Title>
         <Text>I'd be happy to have a chat about anything</Text>
+        <Divider mt="md" />
       </Box>
       <Box
         sx={{

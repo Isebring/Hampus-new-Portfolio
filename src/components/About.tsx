@@ -20,6 +20,7 @@ function About() {
           </Box>
           <Box>
             <img
+              loading="lazy"
               src="/imgs/isebring-design.svg"
               alt="A cat mascot sketching on design ideas"
             />

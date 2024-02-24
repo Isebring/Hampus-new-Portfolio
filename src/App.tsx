@@ -12,7 +12,7 @@ function App() {
     { link: "/", label: "Home" },
     { link: "/profile", label: "Profile" },
     { link: "/cv", label: "CV" },
-    { link: "/skills", label: "Skills" },
+    // { link: "/skills", label: "Skills" },
     { link: "/portfolio", label: "Portfolio" },
   ];
 
