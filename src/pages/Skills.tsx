@@ -220,7 +220,11 @@ function Skills() {
   return (
     <Container sx={{ maxWidth: "1600px" }}>
       <Divider mt="md" />
-      <Title order={2} align="center" mt="lg">
+      <Title
+        order={2}
+        align="center"
+        sx={{ marginTop: "1.5rem", marginBottom: "2.5rem" }}
+      >
         My Skills
       </Title>
       <MediaQuery

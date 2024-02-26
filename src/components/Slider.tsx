@@ -23,7 +23,7 @@ interface Props {
 function Slider({ slides }: Props) {
   return (
     <Container>
-      <Title order={2} align="center" mt="lg">
+      <Title mt="xl" order={2} align="center">
         My Tools
       </Title>
       <Swiper
