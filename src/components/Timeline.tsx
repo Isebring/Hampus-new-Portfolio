@@ -4,6 +4,7 @@ import {
   Container,
   Divider,
   Flex,
+  Image,
   MediaQuery,
   Text,
   ThemeIcon,
@@ -142,8 +143,13 @@ function MyTimeLine() {
               marginTop: "1rem",
             }}
           >
-            <Box sx={{ width: "50%" }}>
-              <Title mb="lg" order={3}>
+            <Box sx={{ display: "flex", justifyContent: "center" }}>
+              <Image
+                maw={500}
+                src="../../public/imgs/illustration.svg"
+                alt="an illustration of a man showing messages on his computer"
+              />
+              {/* <Title mb="lg" order={3}>
                 My goal
               </Title>
               <Text>
@@ -167,7 +173,7 @@ function MyTimeLine() {
                   Accessibility and equity
                 </Text>{" "}
                 since we are all unique and have different needs.
-              </Text>
+              </Text> */}
             </Box>
           </MediaQuery>
         </Flex>

@@ -188,6 +188,12 @@ export function Navigationbar({ links }: NavigationbarProps) {
   function ToggleDarkAndLightMode() {
     const { colorScheme } = useMantineColorScheme();
 
+    const handleKeyDown = (event: any) => {
+      if (event.key === "Enter") {
+        handleToggle();
+      }
+    };
+
     useEffect(() => {
       setActive(location.pathname);
     }, [location.pathname]);
@@ -195,6 +201,7 @@ export function Navigationbar({ links }: NavigationbarProps) {
     return (
       <Group position="center" my={30}>
         <Switch
+          onKeyDown={handleKeyDown}
           aria-label="Here you can switch between light and dark mode colors for the webpage"
           checked={colorScheme === "dark"}
           onClick={handleToggle}

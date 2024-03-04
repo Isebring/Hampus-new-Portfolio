@@ -6,8 +6,12 @@ function Contact() {
   return (
     <Container>
       <Box pl="sm" mb="xl">
-        <Title order={2}>Feel free to reach out</Title>
-        <Text>I'd be happy to have a chat about anything</Text>
+        <Title ta="center" order={2}>
+          Feel free to reach out
+        </Title>
+        <Text mt="xs" ta="center">
+          I'd be happy to have a chat about anything
+        </Text>
         <Divider mt="md" />
       </Box>
       <Box
