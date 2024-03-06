@@ -83,10 +83,11 @@ function CV() {
                 Close PDF
               </Button>
               <iframe
-                src="/cv_hampus_isebring - 2023.pdf"
+                src="/cv_hampus_isebring - 2024.pdf"
                 width="100%"
                 height="100%"
                 title="CV PDF"
+                style={{ position: "relative" }}
               ></iframe>
             </Box>
           )}
