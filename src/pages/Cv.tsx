@@ -57,7 +57,6 @@ function CV() {
     <>
       <BackgroundImage
         style={{ position: "absolute", height: "100dvh" }}
-        alt="Patterns of different shapes as circles, dots and triangles used for decoration purposes"
         src="/imgs/patterns.svg"
       ></BackgroundImage>
       <Container mt="md" size="sm">
