@@ -1,10 +1,17 @@
-import { Box, Button, Container, Group, Image, Text } from '@mantine/core';
-import { useEffect, useState } from 'react';
-import { Page, pdfjs } from 'react-pdf';
-import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-import 'react-pdf/dist/esm/Page/TextLayer.css';
-import { Document } from 'react-pdf/dist/esm/entry.vite';
-import styled from 'styled-components';
+import {
+  BackgroundImage,
+  Box,
+  Button,
+  Container,
+  Group,
+  Text,
+} from "@mantine/core";
+import { useEffect, useState } from "react";
+import { Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import "react-pdf/dist/esm/Page/TextLayer.css";
+import { Document } from "react-pdf/dist/esm/entry.vite";
+import styled from "styled-components";
 
 const BoxHover = styled.div`
   &:hover div {
@@ -29,11 +36,11 @@ function CV() {
       }
     }
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     handleResize();
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -48,31 +55,31 @@ function CV() {
 
   return (
     <>
-      <Image
-        style={{ position: 'absolute', height: '100dvh' }}
+      <BackgroundImage
+        style={{ position: "absolute", height: "100dvh" }}
         alt="Patterns of different shapes as circles, dots and triangles used for decoration purposes"
         src="/imgs/patterns.svg"
-      ></Image>
+      ></BackgroundImage>
       <Container mt="md" size="sm">
         <Box>
           {!showIframe ? (
             <BoxHover
               onClick={toggleIframe}
               style={{
-                display: 'flex',
-                justifyContent: 'center',
-                cursor: 'pointer',
+                display: "flex",
+                justifyContent: "center",
+                cursor: "pointer",
               }}
             >
               <Document
-                file="/cv_hampus_isebring - 2023.pdf"
+                file="/cv_hampus_isebring - 2024.pdf"
                 onLoadSuccess={onDocumentLoadSuccess}
               >
                 <Page pageNumber={pageNumber} scale={pdfScale} />
               </Document>
             </BoxHover>
           ) : (
-            <Box sx={{ height: '100dvh' }}>
+            <Box sx={{ height: "100dvh" }}>
               <Button mt="md" mb="sm" variant="outline" onClick={toggleIframe}>
                 Close PDF
               </Button>
@@ -93,7 +100,7 @@ function CV() {
         <Group position="center">
           <Button mt="md" mb="xs">
             <a
-              style={{ textDecoration: 'none', color: 'white' }}
+              style={{ textDecoration: "none", color: "white" }}
               href="/cv_hampus_isebring - 2023.pdf"
               download="Hampus Isebring CV.pdf"
             >
