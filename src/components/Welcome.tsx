@@ -8,11 +8,13 @@ import {
   MediaQuery,
   Title,
 } from "@mantine/core";
+import { useTranslation } from "react-i18next";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import Typewriter from "./Typewriter";
 
 function Welcome() {
+  const { t } = useTranslation();
   return (
     // <Flex align="center">
     <Container>
@@ -80,7 +82,7 @@ function Welcome() {
 
           <MediaQuery query="(max-width: 815px)" styles={{ fontSize: "35px" }}>
             <Title order={1} size={55} mb="sm" align="center">
-              I am <span style={{ color: "#3596e6" }}>Hampus</span>
+              {t("introName")} <span style={{ color: "#3596e6" }}>Hampus</span>
             </Title>
           </MediaQuery>
         </Box>

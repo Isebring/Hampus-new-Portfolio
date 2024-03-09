@@ -1,6 +1,7 @@
 import { ActionIcon, Container, SimpleGrid, Title } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
-import { IconBrandGithub, IconExternalLink } from "@tabler/icons-react";
+import { useTranslation } from "react-i18next";
+import { FaExternalLinkSquareAlt, FaGithub } from "react-icons/fa";
 import styled from "styled-components";
 
 const PortfolioBox = styled.div`
@@ -49,59 +50,6 @@ const Text = styled.p`
   color: #f8f8f8;
 `;
 
-const projects = [
-  {
-    title: "Design Cases",
-    imgSrc: "/imgs/figma-portfolio.png",
-    description:
-      "In this Figma portfolio I present my case studies in design. They are all related to the design process.",
-    websiteUrl:
-      "https://www.figma.com/proto/4tnMOesa5z2xNH2tvB0Jcv/Hampus-UX-Portfolio?page-id=0%3A1&type=design&node-id=404-2&viewport=574%2C144%2C0.09&scaling=scale-down-width&starting-point-node-id=404%3A2&hide-ui=1",
-    githubLink: "",
-  },
-  {
-    title: "GH: Gamehaven",
-    imgSrc: "/imgs/GH-logo.png",
-    description:
-      "Me and 1 other student created this project. We used the Internet Game Database (IGDB v.4) API to create this web application for games where you can browse, rate, search, bookmark etc.",
-    websiteUrl: "https://ghgamehaven.netlify.app/",
-    githubLink: "https://github.com/gabriel-lugo/GH-GameHaven",
-  },
-  {
-    title: "Frostbite Frenzy",
-    imgSrc:
-      "https://isebring.github.io/Hampus-Isebring-Portfolio/imgs/frostbite-frenzy.PNG",
-    description:
-      "Me and 5 fellow students created this game using P5.js and TypeScript. We built the game using Object Oriented Programming.",
-    websiteUrl: "https://frostbitefrenzy.netlify.app/",
-    githubLink: "https://github.com/Isebring/Frostbite-Frenzy",
-  },
-  {
-    title: "GHEDb",
-    imgSrc: "/imgs/ghedb.png",
-    description:
-      "Me and 2 fellow students created a movie application using React and TypeScript. We used the TMDB API for this assignment which was a lot of fun.",
-    websiteUrl: "https://ghedb.netlify.app/",
-    githubLink: "https://github.com/Isebring/GHE-Movie-App",
-  },
-  {
-    title: "DevStudio",
-    imgSrc: "/imgs/devStudio.png",
-    description:
-      "This was an assignment from Medieinstitutet where we as a group of students created a website together where we offer our services. We used React, TypeScript and Mantine",
-    websiteUrl: "https://devstudiofed22g.netlify.app/",
-    githubLink: "https://github.com/HJYMM22G/HJYMM22G",
-  },
-  {
-    title: "T101",
-    imgSrc: "/imgs/T101.png",
-    description:
-      "Me and 3 fellow students created this tech ecommerce store with React, TypeScript and Mantine. We worked with the context API from React for the shopping cart. ",
-    websiteUrl: "https://tech-101-webshop.netlify.app/",
-    githubLink: "https://github.com/Isebring/Tech-101-Webshop",
-  },
-];
-
 function PortfolioItem(props: {
   title: string;
   imgSrc: string;
@@ -134,7 +82,7 @@ function PortfolioItem(props: {
           aria-label="Project website"
           variant="filled"
         >
-          <IconExternalLink size="1.5rem" />
+          <FaExternalLinkSquareAlt size="1.1rem" />
         </ActionIcon>
 
         {githubLink && (
@@ -150,7 +98,7 @@ function PortfolioItem(props: {
             aria-label="Github"
             variant="filled"
           >
-            <IconBrandGithub size="1.5rem" />
+            <FaGithub size="1.25rem" />
           </ActionIcon>
         )}
       </PortfolioOverlay>
@@ -161,6 +109,54 @@ function PortfolioItem(props: {
 function Portfolio() {
   const isMobile = useMediaQuery("(max-width: 800px)");
   const columns = isMobile ? 1 : 2;
+  const { t } = useTranslation();
+
+  const projects = [
+    {
+      title: t("portfolioTitle1"),
+      imgSrc: "/imgs/figma-portfolio.png",
+      description: t("portfolioText1"),
+      websiteUrl:
+        "https://www.figma.com/proto/4tnMOesa5z2xNH2tvB0Jcv/Hampus-UX-Portfolio?page-id=0%3A1&type=design&node-id=404-2&viewport=574%2C144%2C0.09&scaling=scale-down-width&starting-point-node-id=404%3A2&hide-ui=1",
+      githubLink: "",
+    },
+    {
+      title: t("portfolioTitle2"),
+      imgSrc: "/imgs/GH-logo.png",
+      description: t("portfolioText2"),
+      websiteUrl: "https://ghgamehaven.netlify.app/",
+      githubLink: "https://github.com/gabriel-lugo/GH-GameHaven",
+    },
+    {
+      title: t("portfolioTitle3"),
+      imgSrc:
+        "https://isebring.github.io/Hampus-Isebring-Portfolio/imgs/frostbite-frenzy.PNG",
+      description: t("portfolioText3"),
+      websiteUrl: "https://frostbitefrenzy.netlify.app/",
+      githubLink: "https://github.com/Isebring/Frostbite-Frenzy",
+    },
+    {
+      title: t("portfolioTitle4"),
+      imgSrc: "/imgs/ghedb.png",
+      description: t("portfolioText4"),
+      websiteUrl: "https://ghedb.netlify.app/",
+      githubLink: "https://github.com/Isebring/GHE-Movie-App",
+    },
+    {
+      title: t("portfolioTitle5"),
+      imgSrc: "/imgs/devStudio.png",
+      description: t("portfolioText5"),
+      websiteUrl: "https://devstudiofed22g.netlify.app/",
+      githubLink: "https://github.com/HJYMM22G/HJYMM22G",
+    },
+    {
+      title: t("portfolioTitle6"),
+      imgSrc: "/imgs/T101.png",
+      description: t("portfolioText6"),
+      websiteUrl: "https://tech-101-webshop.netlify.app/",
+      githubLink: "https://github.com/Isebring/Tech-101-Webshop",
+    },
+  ];
 
   return (
     <>
@@ -172,7 +168,7 @@ function Portfolio() {
       ></Image> */}
       <Container>
         <Title align="center" mt="lg" mb="lg">
-          My Portfolio
+          {t("portfolioTitle")}
         </Title>
         <SimpleGrid cols={columns} spacing="xl">
           {projects.map((project, index) => (

@@ -12,6 +12,7 @@ import {
   createStyles,
 } from "@mantine/core";
 import { IconBrandNpm, IconMail } from "@tabler/icons-react";
+import { useTranslation } from "react-i18next";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaCss3Alt, FaGithub, FaHtml5, FaSketch } from "react-icons/fa";
 import { FaGitAlt, FaReact } from "react-icons/fa6";
@@ -31,6 +32,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 export function Profile() {
+  const { t } = useTranslation();
   const { classes } = useStyles();
   function sendMail() {
     window.location.href = "mailto:hampus.isebring@gmail.com";
@@ -74,7 +76,7 @@ export function Profile() {
               shadow="sm"
             >
               <Text mb="sm" size="xs" ta="center">
-                Some of my Coding Tools:
+                {t("codingTools")}
               </Text>
               <Group spacing="xs">
                 <FaReact size="1.5rem" color="#61DAFB" />{" "}
@@ -106,7 +108,7 @@ export function Profile() {
               p="xs"
             >
               <Text mb="sm" size="xs" align="center">
-                Some of my Design Tools:
+                {t("designTools")}
               </Text>
               <Group position="center" spacing="xs">
                 <PiFigmaLogoDuotone size="1.3rem" color="#1877F2" />{" "}
@@ -124,7 +126,7 @@ export function Profile() {
             onClick={sendMail}
             leftIcon={<IconMail size="1rem" />}
           >
-            Contact me
+            {t("contact")}
           </Button>
         </Flex>
         <Divider mt="xl" />

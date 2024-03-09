@@ -16,7 +16,9 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import { IconMoonStars, IconSun } from "@tabler/icons-react";
 import { useEffect, useRef, useState } from "react";
+import { MdLanguage } from "react-icons/md";
 import { Link, useLocation } from "react-router-dom";
+import i18n from "../i18";
 
 const HEADER_HEIGHT = rem(70);
 
@@ -123,17 +125,30 @@ export function Navigationbar({ links }: NavigationbarProps) {
   const [logoType, setLogoType] = useState("dark");
   const theme = useMantineTheme();
   const location = useLocation();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleToggle = () => {
     toggleColorScheme();
     setLogoType(colorScheme === "dark" ? "dark" : "light");
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const logoSize = windowWidth <= 400 ? "6.699rem" : "7.6rem";
+
   const logo =
     logoType === "dark" ? (
       <Image
         height="50%"
-        width="7.5rem"
+        width={logoSize}
         src="../imgs/hampuslogo.svg"
         alt="Hampus Isering logo"
       />
@@ -141,7 +156,7 @@ export function Navigationbar({ links }: NavigationbarProps) {
       <Image
         src="../imgs/hampuslogodark.svg"
         height="50%"
-        width="7.5rem"
+        width={logoSize}
         alt="Hampus Isebring logo"
       />
     );
@@ -205,7 +220,7 @@ export function Navigationbar({ links }: NavigationbarProps) {
           aria-label="Here you can switch between light and dark mode colors for the webpage"
           checked={colorScheme === "dark"}
           onClick={handleToggle}
-          size="lg"
+          size="md"
           onLabel={<IconSun color={theme.white} size="1.25rem" stroke={1.5} />}
           offLabel={
             <IconMoonStars
@@ -214,6 +229,36 @@ export function Navigationbar({ links }: NavigationbarProps) {
               stroke={1.5}
             />
           }
+        />
+      </Group>
+    );
+  }
+
+  function ToggleLanguage() {
+    const [isEnglish, setIsEnglish] = useState(i18n.language === "en");
+
+    const handleKeyDown = (event: any) => {
+      if (event.key === "Enter") {
+        toggleLanguage();
+      }
+    };
+
+    const toggleLanguage = () => {
+      const newLang = i18n.language === "en" ? "sv" : "en";
+      i18n.changeLanguage(newLang);
+      setIsEnglish(!isEnglish);
+    };
+
+    return (
+      <Group position="center" my={30}>
+        <Switch
+          onKeyDown={handleKeyDown}
+          aria-label="Toggle language"
+          checked={isEnglish}
+          onChange={toggleLanguage}
+          label={isEnglish ? "EN" : "SV"}
+          onLabel={<MdLanguage size="1.2rem" />}
+          offLabel={<MdLanguage size="1.2rem" />}
         />
       </Group>
     );
@@ -259,6 +304,7 @@ export function Navigationbar({ links }: NavigationbarProps) {
         </Group>
         <Group position="right">
           <ToggleDarkAndLightMode />
+          <ToggleLanguage />
           <Burger
             aria-label="Click to open mobile menu"
             opened={opened}

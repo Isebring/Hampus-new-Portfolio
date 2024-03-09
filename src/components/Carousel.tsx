@@ -1,11 +1,13 @@
-import { Carousel } from '@mantine/carousel';
-import { Container, Title } from '@mantine/core';
+import { Carousel } from "@mantine/carousel";
+import { Container, Title } from "@mantine/core";
+import { useTranslation } from "react-i18next";
 
 function MyCarousel() {
+  const { t } = useTranslation();
   return (
     <Container size="lg">
       <Title mt="lg" align="center" mb="md" order={3}>
-        <span style={{ color: '#FEFEFE' }}>Some</span> pictures from my life
+        {t("carouselTitle")}
       </Title>
       <Carousel
         withIndicators
@@ -15,8 +17,8 @@ function MyCarousel() {
         loop
         align="start"
         breakpoints={[
-          { maxWidth: 'md', slideSize: '50%' },
-          { maxWidth: 'sm', slideSize: '100%', slideGap: 0 },
+          { maxWidth: "md", slideSize: "50%" },
+          { maxWidth: "sm", slideSize: "100%", slideGap: 0 },
         ]}
       >
         <Carousel.Slide>

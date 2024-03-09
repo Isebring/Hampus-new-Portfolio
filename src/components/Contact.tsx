@@ -1,16 +1,18 @@
 import { Box, Container, Divider, Text, Title } from "@mantine/core";
+import { useTranslation } from "react-i18next";
 import Banner from "./Banner";
 import { ContactCard } from "./ContactCard";
 
 function Contact() {
+  const { t } = useTranslation();
   return (
     <Container>
       <Box pl="sm" mb="xl">
         <Title ta="center" order={2}>
-          Feel free to reach out
+          {t("reachOut")}
         </Title>
         <Text mt="xs" ta="center">
-          I'd be happy to have a chat about anything
+          {t("reachOutText")}
         </Text>
         <Divider mt="md" />
       </Box>

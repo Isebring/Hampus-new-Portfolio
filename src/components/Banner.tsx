@@ -1,4 +1,5 @@
 import { Button, Card, Overlay, Text, createStyles } from "@mantine/core";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 function scrollBackToTop() {
@@ -50,6 +51,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 function Banner() {
+  const { t } = useTranslation();
   const { classes } = useStyles();
   return (
     <Card radius="md" className={classes.card}>
@@ -57,12 +59,11 @@ function Banner() {
 
       <div className={classes.content}>
         <Text size="lg" fw={700} className={classes.title}>
-          Thanks for taking a look!
+          {t("thanks")}
         </Text>
 
         <Text size="sm" className={classes.description}>
-          You're most welcome to have a look at my projects, I have participated
-          in both design and coding projects.
+          {t("thanksText")}
         </Text>
         <Link to="/portfolio">
           <Button

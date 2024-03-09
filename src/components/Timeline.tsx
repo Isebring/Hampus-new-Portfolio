@@ -10,33 +10,35 @@ import {
   ThemeIcon,
   Timeline,
   Title,
-} from '@mantine/core';
-import { IconBrandZoom, IconPencil, IconSchool } from '@tabler/icons-react';
+} from "@mantine/core";
+import { IconBrandZoom, IconPencil, IconSchool } from "@tabler/icons-react";
+import { useTranslation } from "react-i18next";
 
 function MyTimeLine() {
+  const { t } = useTranslation();
   return (
     <Container size="xl">
       <MediaQuery
         query="(max-width: 780px)"
         styles={{
-          flexDirection: 'column',
-          alignItems: 'center',
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
         <Flex mx="auto" mt="xl" justify="space-between">
           <MediaQuery
             query="(max-width: 780px)"
             styles={{
-              width: '100%',
+              width: "100%",
             }}
           >
-            <Box sx={{ width: '50%' }}>
+            <Box sx={{ width: "50%" }}>
               <Title mb="lg" order={3}>
-                My journey in IT
+                {t("journey")}
               </Title>
               <Timeline>
                 <Timeline.Item
-                  title="2019. The beginning of my journey"
+                  title={t("title1")}
                   bulletSize={24}
                   bullet={
                     <Avatar
@@ -47,18 +49,18 @@ function MyTimeLine() {
                     />
                   }
                 >
-                  <Text size="sm">Digital Design, Halmstad University</Text>
+                  <Text size="sm">{t("text1")}</Text>
                 </Timeline.Item>
                 <Timeline.Item
-                  title="2020. On-site to Remote"
+                  title={t("title2")}
                   bulletSize={24}
                   bullet={
                     <ThemeIcon
                       size={22}
                       variant="gradient"
                       gradient={{
-                        from: 'blue',
-                        to: 'cyan',
+                        from: "blue",
+                        to: "cyan",
                       }}
                       radius="xl"
                     >
@@ -66,21 +68,18 @@ function MyTimeLine() {
                     </ThemeIcon>
                   }
                 >
-                  <Text size="sm">
-                    Early in 2020 the pandemic changed my studies as I knew
-                    them.
-                  </Text>
+                  <Text size="sm">{t("text2")}</Text>
                 </Timeline.Item>
                 <Timeline.Item
-                  title="2021. The role of a designer"
+                  title={t("title3")}
                   bulletSize={24}
                   bullet={
                     <ThemeIcon
                       size={22}
                       variant="gradient"
                       gradient={{
-                        from: 'teal',
-                        to: 'cyan',
+                        from: "teal",
+                        to: "cyan",
                       }}
                       radius="xl"
                     >
@@ -88,21 +87,18 @@ function MyTimeLine() {
                     </ThemeIcon>
                   }
                 >
-                  <Text size="sm">
-                    As the years went by, I got more and more comfortable as to
-                    what my role as a designer is.
-                  </Text>
+                  <Text size="sm">{t("text3")}</Text>
                 </Timeline.Item>
                 <Timeline.Item
-                  title="2022. Graduation"
+                  title={t("title4")}
                   bulletSize={24}
                   bullet={
                     <ThemeIcon
                       size={22}
                       variant="gradient"
                       gradient={{
-                        from: 'lightblue',
-                        to: 'cyan',
+                        from: "lightblue",
+                        to: "cyan",
                       }}
                       radius="xl"
                     >
@@ -110,13 +106,10 @@ function MyTimeLine() {
                     </ThemeIcon>
                   }
                 >
-                  <Text size="sm">
-                    In June 2022 I graduated and can now call myself a junior
-                    designer.
-                  </Text>
+                  <Text size="sm">{t("text4")}</Text>
                 </Timeline.Item>
                 <Timeline.Item
-                  title="2022-Present. Front End Developer"
+                  title={t("title5")}
                   bulletSize={24}
                   bullet={
                     <Avatar
@@ -127,11 +120,7 @@ function MyTimeLine() {
                     />
                   }
                 >
-                  <Text size="sm">
-                    Medieinstitutet. After graduating I felt an interest to know
-                    more how developers work so I can better understand and
-                    collaborate with them.
-                  </Text>
+                  <Text size="sm">{t("text5")}</Text>
                 </Timeline.Item>
               </Timeline>
             </Box>
@@ -139,41 +128,16 @@ function MyTimeLine() {
           <MediaQuery
             query="(max-width: 780px)"
             styles={{
-              width: '100%',
-              marginTop: '1rem',
+              width: "100%",
+              marginTop: "1rem",
             }}
           >
-            <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+            <Box sx={{ display: "flex", justifyContent: "center" }}>
               <Image
                 maw={500}
                 src="/imgs/illustration.svg"
                 alt="an illustration of a man showing messages on his computer"
               />
-              {/* <Title mb="lg" order={3}>
-                My goal
-              </Title>
-              <Text>
-                I have a strong passion for creating digital solutions that
-                supports people in their lives. I believe that my background
-                from design combined with my enhanced knowledge and
-                understanding of how developers work can contribute to a broad
-                understanding of the whole process of creating digital
-                artefacts, from start to finish. One of my main goals with a
-                career in IT is to be able to combine interests and subjects I
-                am passionate about. To name some of them: Being a{" "}
-                <Text span c="blue">
-                  helping hand
-                </Text>{" "}
-                for people.{" "}
-                <Text span c="blue">
-                  Sustainability
-                </Text>{" "}
-                for our planet and it's habitants.{" "}
-                <Text span c="blue">
-                  Accessibility and equity
-                </Text>{" "}
-                since we are all unique and have different needs.
-              </Text> */}
             </Box>
           </MediaQuery>
         </Flex>

@@ -8,6 +8,7 @@ import {
   createStyles,
   rem,
 } from "@mantine/core";
+import { t } from "i18next";
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -102,7 +103,7 @@ export function SkillsCard({
 
         <Card.Section className={classes.section}>
           <Text mt="md" className={classes.label} c="dimmed">
-            Things I usually do:
+            {t("skillsTitle1")}
           </Text>
           <Group spacing={7} mt={5}>
             {features}

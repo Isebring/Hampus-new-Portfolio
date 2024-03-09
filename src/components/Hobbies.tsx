@@ -11,29 +11,9 @@ import {
   rem,
 } from "@mantine/core";
 import { IconStretching } from "@tabler/icons-react";
+import { useTranslation } from "react-i18next";
 import { GiRetroController } from "react-icons/gi";
 import { IoMusicalNotes } from "react-icons/io5";
-
-const mockdata = [
-  {
-    title: "Retro Games",
-    description:
-      "In recent years I have started collecting retro games, mostly from older Nintendo systems like SNES, N64 and GCN.",
-    icon: GiRetroController,
-  },
-  {
-    title: "Exercise",
-    description:
-      "A way to clear my head and come back refreshed, exercising is an important part of my daily life.",
-    icon: IconStretching,
-  },
-  {
-    title: "Music",
-    description:
-      "Music has been a part of my life since the beginning. Whatever my mood is, there is always a song to help me get through. I also play the guitar from time to time.",
-    icon: IoMusicalNotes,
-  },
-];
 
 const useStyles = createStyles((theme) => ({
   description: {
@@ -72,6 +52,26 @@ const useStyles = createStyles((theme) => ({
 
 export function HobbyCards() {
   const { classes, theme } = useStyles();
+  const { t } = useTranslation();
+
+  const mockdata = [
+    {
+      title: t("hobbiesTitle1"),
+      description: t("hobbiesText1"),
+      icon: GiRetroController,
+    },
+    {
+      title: t("hobbiesTitle2"),
+      description: t("hobbiesText2"),
+      icon: IconStretching,
+    },
+    {
+      title: t("hobbiesTitle3"),
+      description: t("hobbiesText3"),
+      icon: IoMusicalNotes,
+    },
+  ];
+
   const features = mockdata.map((feature) => (
     <Card
       key={feature.title}
@@ -94,7 +94,7 @@ export function HobbyCards() {
     <Container size="lg" py="xl" mt="lg">
       <Group position="center">
         <Badge color="blue.8" variant="filled" size="lg">
-          My hobbies
+          {t("hobbiesLabel")}
         </Badge>
       </Group>
 
@@ -110,12 +110,11 @@ export function HobbyCards() {
         radius="md"
       >
         <Title order={2} ta="center" mt="sm">
-          In my spare time I enjoy:
+          {t("hobbiesTitle")}
         </Title>
 
         <Text className={classes.description} ta="center" mt="md">
-          spending time with my family, cats, and friends. I also enjoy watching
-          hockey, art, tv-shows and movies.
+          {t("hobbiesText")}
         </Text>
       </Paper>
 

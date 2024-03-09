@@ -1,12 +1,6 @@
-import {
-  BackgroundImage,
-  Box,
-  Button,
-  Container,
-  Group,
-  Text,
-} from "@mantine/core";
+import { BackgroundImage, Box, Button, Container, Group } from "@mantine/core";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
@@ -26,7 +20,7 @@ function CV() {
   const [pageNumber, setPageNumber] = useState<number>(1);
   const [showIframe, setShowIframe] = useState<boolean>(false);
   const [pdfScale, setPdfScale] = useState(1);
-
+  const { t } = useTranslation();
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth < 630) {
@@ -91,11 +85,11 @@ function CV() {
               ></iframe>
             </Box>
           )}
-          {!showIframe && (
+          {/* {!showIframe && (
             <Text align="center">
               Page {pageNumber} of {numPages}
             </Text>
-          )}
+          )} */}
         </Box>
         <Group position="center">
           <Button mt="md" mb="xs">
@@ -104,7 +98,7 @@ function CV() {
               href="/cv_hampus_isebring - 2023.pdf"
               download="Hampus Isebring CV.pdf"
             >
-              Download CV
+              {t("download")}
             </a>
           </Button>
         </Group>

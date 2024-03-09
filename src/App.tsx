@@ -1,16 +1,18 @@
 import { Box } from "@mantine/core";
+import { useTranslation } from "react-i18next";
 import { Outlet } from "react-router-dom";
 import { FooterProps, MyFooter } from "./components/Footer";
 import { Navigationbar, NavigationbarProps } from "./components/Navigationbar";
 
 function App() {
+  const { t } = useTranslation();
   const footerLinks: FooterProps["links"] = [
     { link: "/", label: "Hampus Isebring • 2024 ☕" },
   ];
 
   const headerLinks: NavigationbarProps["links"] = [
-    { link: "/", label: "Home" },
-    { link: "/profile", label: "Profile" },
+    { link: "/", label: t("navHome") },
+    { link: "/profile", label: t("navProfile") },
     { link: "/cv", label: "CV" },
     // { link: "/skills", label: "Skills" },
     { link: "/portfolio", label: "Portfolio" },

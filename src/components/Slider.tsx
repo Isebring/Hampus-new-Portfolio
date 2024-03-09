@@ -1,4 +1,5 @@
 import { Box, Container, Image, Title } from "@mantine/core";
+import { useTranslation } from "react-i18next";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -21,10 +22,11 @@ interface Props {
 }
 
 function Slider({ slides }: Props) {
+  const { t } = useTranslation();
   return (
     <Container>
       <Title mt="xl" order={2} align="center">
-        My Tools
+        {t("tools")}
       </Title>
       <Swiper
         modules={[EffectCoverflow, Navigation, Pagination, Autoplay]}

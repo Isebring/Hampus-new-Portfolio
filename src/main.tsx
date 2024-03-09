@@ -2,22 +2,22 @@ import {
   ColorScheme,
   ColorSchemeProvider,
   MantineProvider,
-} from '@mantine/core';
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom/client';
+} from "@mantine/core";
+import React, { useState } from "react";
+import ReactDOM from "react-dom/client";
 import {
   Route,
   RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
-} from 'react-router-dom';
-import App from './App';
-import './main.css';
-import Cv from './pages/Cv';
-import Home from './pages/Home';
-import Portfolio from './pages/Portfolio';
-import { Profile } from './pages/Profile';
-import Skills from './pages/Skills';
+} from "react-router-dom";
+import App from "./App";
+import "./main.css";
+import Cv from "./pages/Cv";
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
+import { Profile } from "./pages/Profile";
+import Skills from "./pages/Skills";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -32,9 +32,9 @@ const router = createBrowserRouter(
 );
 
 function Root() {
-  const [colorScheme, setColorScheme] = useState<ColorScheme>('light');
+  const [colorScheme, setColorScheme] = useState<ColorScheme>("light");
   const toggleColorScheme = (value?: ColorScheme) =>
-    setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
+    setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
   return (
     <React.StrictMode>
       <ColorSchemeProvider
@@ -45,9 +45,9 @@ function Root() {
           theme={{
             primaryShade: { light: 8, dark: 6 },
             colorScheme,
-            primaryColor: 'blue',
+            primaryColor: "blue",
             headings: {
-              fontFamily: 'Quicksand, sans-serif',
+              fontFamily: "Quicksand, sans-serif",
             },
           }}
           withGlobalStyles
@@ -60,6 +60,6 @@ function Root() {
   );
 }
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <Root />
 );
