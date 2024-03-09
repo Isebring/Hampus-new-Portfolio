@@ -12,6 +12,7 @@ import {
   createStyles,
 } from "@mantine/core";
 import { IconBrandNpm, IconMail } from "@tabler/icons-react";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaCss3Alt, FaGithub, FaHtml5, FaSketch } from "react-icons/fa";
@@ -32,6 +33,11 @@ const useStyles = createStyles((theme) => ({
 }));
 
 export function Profile() {
+  useEffect(() => {
+    document.title = "Hampus Isebring - Profile";
+    window.scrollTo(0, 0);
+  }, []);
+
   const { t } = useTranslation();
   const { classes } = useStyles();
   function sendMail() {

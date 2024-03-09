@@ -48,6 +48,7 @@ export default {
     hobbiesText3: "Music has been a part of my life since the beginning. Whatever my mood is, there is always a song to help me get through. I also play the guitar from time to time.",
     carouselTitle: "Some pictures from my life",
     download: "Download CV",
+    closePDF: "Close PDF",
     portfolioTitle: "My Portfolio",
     portfolioTitle1: "Design Cases",
     portfolioText1: "In this Figma portfolio I present my case studies in design. They are all related to the design process.",

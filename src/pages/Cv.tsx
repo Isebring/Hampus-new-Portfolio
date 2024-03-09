@@ -16,6 +16,11 @@ const BoxHover = styled.div`
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function CV() {
+  useEffect(() => {
+    document.title = "Hampus Isebring - CV";
+    window.scrollTo(0, 0);
+  }, []);
+
   const [numPages, setNumPages] = useState<number | null>(null);
   const [pageNumber, setPageNumber] = useState<number>(1);
   const [showIframe, setShowIframe] = useState<boolean>(false);
@@ -74,7 +79,7 @@ function CV() {
           ) : (
             <Box sx={{ height: "100dvh" }}>
               <Button mt="md" mb="sm" variant="outline" onClick={toggleIframe}>
-                Close PDF
+                {t("closePDF")}
               </Button>
               <iframe
                 src="/cv_hampus_isebring - 2024.pdf"

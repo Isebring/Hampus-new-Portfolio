@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Goal from "../components/Goal";
@@ -9,6 +10,11 @@ import { imgs } from "../data/imgs";
 import Skills from "./Skills";
 
 function Home() {
+  useEffect(() => {
+    document.title = "Hampus Isebring";
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Welcome />

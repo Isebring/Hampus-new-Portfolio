@@ -1,5 +1,6 @@
 import { ActionIcon, Container, SimpleGrid, Title } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { FaExternalLinkSquareAlt, FaGithub } from "react-icons/fa";
 import styled from "styled-components";
@@ -107,6 +108,11 @@ function PortfolioItem(props: {
 }
 
 function Portfolio() {
+  useEffect(() => {
+    document.title = "Hampus Isebring - Portfolio";
+    window.scrollTo(0, 0);
+  }, []);
+
   const isMobile = useMediaQuery("(max-width: 800px)");
   const columns = isMobile ? 1 : 2;
   const { t } = useTranslation();
