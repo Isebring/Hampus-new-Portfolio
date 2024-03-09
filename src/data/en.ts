@@ -36,7 +36,7 @@ export default {
     thanksText: "You're most welcome to have a look at my projects, I have participated in both design and coding projects.",
     codingTools: "Some of my Coding Tools:",
     designTools: "Some of my Design Tools:",
-    contact: "Contant me",
+    contact: "Contact me",
     hobbiesLabel: "My hobbies",
     hobbiesTitle: "In my spare time I enjoy:",
     hobbiesText: "spending time with my family, cats, and friends. I also enjoy watching hockey, art, tv-shows and movies.",
