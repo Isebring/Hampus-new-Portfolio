@@ -50,6 +50,8 @@ export default {
     download: "Ladda ned CV",
     closePDF: "Stäng PDF",
     portfolioTitle: "Min Portfolio",
+    portfolioTitle0: "DH Solutions App",
+    portfolioText0: "Under min LIA period på DH Solutions har jag skapat både design och kodat klientsidan av en React Native applikation som är tänkt att släppas snart.",
     portfolioTitle1: "Designuppdrag",
     portfolioText1: "I denna Figma portfolio presenterar jag mina kundcase från design. De är alla relaterade till designprocessen.",
     portfolioTitle2: "GH: Gamehaven",

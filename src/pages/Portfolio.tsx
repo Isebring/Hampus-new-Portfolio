@@ -7,7 +7,6 @@ import styled from "styled-components";
 
 const PortfolioBox = styled.div`
   position: relative;
-  width: 100%;
   height: 20rem;
   border-radius: 1rem;
   overflow: hidden;
@@ -18,12 +17,17 @@ const PortfolioBox = styled.div`
   }
 `;
 
-const PortfolioImg = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-`;
+const StyledImage = styled.img``;
+
+const PortfolioImg = ({ src, alt, objectFitType, ...rest }: any) => (
+  <StyledImage
+    src={src}
+    alt={alt}
+    style={{ objectFit: objectFitType }}
+    {...rest}
+  />
+);
+
 const PortfolioOverlay = styled.div`
   position: absolute;
   bottom: 100%;
@@ -57,12 +61,14 @@ function PortfolioItem(props: {
   description: string;
   githubLink: string;
   websiteUrl: string;
+  objectFitType: any;
 }) {
-  const { title, imgSrc, description, githubLink, websiteUrl } = props;
+  const { title, imgSrc, description, githubLink, websiteUrl, objectFitType } =
+    props;
 
   return (
     <PortfolioBox>
-      <PortfolioImg src={imgSrc} alt={title} />
+      <PortfolioImg src={imgSrc} alt={title} objectFitType={objectFitType} />
       <PortfolioOverlay>
         <Heading style={{ textAlign: "center", marginTop: "1rem" }}>
           {title}
@@ -71,20 +77,22 @@ function PortfolioItem(props: {
           {description}
         </Text>
 
-        <ActionIcon
-          mt="lg"
-          mx="auto"
-          component="a"
-          href={websiteUrl}
-          target="_blank"
-          sx={{ borderRadius: "50%" }}
-          size="lg"
-          color="blue"
-          aria-label="Project website"
-          variant="filled"
-        >
-          <FaExternalLinkSquareAlt size="1.1rem" />
-        </ActionIcon>
+        {websiteUrl && (
+          <ActionIcon
+            mt="lg"
+            mx="auto"
+            component="a"
+            href={websiteUrl}
+            target="_blank"
+            sx={{ borderRadius: "50%" }}
+            size="lg"
+            color="blue"
+            aria-label="Project website"
+            variant="filled"
+          >
+            <FaExternalLinkSquareAlt size="1.1rem" />
+          </ActionIcon>
+        )}
 
         {githubLink && (
           <ActionIcon
@@ -119,12 +127,21 @@ function Portfolio() {
 
   const projects = [
     {
+      title: t("portfolioTitle0"),
+      imgSrc: "/imgs/dh_logo.png",
+      description: t("portfolioText0"),
+      websiteUrl: "",
+      githubLink: "",
+      objectFitType: "scale-down",
+    },
+    {
       title: t("portfolioTitle1"),
       imgSrc: "/imgs/figma-portfolio.png",
       description: t("portfolioText1"),
       websiteUrl:
         "https://www.figma.com/proto/4tnMOesa5z2xNH2tvB0Jcv/Hampus-UX-Portfolio?page-id=0%3A1&type=design&node-id=404-2&viewport=574%2C144%2C0.09&scaling=scale-down-width&starting-point-node-id=404%3A2&hide-ui=1",
       githubLink: "",
+      objectFitType: "cover",
     },
     {
       title: t("portfolioTitle2"),
@@ -132,6 +149,7 @@ function Portfolio() {
       description: t("portfolioText2"),
       websiteUrl: "https://ghgamehaven.netlify.app/",
       githubLink: "https://github.com/gabriel-lugo/GH-GameHaven",
+      objectFitType: "scale-down",
     },
     {
       title: t("portfolioTitle3"),
@@ -140,6 +158,7 @@ function Portfolio() {
       description: t("portfolioText3"),
       websiteUrl: "https://frostbitefrenzy.netlify.app/",
       githubLink: "https://github.com/Isebring/Frostbite-Frenzy",
+      objectFitType: "cover",
     },
     {
       title: t("portfolioTitle4"),
@@ -147,6 +166,7 @@ function Portfolio() {
       description: t("portfolioText4"),
       websiteUrl: "https://ghedb.netlify.app/",
       githubLink: "https://github.com/Isebring/GHE-Movie-App",
+      objectFitType: "fill",
     },
     {
       title: t("portfolioTitle5"),
@@ -154,6 +174,7 @@ function Portfolio() {
       description: t("portfolioText5"),
       websiteUrl: "https://devstudiofed22g.netlify.app/",
       githubLink: "https://github.com/HJYMM22G/HJYMM22G",
+      objectFitType: "cover",
     },
     {
       title: t("portfolioTitle6"),
@@ -161,6 +182,7 @@ function Portfolio() {
       description: t("portfolioText6"),
       websiteUrl: "https://tech-101-webshop.netlify.app/",
       githubLink: "https://github.com/Isebring/Tech-101-Webshop",
+      objectFitType: "cover",
     },
   ];
 
@@ -185,6 +207,7 @@ function Portfolio() {
               description={project.description}
               websiteUrl={project.websiteUrl}
               githubLink={project.githubLink}
+              objectFitType={project.objectFitType}
             />
           ))}
         </SimpleGrid>

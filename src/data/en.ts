@@ -50,6 +50,8 @@ export default {
     download: "Download CV",
     closePDF: "Close PDF",
     portfolioTitle: "My Portfolio",
+    portfolioTitle0: "DH Solutions App",
+    portfolioText0: "During my internship at DH Solutions, I have created both the design and coded the client side of a React Native application that is intended to be released soon.",
     portfolioTitle1: "Design Cases",
     portfolioText1: "In this Figma portfolio I present my case studies in design. They are all related to the design process.",
     portfolioTitle2: "GH: Gamehaven",
