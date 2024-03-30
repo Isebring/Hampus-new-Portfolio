@@ -119,7 +119,7 @@ function Skills() {
     {
       image:
         "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      title: "Front End Development",
+      title: "Front End",
       subject: "Coding",
       description: <>{t("skillsText3")}</>,
       badges: [
@@ -164,7 +164,7 @@ function Skills() {
     {
       image:
         "https://images.unsplash.com/photo-1617042375876-a13e36732a04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      title: "Back End Development",
+      title: "Back End",
       subject: "Coding",
       description: <>{t("skillsText4")}</>,
       badges: [

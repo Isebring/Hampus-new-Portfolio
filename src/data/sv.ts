@@ -64,6 +64,7 @@ export default {
     portfolioText5: "Detta var en uppgift från Medieinstitutet där vi som en grupp studenter skulle skapa en gemensam sida där vi marknadsför våra tjänster. Vi använde oss av React, TypeScript och Mantine.",
     portfolioTitle6: "T101",
     portfolioText6: "Jag och 3 andra studenter skapade denna webbshopp med React, TypeScript och Mantine. Vi arbetade exempelvis med Reacts context API för att skapa en kundvagn.",
+    stickynote: "Hej, jag är en utvecklare och designer"
 
     
     // Additional sections/pages could be nested similarly

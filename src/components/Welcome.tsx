@@ -11,13 +11,17 @@ import {
 import { useTranslation } from "react-i18next";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import StickyNote from "./StickyNote";
 import Typewriter from "./Typewriter";
 
 function Welcome() {
   const { t } = useTranslation();
   return (
     // <Flex align="center">
-    <Container>
+    <Container size="lg">
+      <Box sx={{ display: "flex", justifyContent: "center" }} mt="xl">
+        <StickyNote />
+      </Box>
       <Box
         sx={{
           marginTop: "2rem",

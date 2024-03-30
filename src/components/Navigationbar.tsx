@@ -219,13 +219,13 @@ export function Navigationbar({ links }: NavigationbarProps) {
           onKeyDown={handleKeyDown}
           aria-label="Here you can switch between light and dark mode colors for the webpage"
           checked={colorScheme === "dark"}
+          size="sm"
           onClick={handleToggle}
-          size="md"
           onLabel={<IconSun color={theme.white} size="1.25rem" stroke={1.5} />}
           offLabel={
             <IconMoonStars
               color={theme.colors.gray[6]}
-              size="1.25rem"
+              size="1rem"
               stroke={1.5}
             />
           }
@@ -252,13 +252,15 @@ export function Navigationbar({ links }: NavigationbarProps) {
     return (
       <Group position="center" my={30}>
         <Switch
+          color="teal"
+          size="xs"
           onKeyDown={handleKeyDown}
           aria-label="Toggle language"
           checked={isEnglish}
           onChange={toggleLanguage}
           label={isEnglish ? "EN" : "SV"}
-          onLabel={<MdLanguage size="1.2rem" />}
-          offLabel={<MdLanguage size="1.2rem" />}
+          onLabel={<MdLanguage size="1rem" />}
+          offLabel={<MdLanguage size="1rem" />}
         />
       </Group>
     );
