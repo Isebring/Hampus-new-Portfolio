@@ -1,9 +1,17 @@
-import { ActionIcon, Container, SimpleGrid, Title } from "@mantine/core";
+import {
+  ActionIcon,
+  Box,
+  Container,
+  Group,
+  SimpleGrid,
+  Title,
+} from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { FaExternalLinkSquareAlt, FaGithub } from "react-icons/fa";
 import styled from "styled-components";
+import "./Portfolio.css";
 
 const PortfolioBox = styled.div`
   position: relative;
@@ -194,7 +202,8 @@ function Portfolio() {
         alt="Circles used for decoration purposes"
         src="/imgs/circles.svg"
       ></Image> */}
-      <Container>
+
+      <Container size="md">
         <Title align="center" mt="lg" mb="lg">
           {t("portfolioTitle")}
         </Title>
@@ -212,6 +221,9 @@ function Portfolio() {
           ))}
         </SimpleGrid>
       </Container>
+      <Group position="center">
+        <Box className="speech-bubble">{t("speechBubble")}</Box>
+      </Group>
       {/* </BackgroundImage> */}
     </>
   );

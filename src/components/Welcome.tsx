@@ -47,7 +47,7 @@ function Welcome() {
             maw={500}
             mt="md"
             mb="md"
-            src="/imgs/hampus-landingpage.png"
+            src="/imgs/hampus-landingpagenew.png"
             alt="a picture of me, Hampus Isebring"
           />
           {/* <Title

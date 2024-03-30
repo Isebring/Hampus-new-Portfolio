@@ -64,7 +64,8 @@ export default {
     portfolioText5: "This was an assignment from Medieinstitutet where we as a group of students created a website together where we offer our services. We used React, TypeScript and Mantine",
     portfolioTitle6: "T101",
     portfolioText6: "Me and 3 fellow students created this tech ecommerce store with React, TypeScript and Mantine. We worked with the context API from React for the shopping cart.",
-    stickynote: "  Hi, I am a developer and designer"
+    stickynote: "  Hi, I am a developer and designer",
+    speechBubble: "I have participated in both design and coding projects"
 
     
     // Additional sections/pages could be nested similarly
