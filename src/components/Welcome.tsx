@@ -18,7 +18,7 @@ function Welcome() {
   const { t } = useTranslation();
   return (
     // <Flex align="center">
-    <Container size="md">
+    <Container sx={{ maxWidth: "50rem" }}>
       <Box sx={{ display: "flex", justifyContent: "center" }} mt="xl">
         <StickyNote />
       </Box>
@@ -44,7 +44,7 @@ function Welcome() {
           }}
         >
           <Image
-            maw={350}
+            maw={250}
             mt="md"
             mb="md"
             src="/imgs/hampus-rounded.png"
