@@ -18,7 +18,7 @@ function Welcome() {
   const { t } = useTranslation();
   return (
     // <Flex align="center">
-    <Container size="lg">
+    <Container size="md">
       <Box sx={{ display: "flex", justifyContent: "center" }} mt="xl">
         <StickyNote />
       </Box>
@@ -44,10 +44,10 @@ function Welcome() {
           }}
         >
           <Image
-            maw={500}
+            maw={350}
             mt="md"
             mb="md"
-            src="/imgs/hampus-landingpagenew.png"
+            src="/imgs/hampus-rounded.png"
             alt="a picture of me, Hampus Isebring"
           />
           {/* <Title
