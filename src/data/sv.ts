@@ -45,7 +45,7 @@ export default {
     hobbiesTitle2: "Träning",
     hobbiesText2: "Ett sätt att rensa huvudet och känna mig som en ny människa, träning är en viktig del av mitt dagliga liv.",
     hobbiesTitle3: "Musik",
-    hobbiesText3: "Musik har varit en del av mitt liv så länge jag kan minnas. Oavsett vilket humör jag befinner mig i finns det alltid en låt som kan hjälpa mig ta igenom det. Jag spelar också gitarr då och då.",
+    hobbiesText3: "Musik har varit en del av mitt liv så länge jag kan minnas. Oavsett vilket humör jag befinner mig i finns det alltid en låt som kan hjälpa mig ta mig igenom det. Jag spelar också gitarr då och då.",
     carouselTitle: "Några bilder från mitt liv",
     download: "Ladda ned CV",
     closePDF: "Stäng PDF",

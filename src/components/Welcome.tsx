@@ -49,10 +49,10 @@ function Welcome() {
             </Title>
           </MediaQuery>
           <Image
-            maw={250}
+            maw={230}
             mt="md"
             mb="md"
-            src="/imgs/hampus-rounded.png"
+            src="/imgs/hampus_rounded.png"
             alt="a picture of me, Hampus Isebring"
           />
           {/* <Title
