@@ -122,6 +122,20 @@ function MyTimeLine() {
                 >
                   <Text size="sm">{t("text5")}</Text>
                 </Timeline.Item>
+                <Timeline.Item
+                  title={t("title6")}
+                  bulletSize={24}
+                  bullet={
+                    <Avatar
+                      size={22}
+                      radius="xl"
+                      src="/imgs/dh-logo.jpg"
+                      alt="DH Solutions logo"
+                    />
+                  }
+                >
+                  <Text size="sm">{t("text6")}</Text>
+                </Timeline.Item>
               </Timeline>
             </Box>
           </MediaQuery>

@@ -20,6 +20,8 @@ export default {
     title4: "2022. Kandidatexamen",
     text4: "I juni 2022 tog jag min examen från högskolan i Halmstad och är nu en junior designer.",
     title5: "2022-Pågående. Front End Developer",
+    title6: "2023-2024. Front End Utvecklare & UX Designer Praktik.",
+    text6: "Under min praktik på DH Solutions har jag bidragit med både UX-design, UI-design och frontendutveckling. Min huvudsakliga uppgift har varit att koda klientsidan för både interna projekt och kundprojekt. Jag har även arbetat med tillgänglighet, vilket är något jag brinner för.",
     text5: "Medieinstitutet. Efter min examen upplevde jag ett starkt intresse för hur utvecklare arbetar och ville bättre förstå kod för att enklare kunna samarbeta.",
     goalTitle: "Mitt mål",
     goalText: "Jag har en stark passion för att skapa digitala lösningar som stödjer människor i deras liv. Jag tror att min bakgrund inom design i kombination med min fördjupade kunskap och förståelse för hur utvecklare arbetar kan bidra till en bred förståelse för hela processen att skapa digitala artefakter, från början till slut. Ett av mina huvudmål med en karriär inom IT är att kunna kombinera intressen och ämnen som jag brinner för. För att nämna några av dem: Att vara en hjälpande hand för människor. Hållbarhet för vår planet och dess invånare. Tillgänglighet och rättvisa eftersom vi alla är unika och har olika behov.",
