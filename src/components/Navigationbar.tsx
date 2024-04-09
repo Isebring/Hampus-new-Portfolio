@@ -15,7 +15,7 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { IconMoonStars, IconSun } from "@tabler/icons-react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { MdLanguage } from "react-icons/md";
 import { Link, useLocation } from "react-router-dom";
 import i18n from "../i18";
@@ -192,14 +192,6 @@ export function Navigationbar({ links }: NavigationbarProps) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const headerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (headerRef.current) {
-      headerRef.current.style.marginBottom = opened ? "200px" : "0";
-    }
-  }, [opened]);
-
   function ToggleDarkAndLightMode() {
     const { colorScheme } = useMantineColorScheme();
 
@@ -252,7 +244,9 @@ export function Navigationbar({ links }: NavigationbarProps) {
     return (
       <Group position="center" my={30}>
         <Switch
-          color="teal"
+          labelPosition="left"
+          color="gray"
+          radius="md"
           size="xs"
           onKeyDown={handleKeyDown}
           aria-label="Toggle language"
@@ -281,12 +275,7 @@ export function Navigationbar({ links }: NavigationbarProps) {
   }
 
   return (
-    <Header
-      height={HEADER_HEIGHT}
-      mb={headerRef.current ? (isBurgerVisible ? 200 : 0) : 0}
-      ref={headerRef}
-      className={classes.root}
-    >
+    <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container size="xl" className={classes.header}>
         <MediaQuery
           query="(max-width: 460px)"
@@ -315,7 +304,7 @@ export function Navigationbar({ links }: NavigationbarProps) {
             size="sm"
           />
         </Group>
-        <Transition transition="pop-top-right" duration={200} mounted={opened}>
+        <Transition transition="skew-up" duration={400} mounted={opened}>
           {(styles) => (
             <Paper
               onClick={scrollBackToTop}
