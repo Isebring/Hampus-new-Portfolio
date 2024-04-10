@@ -1,8 +1,6 @@
 import {
-  Avatar,
   BackgroundImage,
   Box,
-  Button,
   Container,
   Divider,
   Flex,
@@ -11,7 +9,7 @@ import {
   Text,
   createStyles,
 } from "@mantine/core";
-import { IconBrandNpm, IconMail } from "@tabler/icons-react";
+import { IconBrandNpm } from "@tabler/icons-react";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { BiLogoTypescript } from "react-icons/bi";
@@ -22,6 +20,7 @@ import { RiJavascriptFill } from "react-icons/ri";
 import { SiAdobe, SiMongodb } from "react-icons/si";
 import MyCarousel from "../components/Carousel";
 import { HobbyCards } from "../components/Hobbies";
+import ProfileCard from "../components/ProfileCard";
 
 const useStyles = createStyles((theme) => ({
   paper: {
@@ -46,6 +45,11 @@ export function Profile() {
   return (
     <Box mt="xl">
       <BackgroundImage src="/imgs/shape1.svg">
+        <Container size="xs">
+          <Flex justify="center">
+            <ProfileCard />
+          </Flex>
+        </Container>
         {/* <Paper
           radius="md"
           p="lg"
@@ -54,7 +58,7 @@ export function Profile() {
               theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
           })}
         > */}
-        <Avatar
+        {/* <Avatar
           src="/imgs/hampusimg.png"
           alt="A picture of Hampus Isebring"
           size={120}
@@ -66,7 +70,7 @@ export function Profile() {
         </Text>
         <Text ta="center" c="dimmed" fz="sm">
           Front End Developer • UX | UI Designer
-        </Text>
+        </Text> */}
         <Flex align="center" mb="sm" mt="xs">
           <Container size="xs">
             <Paper
@@ -125,7 +129,7 @@ export function Profile() {
           </Container>
         </Flex>
         <Flex justify="center">
-          <Button
+          {/* <Button
             mt="md"
             color="blue.8"
             aria-label="Contact me"
@@ -133,7 +137,7 @@ export function Profile() {
             leftIcon={<IconMail size="1rem" />}
           >
             {t("contact")}
-          </Button>
+          </Button> */}
         </Flex>
         <Divider mt="xl" />
         <HobbyCards />

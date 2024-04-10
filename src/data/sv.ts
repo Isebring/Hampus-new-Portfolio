@@ -67,7 +67,8 @@ export default {
     portfolioTitle6: "T101",
     portfolioText6: "Jag och 3 andra studenter skapade denna webbshopp med React, TypeScript och Mantine. Vi arbetade exempelvis med Reacts context API för att skapa en kundvagn.",
     stickynote: "Hej, jag är en utvecklare och designer",
-    speechBubble: "Jag har deltagit i både design och kodningsprojekt"
+    speechBubble: "Jag har deltagit i både design och kodningsprojekt",
+    github: "Min Github",
 
     
     // Additional sections/pages could be nested similarly

@@ -67,7 +67,8 @@ export default {
     portfolioTitle6: "T101",
     portfolioText6: "Me and 3 fellow students created this tech ecommerce store with React, TypeScript and Mantine. We worked with the context API from React for the shopping cart.",
     stickynote: "  Hi, I am a developer and designer",
-    speechBubble: "I have participated in both design and coding projects"
+    speechBubble: "I have participated in both design and coding projects",
+    github: "My Github",
 
     
     // Additional sections/pages could be nested similarly
