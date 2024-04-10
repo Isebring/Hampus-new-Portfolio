@@ -1,9 +1,12 @@
 import { Carousel } from "@mantine/carousel";
 import { Container, Title } from "@mantine/core";
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 function MyCarousel() {
   const { t } = useTranslation();
+  const autoplay = useRef(Autoplay({ delay: 3000 }));
   return (
     <Container size="lg">
       <Title mt="lg" align="center" mb="md" order={3}>
@@ -20,6 +23,9 @@ function MyCarousel() {
           { maxWidth: "md", slideSize: "50%" },
           { maxWidth: "sm", slideSize: "100%", slideGap: 0 },
         ]}
+        plugins={[autoplay.current]}
+        onMouseEnter={autoplay.current.stop}
+        onMouseLeave={autoplay.current.reset}
       >
         <Carousel.Slide>
           <img
