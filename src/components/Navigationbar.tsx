@@ -158,7 +158,7 @@ export function Navigationbar({ links }: NavigationbarProps) {
         height="50%"
         width={logoSize}
         src="../imgs/hampuslogo.svg"
-        alt="Hampus Isering logo"
+        alt="Hampus Isebring logo"
       />
     ) : (
       <Image
@@ -298,6 +298,8 @@ export function Navigationbar({ links }: NavigationbarProps) {
             to="./"
             onClick={handleLinkClick}
             className={cx(classes.logoLink)}
+            aria-label="Go to Home Page"
+            title="Homepage of Hampus Isebring's portfolio"
           >
             <Group spacing={1}>{logo}</Group>
           </Link>
