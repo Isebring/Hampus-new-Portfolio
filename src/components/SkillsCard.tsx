@@ -37,9 +37,9 @@ const useStyles = createStyles((theme) => ({
   },
 
   skills: {
+    transition: "0.6s ease-in-out",
     "&:hover": {
       transform: "scale(1.03)",
-      transition: "0.6s ease-in-out",
     },
   },
 }));

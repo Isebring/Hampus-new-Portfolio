@@ -112,6 +112,14 @@ const useStyles = createStyles((theme) => ({
         .color,
     },
   },
+  logoLink: {
+    "& img": {
+      transition: "transform 0.45s ease-in-out",
+    },
+    "&:hover img": {
+      transform: "scale(1.03)",
+    },
+  },
 }));
 export interface NavigationbarProps {
   links: { link: string; label: string }[];
@@ -286,7 +294,11 @@ export function Navigationbar({ links }: NavigationbarProps) {
             },
           }}
         >
-          <Link to="./" onClick={handleLinkClick}>
+          <Link
+            to="./"
+            onClick={handleLinkClick}
+            className={cx(classes.logoLink)}
+          >
             <Group spacing={1}>{logo}</Group>
           </Link>
         </MediaQuery>

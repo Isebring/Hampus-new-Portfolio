@@ -24,9 +24,9 @@ import ProfileCard from "../components/ProfileCard";
 
 const useStyles = createStyles((theme) => ({
   paper: {
+    transition: "0.5s ease-in-out",
     "&:hover": {
-      transform: "scale(1.1)",
-      transition: "0.4s ease-in-out",
+      transform: "scale(1.05)",
     },
   },
 }));
