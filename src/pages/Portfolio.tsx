@@ -177,6 +177,14 @@ function Portfolio() {
       objectFitType: "fill",
     },
     {
+      title: t("portfolioTitle7"),
+      imgSrc: "/imgs/quizical-notes.png",
+      description: t("portfolioText7"),
+      websiteUrl: "https://quizicalnotes.netlify.app/",
+      githubLink: "https://github.com/Isebring/Quizical-Notes",
+      objectFitType: "cover",
+    },
+    {
       title: t("portfolioTitle5"),
       imgSrc: "/imgs/devStudio.png",
       description: t("portfolioText5"),
