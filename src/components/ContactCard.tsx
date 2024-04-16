@@ -22,8 +22,8 @@ export function ContactCard() {
         <Avatar
           src="/imgs/hampus-isebring.png"
           alt="a picture of me, Hampus Isebring"
-          size={94}
-          radius="md"
+          size={104}
+          style={{ borderRadius: "60px 70px 40px 140px" }}
         />
         <div>
           <Text fz="xs" tt="uppercase" fw={700} c="dimmed">
