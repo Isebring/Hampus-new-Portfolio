@@ -19,7 +19,7 @@ export default {
     text3: "Under mina år på högskolan blev jag mer bekväm i min roll som designer och vad det innebär.",
     title4: "2022. Kandidatexamen",
     text4: "I juni 2022 tog jag min examen från högskolan i Halmstad och är nu en junior designer.",
-    title5: "2022-Pågående. Front End Developer",
+    title5: "2022-2024. Front End Developer",
     title6: "2023-2024. Front End Utvecklare & UX Designer Praktik.",
     text6: "Under min praktik på DH Solutions har jag bidragit med både UX-design, UI-design och frontendutveckling. Min huvudsakliga uppgift har varit att koda klientsidan för både interna projekt och kundprojekt. Jag har även arbetat med tillgänglighet, vilket är något jag brinner för.",
     text5: "Medieinstitutet. Efter min examen upplevde jag ett starkt intresse för hur utvecklare arbetar och ville bättre förstå kod för att enklare kunna samarbeta.",

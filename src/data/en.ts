@@ -19,7 +19,7 @@ export default {
     text3: "As the years went by, I got more and more comfortable as to what my role as a designer is.",
     title4: "2022. Graduation",
     text4: "In June 2022 I graduated and can now call myself a junior designer.",
-    title5: "2022-Present. Front End Developer.",
+    title5: "2022-2024. Front End Developer.",
     title6: "2023-2024. Front End Developer & UX Designer Internship.",
     text6: "During my internship at DH Solutions I have contributed with both UX design, UI design and Front End Development. My primary task was to code the client side of both internal projects and client projects. I also got to work a bit with accessibility which is a passion of mine.",
     text5: "Medieinstitutet. After graduating I felt an interest to know more how developers work so I can better understand and collaborate with them.",
