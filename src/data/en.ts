@@ -71,6 +71,7 @@ export default {
     stickynote: "  Hi, I am a developer and designer",
     speechBubble: "I have participated in both design and coding projects",
     github: "My Github",
+    tagText: "Creativity",
 
     
     // Additional sections/pages could be nested similarly

@@ -7,45 +7,51 @@ import {
   Image,
   MediaQuery,
   Title,
-} from '@mantine/core';
-import { useTranslation } from 'react-i18next';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { IoMdMail } from 'react-icons/io';
-import StickyNote from './StickyNote';
-import Typewriter from './Typewriter';
+} from "@mantine/core";
+import { useTranslation } from "react-i18next";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+import StickyNote from "./StickyNote";
+import Tag from "./Tag";
+import Typewriter from "./Typewriter";
 
 function Welcome() {
   const { t } = useTranslation();
   return (
     // <Flex align="center">
-    <Container sx={{ maxWidth: '82rem' }}>
-      <Box sx={{ display: 'flex', justifyContent: 'center' }} mt="xl">
+    <Container sx={{ maxWidth: "82rem" }}>
+      <Box sx={{ display: "flex", justifyContent: "center" }} mt="xl">
         <StickyNote />
       </Box>
+      <MediaQuery query="(max-width: 440px)" styles={{ display: "none" }}>
+        <Box sx={{ paddingLeft: "2rem" }}>
+          <Tag />
+        </Box>
+      </MediaQuery>
       <Box
         sx={{
-          marginTop: '2rem',
-          marginBottom: '2rem',
-          display: 'flex',
-          justifyContent: 'center',
+          marginTop: "2rem",
+          marginBottom: "2rem",
+          display: "flex",
+          justifyContent: "center",
         }}
       >
         {/* <Texteffect /> */}
       </Box>
       <MediaQuery
         query="(max-width: 815px)"
-        styles={{ flexDirection: 'column' }}
+        styles={{ flexDirection: "column" }}
       >
         <Box
           sx={{
-            display: 'flex',
-            justifyContent: 'space-evenly',
-            alignItems: 'center',
+            display: "flex",
+            justifyContent: "space-evenly",
+            alignItems: "center",
           }}
         >
-          <MediaQuery query="(max-width: 815px)" styles={{ fontSize: '35px' }}>
+          <MediaQuery query="(max-width: 815px)" styles={{ fontSize: "35px" }}>
             <Title order={1} size={55} mb="sm" align="center">
-              {t('introName')} <span style={{ color: '#3596e6' }}>Hampus</span>
+              {t("introName")} <span style={{ color: "#3596e6" }}>Hampus</span>
             </Title>
           </MediaQuery>
           <Image
@@ -97,7 +103,7 @@ function Welcome() {
           component="a"
           href="https://github.com/Isebring"
           target="_blank"
-          sx={{ borderRadius: '50%' }}
+          sx={{ borderRadius: "50%" }}
           size="lg"
           color="blue"
           aria-label="Reach out to me on Github"
@@ -109,7 +115,7 @@ function Welcome() {
           component="a"
           href="https://www.linkedin.com/in/hampus-isebring-6947b0230/"
           target="_blank"
-          sx={{ borderRadius: '50%' }}
+          sx={{ borderRadius: "50%" }}
           size="lg"
           color="blue"
           aria-label="Reach out to me on LinkedIn"
@@ -121,7 +127,7 @@ function Welcome() {
           component="a"
           href="mailto:hampus.isebring@gmail.com"
           target="_blank"
-          sx={{ borderRadius: '50%' }}
+          sx={{ borderRadius: "50%" }}
           size="lg"
           color="blue"
           aria-label="Reach out to me on email"

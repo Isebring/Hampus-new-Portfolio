@@ -71,6 +71,7 @@ export default {
     stickynote: "Hej, jag är en utvecklare och designer",
     speechBubble: "Jag har deltagit i både design och kodningsprojekt",
     github: "Min Github",
+    tagText: "Kreativitet",
 
     
     // Additional sections/pages could be nested similarly
