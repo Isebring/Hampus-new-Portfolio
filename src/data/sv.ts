@@ -31,7 +31,7 @@ export default {
     skillsTitle1: "Saker jag vanligtvis gör",
     skillsText2: "Service design är ett mer holistiskt tillvägagångssätt och jag har implementerat det i vissa designprocesser. Att beakta båda aspekterna av frontstage och backstage har sina fördelar när man etablerar värde i ett företag. Att skapa en service blueprint bland andra åtgärder leder till en bättre förståelse för hur saker kopplas samman och fungerar i ett större sammanhang.",
     skillsText3: "HTML, CSS, JavaScript och TypeScript. Jag är också bekant med Webflow och Wordpress. Jag har mest erfarenhet av HTML, CSS och JavaScript. Jag blir mer van vid TypeScript och använder bibliotek som React och Preact i projekt.",
-    skillsText4: "Node, Express, Socket.io and MongoDB är några av de verktyg jag arbetat med i Back End utveckling. Jag har exempelvis skapat REST API:er med CRUD operationer.",
+    skillsText4: "Node, Express, Socket.io och MongoDB är några av de verktyg jag arbetat med i Back End utveckling. Jag har exempelvis skapat REST API:er med CRUD operationer.",
     reachOut: "Du får gärna höra av dig",
     reachOutText: "Jag är alltid öppen för en diskussion eller samtal",
     thanks: "Tack för titten!",
