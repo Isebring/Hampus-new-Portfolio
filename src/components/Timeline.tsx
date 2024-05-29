@@ -4,7 +4,6 @@ import {
   Container,
   Divider,
   Flex,
-  Image,
   MediaQuery,
   Text,
   ThemeIcon,
@@ -13,6 +12,7 @@ import {
 } from "@mantine/core";
 import { IconBrandZoom, IconPencil, IconSchool } from "@tabler/icons-react";
 import { useTranslation } from "react-i18next";
+import Animation from "./Animation";
 
 function MyTimeLine() {
   const { t } = useTranslation();
@@ -146,12 +146,18 @@ function MyTimeLine() {
               marginTop: "1rem",
             }}
           >
-            <Box sx={{ display: "flex", justifyContent: "center" }}>
-              <Image
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              {/* <Image
                 maw={500}
                 src="/imgs/illustration.svg"
                 alt="an illustration of a man showing messages on his computer"
-              />
+              /> */}
+              <Animation />
             </Box>
           </MediaQuery>
         </Flex>

@@ -1,4 +1,5 @@
 import { Blockquote, Box, Container, Flex, MediaQuery } from "@mantine/core";
+import IdeaAnimation from "./IdeaAnimation";
 
 function About() {
   return (
@@ -12,18 +13,19 @@ function About() {
         }}
       >
         <Flex justify="center" align="center">
-          <Box>
+          <Box style={{ width: "100%" }}>
             <Blockquote color="blue" cite="– Nelson Mandela">
               The greatest glory in living lies not in never falling, but in
               rising every time we fall
             </Blockquote>
           </Box>
-          <Box>
-            <img
+          <Box style={{ width: "50%" }}>
+            {/* <img
               loading="lazy"
               src="/imgs/isebring-design.svg"
               alt="A cat mascot sketching on design ideas"
-            />
+            /> */}
+            <IdeaAnimation />
           </Box>
         </Flex>
       </MediaQuery>
