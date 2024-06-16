@@ -100,7 +100,7 @@ function CV() {
           <Button mt="md" mb="xs">
             <a
               style={{ textDecoration: "none", color: "white" }}
-              href="/cv_hampus_isebring - 2023.pdf"
+              href="/cv_hampus_isebring - 2024.pdf"
               download="Hampus Isebring CV.pdf"
             >
               {t("download")}
