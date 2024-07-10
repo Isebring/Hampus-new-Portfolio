@@ -51,7 +51,7 @@ export default {
     carouselTitle: "Some pictures from my life",
     download: "Download CV",
     closePDF: "Close PDF",
-    portfolioTitle: "My Portfolio",
+    portfolioTitle: "My Coding Projects",
     portfolioTitle0: "DH Solutions App",
     portfolioText0: "During my internship at DH Solutions, I have created both the design and coded the client side of a React Native application that is intended to be released soon.",
     portfolioTitle1: "Design Cases",

@@ -142,15 +142,15 @@ function Portfolio() {
       githubLink: "",
       objectFitType: "scale-down",
     },
-    {
-      title: t("portfolioTitle1"),
-      imgSrc: "/imgs/figma-portfolio.png",
-      description: t("portfolioText1"),
-      websiteUrl:
-        "https://www.figma.com/proto/4tnMOesa5z2xNH2tvB0Jcv/Hampus-UX-Portfolio?page-id=0%3A1&type=design&node-id=404-2&viewport=574%2C144%2C0.09&scaling=scale-down-width&starting-point-node-id=404%3A2&hide-ui=1",
-      githubLink: "",
-      objectFitType: "cover",
-    },
+    // {
+    //   title: t("portfolioTitle1"),
+    //   imgSrc: "/imgs/figma-portfolio.png",
+    //   description: t("portfolioText1"),
+    //   websiteUrl:
+    //     "https://www.figma.com/proto/4tnMOesa5z2xNH2tvB0Jcv/Hampus-UX-Portfolio?page-id=0%3A1&type=design&node-id=404-2&viewport=574%2C144%2C0.09&scaling=scale-down-width&starting-point-node-id=404%3A2&hide-ui=1",
+    //   githubLink: "",
+    //   objectFitType: "cover",
+    // },
     {
       title: t("portfolioTitle2"),
       imgSrc: "/imgs/GH-logo.png",
