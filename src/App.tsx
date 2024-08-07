@@ -14,7 +14,7 @@ function App() {
     { link: "/", label: t("navHome") },
     { link: "/profile", label: t("navProfile") },
     { link: "/cv", label: "CV" },
-    // { link: "/skills", label: "Skills" },
+    { link: "/design", label: "Design" },
     { link: "/coding", label: "Coding" },
   ];
 

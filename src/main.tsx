@@ -13,11 +13,12 @@ import {
 } from "react-router-dom";
 import App from "./App";
 import "./main.css";
+import Coding from "./pages/Coding";
 import Cv from "./pages/Cv";
 import Home from "./pages/Home";
-import Portfolio from "./pages/Portfolio";
 import { Profile } from "./pages/Profile";
 import Skills from "./pages/Skills";
+import Design from "./pages/Design";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,7 +26,8 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/skills" element={<Skills />} />
-      <Route path="/coding" element={<Portfolio />} />
+      <Route path="/coding" element={<Coding />} />
+      <Route path="/design" element={<Design />} />
       <Route path="/cv" element={<Cv />} />
     </Route>
   )
