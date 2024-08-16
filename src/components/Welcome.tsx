@@ -19,7 +19,7 @@ function Welcome() {
   const { t } = useTranslation();
   return (
     // <Flex align="center">
-    <Container sx={{ maxWidth: "82rem" }}>
+    <Container size="xl">
       <Box sx={{ display: "flex", justifyContent: "center" }} mt="xl">
         <StickyNote />
       </Box>
@@ -45,12 +45,13 @@ function Welcome() {
         <Box
           sx={{
             display: "flex",
-            justifyContent: "space-evenly",
+            justifyContent: "center",
             alignItems: "center",
+            gap: "5rem",
           }}
         >
           <MediaQuery query="(max-width: 815px)" styles={{ fontSize: "35px" }}>
-            <Title order={1} size={55} mb="sm" align="center">
+            <Title order={1} size={55} align="center">
               {t("introName")} <span style={{ color: "#3596e6" }}>Hampus</span>
             </Title>
           </MediaQuery>
