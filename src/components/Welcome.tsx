@@ -50,7 +50,10 @@ function Welcome() {
             gap: "5rem",
           }}
         >
-          <MediaQuery query="(max-width: 815px)" styles={{ fontSize: "35px" }}>
+          <MediaQuery
+            query="(max-width: 815px)"
+            styles={{ fontSize: "36px", paddingTop: "1rem" }}
+          >
             <Title order={1} size={55} align="center">
               {t("introName")} <span style={{ color: "#3596e6" }}>Hampus</span>
             </Title>
