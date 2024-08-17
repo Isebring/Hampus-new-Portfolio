@@ -60,8 +60,7 @@ function Welcome() {
           </MediaQuery>
           <Image
             maw={230}
-            mt="md"
-            mb="md"
+            mb="xl"
             src="/imgs/hampus_isebring.png"
             alt="a picture of me, Hampus Isebring"
           />
