@@ -186,11 +186,11 @@ function Portfolio() {
     },
     {
       title: t("portfolioTitle5"),
-      imgSrc: "/imgs/devStudio.png",
+      imgSrc: "/imgs/my-dictionary.png",
       description: t("portfolioText5"),
-      websiteUrl: "https://devstudiofed22g.netlify.app/",
-      githubLink: "https://github.com/HJYMM22G/HJYMM22G",
-      objectFitType: "cover",
+      websiteUrl: "https://myengdictionary.netlify.app/",
+      githubLink: "https://github.com/Isebring/Dictionary-assignment",
+      objectFitType: "scale-down",
     },
     {
       title: t("portfolioTitle6"),
