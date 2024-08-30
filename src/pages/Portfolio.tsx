@@ -51,7 +51,7 @@ const PortfolioOverlay = styled.div`
 const Heading = styled.h2`
   font-size: 1.6rem;
   font-weight: 600;
-  font-family: Quicksand, sans-serif;
+  font-family: Inter Tight, sans-serif;
   margin-bottom: 0.625rem;
   color: #f8f8f8;
 `;

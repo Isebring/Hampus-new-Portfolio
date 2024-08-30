@@ -47,7 +47,7 @@ function Root() {
             colorScheme,
             primaryColor: "blue",
             headings: {
-              fontFamily: "Quicksand, sans-serif",
+              fontFamily: "Inter Tight, sans-serif",
             },
           }}
           withGlobalStyles

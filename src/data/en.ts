@@ -63,7 +63,7 @@ export default {
     portfolioTitle4: "GHEDB",
     portfolioText4: "Me and 2 fellow students created a movie application using React and TypeScript. We used the TMDB API for this assignment which was a lot of fun.",
     portfolioTitle5: "My Dictionary",
-    portfolioText5: "This was an assignment from Medieinstitutet where I as a student created an english dictionary where the user can search for words and mark them as favorites. I also created tests in this project, using RTL and Jest. My stack was React and TypeScript",
+    portfolioText5: "I created an english dictionary where the user can search for words and mark them as favorites. I also created tests using RTL and Jest. My stack was React and TypeScript",
     portfolioTitle6: "T101",
     portfolioTitle7: "Quizical Notes",
     portfolioText7: "I created this music quiz app as a side project on my own. I used the Open Trivia Database API and React, TypeScript, Mantine and Axios.",

@@ -63,7 +63,7 @@ export default {
     portfolioTitle4: "GHEDB",
     portfolioText4: "Jag och 2 andra studenter skapade en filmapplikation med React och TypeScript. Vi använde oss av TMDBs API för denna uppgift.",
     portfolioTitle5: "Mitt Lexikon",
-    portfolioText5: "Detta var en uppgift från Medieinstitutet där jag som student skapade ett engelskt lexikon där användaren kan söka på ord och favoritmarkera dessa. Jag skapade även tester i detta projekt med hjälp av RTL och Jest. Jag använde mig av React och TypeScript.",
+    portfolioText5: "Jag skapade ett engelskt lexikon där användaren kan söka på ord och favoritmarkera dessa. Jag skapade även tester med hjälp av RTL och Jest. Jag använde mig av React och TypeScript.",
     portfolioTitle6: "T101",
     portfolioText6: "Jag och 3 andra studenter skapade denna webbshopp med React, TypeScript och Mantine. Vi arbetade exempelvis med Reacts context API för att skapa en kundvagn.",
     portfolioTitle7: "Quizical Notes",

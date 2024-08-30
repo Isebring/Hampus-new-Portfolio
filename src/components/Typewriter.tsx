@@ -7,8 +7,8 @@ function Typewriter() {
   const { t } = useTranslation();
 
   return (
-    <Container>
-      <Title order={2} mb="xl" align="center" fw={600}>
+    <Container mt="xl">
+      <Title order={2} mb="xl" align="center" fw={300}>
         <span style={{ color: "#3596e6" }}>{t("intro")}</span>{" "}
         <TypeAnimation
           key={i18n.language}
