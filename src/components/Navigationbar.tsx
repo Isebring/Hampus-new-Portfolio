@@ -16,7 +16,6 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import { IconMoonStars, IconSun } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
-import { MdLanguage } from "react-icons/md";
 import { Link, useLocation } from "react-router-dom";
 import i18n from "../i18";
 
@@ -252,17 +251,26 @@ export function Navigationbar({ links }: NavigationbarProps) {
     return (
       <Group position="center" my={30}>
         <Switch
-          labelPosition="left"
-          color="gray"
-          radius="md"
           size="xs"
           onKeyDown={handleKeyDown}
           aria-label="Toggle language"
           checked={isEnglish}
           onChange={toggleLanguage}
           label={isEnglish ? "EN" : "SV"}
-          onLabel={<MdLanguage size="1rem" />}
-          offLabel={<MdLanguage size="1rem" />}
+          onLabel={
+            <Image
+              maw={20}
+              src="../../public/imgs/usa_icon.png"
+              alt="Flag of USA"
+            />
+          }
+          offLabel={
+            <Image
+              maw={20}
+              src="../../public/imgs/sweden_icon.png"
+              alt="Flag of Sweden"
+            />
+          }
         />
       </Group>
     );
