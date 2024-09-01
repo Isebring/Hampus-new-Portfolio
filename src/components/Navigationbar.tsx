@@ -258,18 +258,10 @@ export function Navigationbar({ links }: NavigationbarProps) {
           onChange={toggleLanguage}
           label={isEnglish ? "EN" : "SV"}
           onLabel={
-            <Image
-              maw={20}
-              src="../../public/imgs/usa_icon.png"
-              alt="Flag of USA"
-            />
+            <Image maw={20} src="/imgs/usa_icon.png" alt="Flag of USA" />
           }
           offLabel={
-            <Image
-              maw={20}
-              src="../../public/imgs/sweden_icon.png"
-              alt="Flag of Sweden"
-            />
+            <Image maw={20} src="/imgs/sweden_icon.png" alt="Flag of Sweden" />
           }
         />
       </Group>
