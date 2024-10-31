@@ -4,6 +4,13 @@ export const imgs = [
       alt: "Figma logo"
     },
     {
+      url: "https://i0.wp.com/wordpress.org/files/2023/02/wmark.png?w=500&ssl=1",
+      alt: "Wordpress logo"
+    },
+    {url: "https://elementor.com/marketing/wp-content/uploads/2021/10/Elementor-Logo-Symbol-Red.png",
+      alt: "Elementor logo"
+    },
+    {
       url: "https://xpgraph.com/wp-content/uploads/2017/12/reactjs.jpg",
       alt: "A space-themed React logo with a blue atom symbol"
     },
