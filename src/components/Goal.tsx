@@ -1,6 +1,5 @@
-import { Container, Divider, Text, Title } from "@mantine/core";
+import { Container, Divider, Image, Text, Title } from "@mantine/core";
 import { useTranslation } from "react-i18next";
-import { GoGoal } from "react-icons/go";
 
 function Goal() {
   const { t } = useTranslation();
@@ -8,9 +7,15 @@ function Goal() {
     <Container size="xl">
       <Title sx={{ display: "flex" }} mb="lg" order={3}>
         {t("goalTitle")}
-        <GoGoal size="2rem" style={{ marginLeft: "auto" }} />
+        {/* <GoGoal size="2rem" style={{ marginLeft: "auto" }} /> */}
       </Title>
       <Text>{t("goalText")}</Text>
+      <Image
+        style={{ marginLeft: "auto" }}
+        maw={300}
+        src="/imgs/abstract-rounded-blue-spike.png"
+        alt="an illustration of a man showing messages on his computer"
+      />
       <Divider mt="xl" />
     </Container>
   );

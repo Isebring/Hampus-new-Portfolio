@@ -25,7 +25,7 @@ export default {
     text5: "Medieinstitutet. After graduating I felt an interest to know more how developers work so I can better understand and collaborate with them.",
     goalTitle: "My goal",
     goalText: "I have a strong passion for creating digital solutions that supports people in their lives. I believe that my background from design combined with my enhanced knowledge and understanding of how developers work can contribute to a broad understanding of the whole process of creating digital artefacts, from start to finish. One of my main goals with a career in IT is to be able to combine interests and subjects I am passionate about. To name some of them: Being a helping hand for people. Sustainability for our planet and it's habitants. Accessibility and equity since we are all unique and have different needs.",
-    tools: "My tools",
+    tools: "Some of my tools",
     skillsTitle: "My skills",
     skillsText1: "UX design is something I am familiar with due to my three years of studying at Halmstad university. UX and UI are both important parts, and I believe a designer needs both to succeed well in a design process. While UX refers to the overall experience of a product or service, UI is what meets the eye and therefore is an important part of the experience. I present my design projects in a Figma portfolio.",
     skillsTitle1: "Things I usually do",

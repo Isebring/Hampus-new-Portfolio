@@ -25,7 +25,7 @@ export default {
     text5: "Medieinstitutet. Efter min examen upplevde jag ett starkt intresse för hur utvecklare arbetar och ville bättre förstå kod för att enklare kunna samarbeta.",
     goalTitle: "Mitt mål",
     goalText: "Jag har en stark passion för att skapa digitala lösningar som stödjer människor i deras liv. Jag tror att min bakgrund inom design i kombination med min fördjupade kunskap och förståelse för hur utvecklare arbetar kan bidra till en bred förståelse för hela processen att skapa digitala artefakter, från början till slut. Ett av mina huvudmål med en karriär inom IT är att kunna kombinera intressen och ämnen som jag brinner för. För att nämna några av dem: Att vara en hjälpande hand för människor. Hållbarhet för vår planet och dess invånare. Tillgänglighet och rättvisa eftersom vi alla är unika och har olika behov.",
-    tools: "Mina verktyg",
+    tools: "Några av mina verktyg",
     skillsTitle: "Mina kompetenser",
     skillsText1: "UX-design är något jag är bekant med tack vare mina tre år av studier vid Halmstads universitet. UX och UI är båda viktiga delar, och jag tror att en designer behöver båda för att lyckas väl i en designprocess. Medan UX avser den övergripande upplevelsen av en produkt eller tjänst är UI det som möter ögat och därför en viktig del av upplevelsen. Jag presenterar mina designprojekt i en Figma-portfolio.",
     skillsTitle1: "Saker jag vanligtvis gör",
