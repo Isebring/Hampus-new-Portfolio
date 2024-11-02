@@ -155,7 +155,7 @@ function Portfolio() {
       title: t("portfolioTitle2"),
       imgSrc: "/imgs/GH-logo.png",
       description: t("portfolioText2"),
-      websiteUrl: "https://ghgamehaven.netlify.app/",
+      websiteUrl: "https://gh-gamehaven.netlify.app/",
       githubLink: "https://github.com/gabriel-lugo/GH-GameHaven",
       objectFitType: "scale-down",
     },
