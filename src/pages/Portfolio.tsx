@@ -31,7 +31,7 @@ const PortfolioImg = ({ src, alt, objectFitType, ...rest }: any) => (
   <StyledImage
     src={src}
     alt={alt}
-    style={{ objectFit: objectFitType }}
+    style={{ objectFit: objectFitType, backgroundColor: "#F3F8F9" }}
     {...rest}
   />
 );
@@ -135,6 +135,14 @@ function Portfolio() {
 
   const projects = [
     {
+      title: t("portfolioTitle6"),
+      imgSrc: "/imgs/logoCreative.svg",
+      description: t("portfolioText6"),
+      websiteUrl: "https://creativepaper.netlify.app",
+      githubLink: "https://github.com/Isebring/Creative-Paper-webbshop",
+      objectFitType: "contain",
+    },
+    {
       title: t("portfolioTitle0"),
       imgSrc: "/imgs/dh_logo.png",
       description: t("portfolioText0"),
@@ -191,14 +199,6 @@ function Portfolio() {
       websiteUrl: "https://myengdictionary.netlify.app/",
       githubLink: "https://github.com/Isebring/Dictionary-assignment",
       objectFitType: "scale-down",
-    },
-    {
-      title: t("portfolioTitle6"),
-      imgSrc: "/imgs/T101.png",
-      description: t("portfolioText6"),
-      websiteUrl: "https://tech-101-webshop.netlify.app/",
-      githubLink: "https://github.com/Isebring/Tech-101-Webshop",
-      objectFitType: "cover",
     },
   ];
 
