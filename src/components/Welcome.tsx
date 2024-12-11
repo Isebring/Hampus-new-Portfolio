@@ -14,6 +14,7 @@ import { IoMdMail } from "react-icons/io";
 import StickyNote from "./StickyNote";
 import Tag from "./Tag";
 import Typewriter from "./Typewriter";
+import BeeAnimation from "./BeeAnimation";
 
 function Welcome() {
   const { t } = useTranslation();
@@ -22,6 +23,7 @@ function Welcome() {
     <Container size="xl">
       <Box sx={{ display: "flex", justifyContent: "center" }} mt="xl">
         <StickyNote />
+        <BeeAnimation />
       </Box>
       <MediaQuery query="(max-width: 440px)" styles={{ display: "none" }}>
         <Box sx={{ paddingLeft: "2rem" }}>
