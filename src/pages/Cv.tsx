@@ -30,7 +30,7 @@ function CV() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    document.title = "Hampus Isebring - CV";
+    document.title = "CV - Hampus Isebring ";
     window.scrollTo(0, 0);
 
     const updateCvFile = () => {
