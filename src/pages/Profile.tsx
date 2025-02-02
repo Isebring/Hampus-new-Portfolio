@@ -33,7 +33,7 @@ const useStyles = createStyles((theme) => ({
 
 export function Profile() {
   useEffect(() => {
-    document.title = "Hampus Isebring - Profile";
+    document.title = "Profile - Hampus Isebring";
     window.scrollTo(0, 0);
   }, []);
 

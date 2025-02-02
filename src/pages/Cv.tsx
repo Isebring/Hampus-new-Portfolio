@@ -17,7 +17,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 function CV() {
   useEffect(() => {
-    document.title = "Hampus Isebring - CV";
+    document.title = "CV - Hampus Isebring";
     window.scrollTo(0, 0);
   }, []);
 
