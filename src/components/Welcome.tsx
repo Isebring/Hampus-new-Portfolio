@@ -14,6 +14,7 @@ import { IoMdMail } from "react-icons/io";
 import StickyNote from "./StickyNote";
 import Tag from "./Tag";
 import Typewriter from "./Typewriter";
+import BeeAnimation from "./BeeAnimation";
 
 function Welcome() {
   const { t } = useTranslation();
@@ -22,6 +23,7 @@ function Welcome() {
     <Container size="xl">
       <Box sx={{ display: "flex", justifyContent: "center" }} mt="xl">
         <StickyNote />
+        <BeeAnimation />
       </Box>
       <MediaQuery query="(max-width: 440px)" styles={{ display: "none" }}>
         <Box sx={{ paddingLeft: "2rem" }}>
@@ -42,29 +44,31 @@ function Welcome() {
         query="(max-width: 815px)"
         styles={{ flexDirection: "column" }}
       >
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "5rem",
-          }}
-        >
-          <MediaQuery
-            query="(max-width: 815px)"
-            styles={{ fontSize: "36px", paddingTop: "1rem" }}
+        <MediaQuery query="(max-width: 815px)" styles={{ gap: "2.5rem" }}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "5rem",
+            }}
           >
-            <Title order={1} size={55} align="center">
-              {t("introName")} <span style={{ color: "#3596e6" }}>Hampus</span>
-            </Title>
-          </MediaQuery>
-          <Image
-            maw={230}
-            mb="xl"
-            src="/imgs/hampus_isebring.png"
-            alt="a picture of me, Hampus Isebring"
-          />
-          {/* <Title
+            <MediaQuery
+              query="(max-width: 815px)"
+              styles={{ fontSize: "36px" }}
+            >
+              <Title order={1} size={55} align="center">
+                {t("introName")}{" "}
+                <span style={{ color: "#3596e6" }}>Hampus</span>
+              </Title>
+            </MediaQuery>
+            <Image
+              maw={240}
+              mb="xl"
+              src="/imgs/hampus_isebring.png"
+              alt="a picture of me, Hampus Isebring"
+            />
+            {/* <Title
           mb="lg"
           order={2}
           sx={{
@@ -97,7 +101,8 @@ function Welcome() {
         >
           Hello World
         </Title> */}
-        </Box>
+          </Box>
+        </MediaQuery>
       </MediaQuery>
       {/* <Texteffect /> */}
       <Typewriter />
