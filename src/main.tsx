@@ -3,6 +3,7 @@ import {
   ColorSchemeProvider,
   MantineProvider,
 } from "@mantine/core";
+import { Accessibility } from "accessibility";
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import {
@@ -32,9 +33,17 @@ const router = createBrowserRouter(
 );
 
 function Root() {
+  window.addEventListener(
+    "load",
+    function () {
+      new Accessibility();
+    },
+    false
+  );
   const [colorScheme, setColorScheme] = useState<ColorScheme>("light");
   const toggleColorScheme = (value?: ColorScheme) =>
     setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
+
   return (
     <React.StrictMode>
       <ColorSchemeProvider
