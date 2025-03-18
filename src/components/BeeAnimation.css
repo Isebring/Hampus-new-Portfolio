@@ -3,7 +3,7 @@
   width: 31.25em;
   position: absolute;
   right: 30%;
-  top: 3.6%;
+  top: 3.8%;
   bottom: 0;
   animation: fly 4s infinite;
 }
@@ -104,8 +104,43 @@
   left: 1.87em;
   box-shadow: 2.5em 1.25em #0b2b35;
 }
+
+.chat-bubble {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  background: white;
+  color: black;
+  font-size: 3em;
+  padding: 0.5em 0.8em;
+  border-radius: 1.5em;
+  box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.2);
+  animation: float 2s infinite alternate;
+}
+
+.chat-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -0.3em;
+  right: 1em;
+  width: 0;
+  height: 0;
+  border-left: 0.5em solid transparent;
+  /* border-right: 0.5em solid transparent; */
+  border-top: 0.5em solid white;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-0.5em);
+  }
+}
+
 @media screen and (min-width: 200px) {
   .container {
-    font-size: 0.35em;
+    font-size: 0.28em;
   }
 }
