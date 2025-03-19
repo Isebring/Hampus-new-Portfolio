@@ -111,11 +111,12 @@
   left: 1em;
   background: white;
   color: black;
-  font-size: 3em;
+  font-size: 3.2em;
   padding: 0.5em 0.8em;
   border-radius: 1.5em;
   box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.2);
   animation: float 2s infinite alternate;
+  line-height: 1.4;
 }
 
 .chat-bubble::after {
