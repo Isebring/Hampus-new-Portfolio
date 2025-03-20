@@ -3,6 +3,7 @@ import {
   ColorSchemeProvider,
   MantineProvider,
 } from "@mantine/core";
+import { Accessibility } from "accessibility";
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import {
@@ -18,7 +19,7 @@ import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import { Profile } from "./pages/Profile";
 import Skills from "./pages/Skills";
-import { Accessibility } from "accessibility";
+import { titleCaseLabels } from "./data/Accessibility";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -34,11 +35,10 @@ const router = createBrowserRouter(
 window.addEventListener(
   "load",
   function () {
-    new Accessibility();
+    new Accessibility({ labels: titleCaseLabels });
   },
   false
 );
-
 function Root() {
   const [colorScheme, setColorScheme] = useState<ColorScheme>("light");
   const toggleColorScheme = (value?: ColorScheme) =>
