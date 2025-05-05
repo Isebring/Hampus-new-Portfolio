@@ -125,7 +125,7 @@ function PortfolioItem(props: {
 
 function Portfolio() {
   useEffect(() => {
-    document.title = "Hampus Isebring - Portfolio";
+    document.title = "Portfolio - Hampus Isebring";
     window.scrollTo(0, 0);
   }, []);
 

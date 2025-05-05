@@ -19,7 +19,7 @@ function IdeaAnimation() {
     <Box style={containerStyle}>
       <Lottie
         animationData={animationData}
-        loop={true}
+        loop={false}
         // style={animationStyle}
       />
     </Box>

@@ -5,6 +5,15 @@
   font-display: swap;
 }
 
+._access-menu button {
+  color: black;
+}
+
+body {
+  --_access-icon-border-radius: 50%;
+  --_access-icon-border: 0.1px solid rgb(230, 230, 230);
+}
+
 html {
   position: relative;
   min-height: 100%;

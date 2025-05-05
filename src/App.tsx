@@ -6,8 +6,9 @@ import { Navigationbar, NavigationbarProps } from "./components/Navigationbar";
 
 function App() {
   const { t } = useTranslation();
+  const currentYear = new Date().getFullYear();
   const footerLinks: FooterProps["links"] = [
-    { link: "/", label: "Hampus Isebring • 2024 ☕" },
+    { link: "/", label: `Hampus Isebring • ${currentYear} ☕` },
   ];
 
   const headerLinks: NavigationbarProps["links"] = [

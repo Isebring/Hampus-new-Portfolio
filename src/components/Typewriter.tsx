@@ -14,16 +14,17 @@ function Typewriter() {
           key={i18n.language}
           sequence={[
             t("professions.uxDesigner"),
-            2000,
+            2500,
             t("professions.developer"),
-            2000,
+            2500,
             t("professions.musicLover"),
-            2000,
+            2500,
             t("professions.gamer"),
-            2000,
+            2500,
             t("professions.friend"),
-            2000,
+            2500,
           ]}
+          speed={{ type: "keyStrokeDelayInMs", value: 150 }}
           repeat={Infinity}
         />
       </Title>

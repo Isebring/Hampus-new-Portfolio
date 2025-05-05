@@ -18,6 +18,11 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 function CV() {
   const [pdfFile, setPdfFile] = useState("/cv_hampus_isebring_sv.pdf");
+  useEffect(() => {
+    document.title = "CV - Hampus Isebring";
+    window.scrollTo(0, 0);
+  }, []);
+
   const [numPages, setNumPages] = useState<number | null>(null);
   const [pageNumber, setPageNumber] = useState<number>(1);
   const [showIframe, setShowIframe] = useState<boolean>(false);
@@ -25,7 +30,7 @@ function CV() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    document.title = "Hampus Isebring - CV";
+    document.title = "CV - Hampus Isebring ";
     window.scrollTo(0, 0);
 
     const updateCvFile = () => {

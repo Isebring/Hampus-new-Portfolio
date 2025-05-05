@@ -8,6 +8,7 @@ const BeeAnimation = () => {
       <Box className="bee">
         <Box className="shine"></Box>
       </Box>
+      <Box className="chat-bubble">👋</Box>
     </Box>
   );
 };
