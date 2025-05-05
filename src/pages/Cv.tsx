@@ -104,7 +104,7 @@ function CV() {
               <iframe
                 src={pdfFile}
                 width="100%"
-                height="100%"
+                height="95%"
                 title="CV PDF"
                 style={{ position: "relative" }}
               ></iframe>
