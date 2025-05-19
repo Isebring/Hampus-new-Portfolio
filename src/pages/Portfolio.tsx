@@ -144,9 +144,9 @@ function Portfolio() {
     },
     {
       title: t("portfolioTitle0"),
-      imgSrc: "/imgs/dh_logo.png",
+      imgSrc: "/imgs/dh-rapport-design.png",
       description: t("portfolioText0"),
-      websiteUrl: "",
+      websiteUrl: "https://dhsolutions.se/dh-tidrapport/",
       githubLink: "",
       objectFitType: "scale-down",
     },
