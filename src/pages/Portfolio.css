@@ -1,9 +1,9 @@
 .speech-bubble {
-  margin-top: 10rem;
+  margin-bottom: 2rem;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  z-index: 2;
+  /* z-index: 2; */
   width: 120px;
   height: 70px;
   position: absolute;

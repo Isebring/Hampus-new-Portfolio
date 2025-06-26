@@ -6,7 +6,7 @@ function Contact() {
   const { t } = useTranslation();
   return (
     <Container size="xl">
-      <Divider mt="md" mb="xl" />
+      <Divider mt="md" mb="lg" />
       <Box pl="sm" mb="xl">
         <Title ta="center" order={2}>
           {t("reachOut")}
@@ -15,16 +15,7 @@ function Contact() {
           {t("reachOutText")}
         </Text>
       </Box>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: ["column", "row"],
-          justifyContent: ["space-between", "center"],
-          alignItems: "center",
-          flexWrap: "wrap",
-          gap: "5rem",
-        }}
-      >
+      <Box>
         <ContactCard />
         {/* <Banner /> */}
       </Box>
