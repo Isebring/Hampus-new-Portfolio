@@ -2,6 +2,7 @@ import {
   ActionIcon,
   Box,
   Container,
+  Divider,
   Group,
   SimpleGrid,
   Title,
@@ -129,8 +130,8 @@ function Portfolio() {
     window.scrollTo(0, 0);
   }, []);
 
-  const isMobile = useMediaQuery("(max-width: 800px)");
-  const columns = isMobile ? 1 : 2;
+  const isMobile = useMediaQuery("(max-width: 1000px)");
+  const columns = isMobile ? 1 : 3;
   const { t } = useTranslation();
 
   const projects = [
@@ -148,7 +149,7 @@ function Portfolio() {
       description: t("portfolioText0"),
       websiteUrl: "https://dhsolutions.se/dh-tidrapport/",
       githubLink: "",
-      objectFitType: "scale-down",
+      objectFitType: "contain",
     },
     {
       title: t("portfolioTitle1"),
@@ -165,7 +166,7 @@ function Portfolio() {
       description: t("portfolioText2"),
       websiteUrl: "https://gh-gamehaven.netlify.app/",
       githubLink: "https://github.com/gabriel-lugo/GH-GameHaven",
-      objectFitType: "scale-down",
+      objectFitType: "contain",
     },
     {
       title: t("portfolioTitle3"),
@@ -182,7 +183,7 @@ function Portfolio() {
       description: t("portfolioText4"),
       websiteUrl: "https://ghedb.netlify.app/",
       githubLink: "https://github.com/Isebring/GHE-Movie-App",
-      objectFitType: "fill",
+      objectFitType: "cover",
     },
     {
       title: t("portfolioTitle7"),
@@ -211,11 +212,11 @@ function Portfolio() {
         src="/imgs/circles.svg"
       ></Image> */}
 
-      <Container size="md">
+      <Container size="xl">
         <Title align="center" mt="lg" mb="lg">
           {t("portfolioTitle")}
         </Title>
-        <SimpleGrid cols={columns} spacing="xl">
+        <SimpleGrid cols={columns} spacing={"xl"}>
           {projects.map((project, index) => (
             <PortfolioItem
               key={index}
@@ -227,11 +228,12 @@ function Portfolio() {
               objectFitType={project.objectFitType}
             />
           ))}
+          <Group position="center">
+            <Box className="speech-bubble">{t("speechBubble")}</Box>
+          </Group>
         </SimpleGrid>
+        <Divider mt="xl" />
       </Container>
-      <Group position="center">
-        <Box className="speech-bubble">{t("speechBubble")}</Box>
-      </Group>
       {/* </BackgroundImage> */}
     </>
   );

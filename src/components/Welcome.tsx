@@ -11,10 +11,10 @@ import {
 import { useTranslation } from "react-i18next";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import BeeAnimation from "./BeeAnimation";
 import StickyNote from "./StickyNote";
 import Tag from "./Tag";
 import Typewriter from "./Typewriter";
-import BeeAnimation from "./BeeAnimation";
 
 function Welcome() {
   const { t } = useTranslation();
@@ -57,7 +57,12 @@ function Welcome() {
               query="(max-width: 815px)"
               styles={{ fontSize: "36px" }}
             >
-              <Title order={1} size={55} align="center">
+              <Title
+                style={{ fontFamily: "Clash Display", fontWeight: "600" }}
+                order={1}
+                size={55}
+                align="center"
+              >
                 {t("introName")}{" "}
                 <span style={{ color: "#3596e6" }}>Hampus</span>
               </Title>

@@ -8,6 +8,7 @@ import Welcome from "../components/Welcome";
 import "../data/imgs";
 import { imgs } from "../data/imgs";
 import Skills from "./Skills";
+import Portfolio from "./Portfolio";
 
 function Home() {
   useEffect(() => {
@@ -18,6 +19,7 @@ function Home() {
   return (
     <>
       <Welcome />
+      <Portfolio />
       <MyTimeLine />
       <Goal />
       <Slider slides={imgs} />
