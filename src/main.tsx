@@ -15,7 +15,6 @@ import {
 import App from "./App";
 import { titleCaseLabels } from "./data/Accessibility";
 import "./main.css";
-import Cv from "./pages/Cv";
 import Home from "./pages/Home";
 import { Profile } from "./pages/Profile";
 import Skills from "./pages/Skills";
@@ -27,7 +26,7 @@ const router = createBrowserRouter(
       <Route path="/profile" element={<Profile />} />
       <Route path="/skills" element={<Skills />} />
       {/* <Route path="/portfolio" element={<Portfolio />} /> */}
-      <Route path="/cv" element={<Cv />} />
+      {/* <Route path="/cv" element={<Cv />} /> */}
     </Route>
   )
 );

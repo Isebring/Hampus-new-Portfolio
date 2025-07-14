@@ -147,4 +147,10 @@
     font-size: 0.2em;
     z-index: -10;
   }
+
+  @media screen and (max-width: 440px) {
+    .container {
+      margin-top: -1rem;
+    }
+  }
 }

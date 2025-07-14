@@ -7,8 +7,9 @@ import MyTimeLine from "../components/Timeline";
 import Welcome from "../components/Welcome";
 import "../data/imgs";
 import { imgs } from "../data/imgs";
-import Skills from "./Skills";
+import CV from "./Cv";
 import Portfolio from "./Portfolio";
+import Skills from "./Skills";
 
 function Home() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function Home() {
       <Portfolio />
       <MyTimeLine />
       <Goal />
+      <CV />
       <Slider slides={imgs} />
       <Skills />
       <About />

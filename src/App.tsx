@@ -14,7 +14,7 @@ function App() {
   const headerLinks: NavigationbarProps["links"] = [
     { link: "/", label: t("navHome") },
     { link: "/profile", label: t("navProfile") },
-    { link: "/cv", label: "CV" },
+    // { link: "/cv", label: "CV" },
     // { link: "/skills", label: "Skills" },
     // { link: "/portfolio", label: "Portfolio" },
   ];
