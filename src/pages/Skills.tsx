@@ -1,4 +1,4 @@
-import { Container, Divider, Flex, MediaQuery, Title } from "@mantine/core";
+import { Container, Flex, MediaQuery, Title } from "@mantine/core";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { BadgeCardProps, SkillsCard } from "../components/SkillsCard";
@@ -209,7 +209,7 @@ function Skills() {
   ];
   return (
     <Container sx={{ maxWidth: "1600px" }}>
-      <Divider mt="md" />
+      {/* <Divider mt="md" /> */}
       <Title
         order={2}
         align="center"

@@ -1,16 +1,16 @@
-import { Box, Container, Image, Title } from '@mantine/core';
-import { useTranslation } from 'react-i18next';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import { Box, Container, Divider, Image, Title } from "@mantine/core";
+import { useTranslation } from "react-i18next";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import {
   Autoplay,
   EffectCoverflow,
   Navigation,
   Pagination,
-} from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import './Slider.css';
+} from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "./Slider.css";
 
 interface Slide {
   url: string;
@@ -24,23 +24,23 @@ interface Props {
 function Slider({ slides }: Props) {
   const { t } = useTranslation();
   return (
-    <Container>
+    <Container size="xl">
       <Title mt="xl" order={2} align="center">
-        {t('tools')}
+        {t("tools")}
       </Title>
       <Swiper
         modules={[EffectCoverflow, Navigation, Pagination, Autoplay]}
         navigation={{
-          prevEl: '.button-prev',
-          nextEl: '.button-next',
+          prevEl: ".button-prev",
+          nextEl: ".button-next",
         }}
         pagination={{ clickable: true }}
         speed={1000}
-        slidesPerView={'auto'}
+        slidesPerView={"auto"}
         autoplay={{ delay: 3500 }}
         loop={true}
         centeredSlides
-        effect={'coverflow'}
+        effect={"coverflow"}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -67,6 +67,7 @@ function Slider({ slides }: Props) {
           />
         </Box>
       </Swiper>
+      <Divider mt="xl" />
     </Container>
   );
 }

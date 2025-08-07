@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   Container,
+  Divider,
   Group,
   Title,
 } from "@mantine/core";
@@ -205,6 +206,7 @@ function CV() {
             </Group>
           </Box>
         </Box>
+        <Divider mt="xl" />
       </Container>
     </>
   );
