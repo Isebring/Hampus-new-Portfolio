@@ -155,7 +155,7 @@ function CV() {
           <Box
             style={{
               flex: "1 1 45%",
-              maxWidth: "500px",
+              maxWidth: "600px",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
